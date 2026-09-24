@@ -1,13 +1,13 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T20:43:20.769741+00:00",
-  "equity": 164.1629,
-  "free_cash": 110.7414,
+  "last_updated": "2026-09-24T20:58:25.146204+00:00",
+  "equity": 165.0127,
+  "free_cash": 90.4014,
   "realized_pnl": -23.8186,
-  "fees_paid": 8.55,
-  "slippage_paid": 1.71,
-  "open_count": 3,
+  "fees_paid": 9.5,
+  "slippage_paid": 1.9,
+  "open_count": 4,
   "positions": [
     {
       "lead_id": "9Nnvxfav-1790277986782",
@@ -16,13 +16,13 @@
       "entry_price": 6.22059e-05,
       "dollars": 19.0,
       "opened_at": 1790277989.380834,
-      "mark_price": 5.382e-05,
-      "last_mark_price": 5.382e-05,
-      "unrealized_pnl": -2.561366365569824,
-      "unrealized_pct": -13.480875608262233,
-      "volume_h6": 254150.39,
-      "volume_h24": 254150.39,
-      "last_liquidity": 19364.84,
+      "mark_price": 5.528e-05,
+      "last_mark_price": 5.528e-05,
+      "unrealized_pnl": -2.1154279577982154,
+      "unrealized_pct": -11.133831356832713,
+      "volume_h6": 254272.01,
+      "volume_h24": 254272.01,
+      "last_liquidity": 19664.5,
       "entry_liquidity": 20905.57
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 8.16888e-05,
       "dollars": 19.0,
       "opened_at": 1790277989.381068,
-      "mark_price": 7.649e-05,
-      "last_mark_price": 7.649e-05,
-      "unrealized_pnl": -1.2091890197921873,
-      "unrealized_pct": -6.3641527357483545,
-      "volume_h6": 493191.97,
-      "volume_h24": 493191.97,
-      "last_liquidity": 23939.13,
+      "mark_price": 8.981e-05,
+      "last_mark_price": 8.981e-05,
+      "unrealized_pnl": 1.8889101076279735,
+      "unrealized_pct": 9.941632145410386,
+      "volume_h6": 497480.52,
+      "volume_h24": 497480.52,
+      "last_liquidity": 26133.89,
       "entry_liquidity": 24700.87
     },
     {
@@ -48,14 +48,30 @@
       "entry_price": 0.000104939,
       "dollars": 19.0,
       "opened_at": 1790278986.167081,
-      "mark_price": 0.000106,
-      "last_mark_price": 0.000106,
-      "unrealized_pnl": 0.19210207835027884,
-      "unrealized_pct": 1.0110635702646256,
-      "volume_h6": 73836.01,
-      "volume_h24": 759211.65,
-      "last_liquidity": 28363.55,
+      "mark_price": 9.852e-05,
+      "last_mark_price": 9.852e-05,
+      "unrealized_pnl": -1.1622085211408546,
+      "unrealized_pct": -6.116886953372918,
+      "volume_h6": 70330.66,
+      "volume_h24": 760587.05,
+      "last_liquidity": 27414.35,
       "entry_liquidity": 29563.23
+    },
+    {
+      "lead_id": "8LHgAXXP-1790283502989",
+      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
+      "ticker": "DAP",
+      "entry_price": 6.23877e-05,
+      "dollars": 19.0,
+      "opened_at": 1790283505.145466,
+      "mark_price": 6.23877e-05,
+      "last_mark_price": 6.23877e-05,
+      "unrealized_pnl": 0.0,
+      "unrealized_pct": 0.0,
+      "volume_h6": null,
+      "volume_h24": null,
+      "last_liquidity": null,
+      "entry_liquidity": null
     }
   ],
   "closed": [
@@ -204,9 +220,41 @@
       "realized_pnl": -23.8186,
       "fees_paid": 8.55,
       "slippage_paid": 1.71
+    },
+    {
+      "ts": "2026-09-24T20:58:25.146133+00:00",
+      "equity": 165.0127,
+      "free_cash": 90.4014,
+      "open": 4,
+      "realized_pnl": -23.8186,
+      "fees_paid": 9.5,
+      "slippage_paid": 1.9
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T20:58:25.145548+00:00",
+      "type": "open",
+      "lead_id": "8LHgAXXP-1790283502989",
+      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
+      "ticker": "DAP",
+      "mid_price": 6.177e-05,
+      "fill_price": 6.23877e-05,
+      "dollars": 19.0,
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 90.40139171421768
+    },
+    {
+      "ts": "2026-09-24T20:58:22.990513+00:00",
+      "type": "discovered",
+      "count": 3,
+      "tickers": [
+        "DAP",
+        "JEANINU",
+        "RUNE"
+      ]
+    },
     {
       "ts": "2026-09-24T20:43:19.552013+00:00",
       "type": "close",
