@@ -1,9 +1,9 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T19:43:06.167777+00:00",
-  "equity": 177.3743,
-  "free_cash": 122.2227,
+  "last_updated": "2026-09-24T19:58:09.610674+00:00",
+  "equity": 174.8024,
+  "free_cash": 122.0227,
   "realized_pnl": -14.2773,
   "fees_paid": 6.65,
   "slippage_paid": 1.33,
@@ -16,13 +16,13 @@
       "entry_price": 6.22059e-05,
       "dollars": 19.0,
       "opened_at": 1790277989.380834,
-      "mark_price": 6.14e-05,
-      "last_mark_price": 6.14e-05,
-      "unrealized_pnl": -0.24615189234461637,
-      "unrealized_pct": -1.295536275497981,
-      "volume_h6": 252547.08,
-      "volume_h24": 252547.08,
-      "last_liquidity": 20863.93,
+      "mark_price": 5.44e-05,
+      "last_mark_price": 5.44e-05,
+      "unrealized_pnl": -2.384212751523569,
+      "unrealized_pct": -12.548488165913522,
+      "volume_h6": 253339.5,
+      "volume_h24": 253339.5,
+      "last_liquidity": 19523.72,
       "entry_liquidity": 20905.57
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 8.16888e-05,
       "dollars": 19.0,
       "opened_at": 1790277989.381068,
-      "mark_price": 7.48e-05,
-      "last_mark_price": 7.48e-05,
-      "unrealized_pnl": -1.602266161334233,
-      "unrealized_pct": -8.432979796495964,
-      "volume_h6": 487020.98,
-      "volume_h24": 487020.98,
-      "last_liquidity": 23690.22,
+      "mark_price": 7.328e-05,
+      "last_mark_price": 7.328e-05,
+      "unrealized_pnl": -1.9558029986974943,
+      "unrealized_pct": -10.293699993144708,
+      "volume_h6": 489303.92,
+      "volume_h24": 489303.92,
+      "last_liquidity": 23435.51,
       "entry_liquidity": 24700.87
     },
     {
@@ -48,14 +48,14 @@
       "entry_price": 0.000104939,
       "dollars": 19.0,
       "opened_at": 1790278986.167081,
-      "mark_price": 0.000104939,
-      "last_mark_price": 0.000104939,
-      "unrealized_pnl": 0.0,
-      "unrealized_pct": 0.0,
-      "volume_h6": null,
-      "volume_h24": null,
-      "last_liquidity": null,
-      "entry_liquidity": null
+      "mark_price": 0.0001056,
+      "last_mark_price": 0.0001056,
+      "unrealized_pnl": 0.11967905163952376,
+      "unrealized_pct": 0.6298897454711777,
+      "volume_h6": 107143.86,
+      "volume_h24": 757548.22,
+      "last_liquidity": 29563.23,
+      "entry_liquidity": 29563.23
     }
   ],
   "closed": [
@@ -144,9 +144,27 @@
       "realized_pnl": -14.2773,
       "fees_paid": 6.65,
       "slippage_paid": 1.33
+    },
+    {
+      "ts": "2026-09-24T19:58:09.610559+00:00",
+      "equity": 174.8024,
+      "free_cash": 122.0227,
+      "open": 3,
+      "realized_pnl": -14.2773,
+      "fees_paid": 6.65,
+      "slippage_paid": 1.33
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T19:58:08.136838+00:00",
+      "type": "discovered",
+      "count": 2,
+      "tickers": [
+        "JEANINU",
+        "RUNE"
+      ]
+    },
     {
       "ts": "2026-09-24T19:43:06.167170+00:00",
       "type": "open",
