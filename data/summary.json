@@ -1,13 +1,13 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T23:14:05.748134+00:00",
-  "equity": 112.6933,
-  "free_cash": 57.2999,
+  "last_updated": "2026-09-24T23:29:10.446524+00:00",
+  "equity": 112.8225,
+  "free_cash": 36.9599,
   "realized_pnl": -65.0001,
-  "fees_paid": 25.65,
-  "slippage_paid": 5.13,
-  "open_count": 3,
+  "fees_paid": 26.6,
+  "slippage_paid": 5.32,
+  "open_count": 4,
   "positions": [
     {
       "lead_id": "qe5iaQ3G-1790287122003",
@@ -16,13 +16,13 @@
       "entry_price": 5.83376e-05,
       "dollars": 19.0,
       "opened_at": 1790287123.519962,
-      "mark_price": 5.745e-05,
-      "last_mark_price": 5.745e-05,
-      "unrealized_pnl": -0.2890828556539869,
-      "unrealized_pct": -1.5214887139683522,
-      "volume_h6": 509786.59,
-      "volume_h24": 509786.59,
-      "last_liquidity": 20498.69,
+      "mark_price": 5.539e-05,
+      "last_mark_price": 5.539e-05,
+      "unrealized_pnl": -0.9600052110474201,
+      "unrealized_pct": -5.052659005512737,
+      "volume_h6": 510206.33,
+      "volume_h24": 510206.33,
+      "last_liquidity": 20101.76,
       "entry_liquidity": 21583.49
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 0.000127765,
       "dollars": 19.0,
       "opened_at": 1790288028.440957,
-      "mark_price": 0.0001225,
-      "last_mark_price": 0.0001225,
-      "unrealized_pnl": -0.7829609047861323,
-      "unrealized_pct": -4.120846867295434,
-      "volume_h6": 123232.86,
-      "volume_h24": 123232.86,
-      "last_liquidity": 31007.59,
+      "mark_price": 0.0001207,
+      "last_mark_price": 0.0001207,
+      "unrealized_pnl": -1.050639846593355,
+      "unrealized_pct": -5.529683403122922,
+      "volume_h6": 123814.5,
+      "volume_h24": 123814.5,
+      "last_liquidity": 30790.47,
       "entry_liquidity": 31365.63
     },
     {
@@ -48,14 +48,30 @@
       "entry_price": 0.0010968599999999998,
       "dollars": 19.0,
       "opened_at": 1790289837.019919,
-      "mark_price": 0.001066,
-      "last_mark_price": 0.001066,
-      "unrealized_pnl": -0.534562296008602,
-      "unrealized_pct": -2.813485768466326,
-      "volume_h6": 169385.17,
-      "volume_h24": 169385.17,
-      "last_liquidity": 123312.25,
+      "mark_price": 0.001205,
+      "last_mark_price": 0.001205,
+      "unrealized_pnl": 1.8732199186769518,
+      "unrealized_pct": 9.859052203562904,
+      "volume_h6": 189318.84,
+      "volume_h24": 189318.84,
+      "last_liquidity": 131330.15,
       "entry_liquidity": 129081.86
+    },
+    {
+      "lead_id": "4G5YDqDv-1790292548328",
+      "contract": "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi",
+      "ticker": "ARENA",
+      "entry_price": 0.0003636,
+      "dollars": 19.0,
+      "opened_at": 1790292550.445684,
+      "mark_price": 0.0003636,
+      "last_mark_price": 0.0003636,
+      "unrealized_pnl": 0.0,
+      "unrealized_pct": 0.0,
+      "volume_h6": null,
+      "volume_h24": null,
+      "last_liquidity": null,
+      "entry_liquidity": null
     }
   ],
   "closed": [
@@ -510,9 +526,41 @@
       "realized_pnl": -65.0001,
       "fees_paid": 25.65,
       "slippage_paid": 5.13
+    },
+    {
+      "ts": "2026-09-24T23:29:10.446468+00:00",
+      "equity": 112.8225,
+      "free_cash": 36.9599,
+      "open": 4,
+      "realized_pnl": -65.0001,
+      "fees_paid": 26.6,
+      "slippage_paid": 5.32
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T23:29:10.445789+00:00",
+      "type": "open",
+      "lead_id": "4G5YDqDv-1790292548328",
+      "contract": "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi",
+      "ticker": "ARENA",
+      "mid_price": 0.00036,
+      "fill_price": 0.0003636,
+      "dollars": 19.0,
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 36.95989433752332
+    },
+    {
+      "ts": "2026-09-24T23:29:08.329271+00:00",
+      "type": "discovered",
+      "count": 3,
+      "tickers": [
+        "ARENA",
+        "REVS",
+        "JEANINU"
+      ]
+    },
     {
       "ts": "2026-09-24T23:14:03.483251+00:00",
       "type": "discovered",
