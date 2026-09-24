@@ -1,12 +1,12 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T22:28:53.041475+00:00",
-  "equity": 121.4264,
-  "free_cash": 64.9371,
-  "realized_pnl": -59.1029,
-  "fees_paid": 23.75,
-  "slippage_paid": 4.75,
+  "last_updated": "2026-09-24T22:43:57.020737+00:00",
+  "equity": 119.1708,
+  "free_cash": 57.6999,
+  "realized_pnl": -65.0001,
+  "fees_paid": 25.65,
+  "slippage_paid": 5.13,
   "open_count": 3,
   "positions": [
     {
@@ -16,30 +16,14 @@
       "entry_price": 5.83376e-05,
       "dollars": 19.0,
       "opened_at": 1790287123.519962,
-      "mark_price": 6.611e-05,
-      "last_mark_price": 6.611e-05,
-      "unrealized_pnl": 2.5313965607087026,
-      "unrealized_pct": 13.323139793203698,
-      "volume_h6": 507592.87,
-      "volume_h24": 507592.87,
-      "last_liquidity": 22082.57,
+      "mark_price": 6.415e-05,
+      "last_mark_price": 6.415e-05,
+      "unrealized_pnl": 1.8930432516935898,
+      "unrealized_pct": 9.96338553522942,
+      "volume_h6": 508070.15,
+      "volume_h24": 508070.15,
+      "last_liquidity": 21747.38,
       "entry_liquidity": 21583.49
-    },
-    {
-      "lead_id": "8LHgAXXP-1790288026189",
-      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
-      "ticker": "DAP",
-      "entry_price": 6.31149e-05,
-      "dollars": 19.0,
-      "opened_at": 1790288028.440359,
-      "mark_price": 5.482e-05,
-      "last_mark_price": 5.482e-05,
-      "unrealized_pnl": -2.4970823054460993,
-      "unrealized_pct": -13.142538449716312,
-      "volume_h6": 1643979.2,
-      "volume_h24": 1643979.2,
-      "last_liquidity": 21072.2,
-      "entry_liquidity": 21072.2
     },
     {
       "lead_id": "HiiRvVQm-1790288026190",
@@ -48,14 +32,30 @@
       "entry_price": 0.000127765,
       "dollars": 19.0,
       "opened_at": 1790288028.440957,
-      "mark_price": 0.0001241,
-      "last_mark_price": 0.0001241,
-      "unrealized_pnl": -0.5450240676241537,
-      "unrealized_pct": -2.8685477243376507,
-      "volume_h6": 118574.25,
-      "volume_h24": 118574.25,
-      "last_liquidity": 31365.63,
+      "mark_price": 0.0001451,
+      "last_mark_price": 0.0001451,
+      "unrealized_pnl": 2.5778969201267947,
+      "unrealized_pct": 13.56787852698313,
+      "volume_h6": 120105.76,
+      "volume_h24": 120105.76,
+      "last_liquidity": 33746.99,
       "entry_liquidity": 31365.63
+    },
+    {
+      "lead_id": "EyWrMXBb-1790289835210",
+      "contract": "EyWrMXBb5DXppWs5uNa6repSEDoDSachbjeixU9KREVS",
+      "ticker": "REVS",
+      "entry_price": 0.0010968599999999998,
+      "dollars": 19.0,
+      "opened_at": 1790289837.019919,
+      "mark_price": 0.0010968599999999998,
+      "last_mark_price": 0.0010968599999999998,
+      "unrealized_pnl": 0.0,
+      "unrealized_pct": 0.0,
+      "volume_h6": null,
+      "volume_h24": null,
+      "last_liquidity": null,
+      "entry_liquidity": null
     }
   ],
   "closed": [
@@ -322,6 +322,30 @@
       "fee": 0.95,
       "slippage": 0.19,
       "closed_at": "2026-09-24T22:13:46.190986+00:00"
+    },
+    {
+      "lead_id": "8LHgAXXP-1790288026189",
+      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
+      "ticker": "DAP",
+      "entry_price": 6.31149e-05,
+      "dollars": 19.0,
+      "opened_at": 1790288028.440359,
+      "mark_price": 4.779e-05,
+      "last_mark_price": 4.779e-05,
+      "unrealized_pnl": -4.613381309326324,
+      "unrealized_pct": -24.28095425961223,
+      "volume_h6": 1649354.62,
+      "volume_h24": 1649354.62,
+      "last_liquidity": 19536.0,
+      "entry_liquidity": 21072.2,
+      "exit_mid": 4.779e-05,
+      "exit_price": 4.7312100000000004e-05,
+      "realized_pnl": -5.89724749623306,
+      "realized_pct": -31.03814471701611,
+      "close_reason": "STOP_LOSS: -24.28% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "closed_at": "2026-09-24T22:43:55.592504+00:00"
     }
   ],
   "equity_series": [
@@ -459,9 +483,56 @@
       "realized_pnl": -59.1029,
       "fees_paid": 23.75,
       "slippage_paid": 4.75
+    },
+    {
+      "ts": "2026-09-24T22:43:57.020678+00:00",
+      "equity": 119.1708,
+      "free_cash": 57.6999,
+      "open": 3,
+      "realized_pnl": -65.0001,
+      "fees_paid": 25.65,
+      "slippage_paid": 5.13
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T22:43:57.020009+00:00",
+      "type": "open",
+      "lead_id": "EyWrMXBb-1790289835210",
+      "contract": "EyWrMXBb5DXppWs5uNa6repSEDoDSachbjeixU9KREVS",
+      "ticker": "REVS",
+      "mid_price": 0.001086,
+      "fill_price": 0.0010968599999999998,
+      "dollars": 19.0,
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 57.69989433752333
+    },
+    {
+      "ts": "2026-09-24T22:43:55.592592+00:00",
+      "type": "close",
+      "lead_id": "8LHgAXXP-1790288026189",
+      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
+      "ticker": "DAP",
+      "entry_price": 6.31149e-05,
+      "exit_mid": 4.779e-05,
+      "exit_price": 4.7312100000000004e-05,
+      "dollars": 19.0,
+      "realized_pnl": -5.89724749623306,
+      "reason": "STOP_LOSS: -24.28% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 78.03989433752334
+    },
+    {
+      "ts": "2026-09-24T22:43:55.211332+00:00",
+      "type": "discovered",
+      "count": 2,
+      "tickers": [
+        "REVS",
+        "JEANINU"
+      ]
+    },
     {
       "ts": "2026-09-24T22:28:52.488235+00:00",
       "type": "rejected",
