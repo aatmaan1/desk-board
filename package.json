@@ -1,7 +1,4 @@
 {
   "name": "desk-board",
-  "private": true,
-  "scripts": {
-    "build": "mkdir -p dist && cp -r public/* dist/"
-  }
+  "private": true
 }

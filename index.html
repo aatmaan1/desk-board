@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Desk — Trades</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root { --bg:#0b0f14; --panel:#121821; --line:#1e2936; --text:#e7eef7; --muted:#8b9bb0; --green:#3ddc97; --red:#ff6b6b; --blue:#5b9cff; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); }
+  header { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(11,15,20,.92); backdrop-filter:blur(8px); z-index:5; }
+  h1 { font-size:16px; margin:0; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
+  .badge { font-size:12px; font-weight:700; padding:4px 10px; border-radius:999px; letter-spacing:.06em; }
+  .badge.paper { background:#1b3a2f; color:var(--green); }
+  .badge.live { background:#3a1b1b; color:var(--red); }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; padding:16px 20px; }
+  .kpi { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+  .kpi .l { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .kpi .v { font-size:22px; font-weight:650; margin-top:4px; font-variant-numeric:tabular-nums; }
+  .pos { color:var(--green); } .neg { color:var(--red); }
+  main { padding:0 20px 40px; display:grid; gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px; }
+  .card h2 { margin:0 0 12px; font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .grid2 { display:grid; grid-template-columns:1.4fr 1fr; gap:16px; }
+  @media (max-width:900px){ .grid2{grid-template-columns:1fr;} }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); font-variant-numeric:tabular-nums; }
+  th { color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.04em; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:12px; color:var(--muted); }
+  .feed { max-height:320px; overflow:auto; font-size:12px; }
+  .feed div { padding:6px 0; border-bottom:1px solid var(--line); }
+  .meta { color:var(--muted); font-size:12px; }
+</style>
+</head>
+<body>
+<header>
+  <div style="display:flex;gap:10px;align-items:center;">
+    <h1>Trading Desk</h1>
+    <span id="mode" class="badge paper">PAPER</span>
+  </div>
+  <div class="meta" id="updated">Loading…</div>
+</header>
+<section class="kpis" id="kpis"></section>
+<main>
+  <div class="card"><h2>Equity</h2><canvas id="equityChart" height="110"></canvas></div>
+  <div class="grid2">
+    <div class="card"><h2>Open positions</h2>
+      <div style="overflow:auto;"><table id="opens"><thead><tr>
+        <th>Ticker</th><th>Size</th><th>Entry</th><th>Mark</th><th>uPnL</th><th>Age</th><th>Contract</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card"><h2>Recent events</h2><div class="feed" id="events"></div></div>
+  </div>
+  <div class="card"><h2>Closed trades</h2>
+    <div style="overflow:auto;"><table id="closed"><thead><tr>
+      <th>Ticker</th><th>Size</th><th>PnL</th><th>Reason</th><th>Fee</th><th>Slip</th><th>Closed</th>
+    </tr></thead><tbody></tbody></table></div>
+  </div>
+</main>
+<script>
+let chart;
+const fmt = n => (n==null||isNaN(n)) ? '—' : Number(n).toLocaleString(undefined,{maximumFractionDigits:2});
+const money = n => '$' + fmt(n);
+const pct = n => (n==null||isNaN(n)) ? '—' : (n>=0?'+':'') + Number(n).toFixed(2) + '%';
+const age = ts => { if(!ts) return '—'; const h=(Date.now()/1000-ts)/3600; return h<1?Math.round(h*60)+'m':h.toFixed(1)+'h'; };
+const short = a => a ? a.slice(0,4)+'…'+a.slice(-4) : '—';
+async function refresh(){
+  const d = await (await fetch('/data/summary.json?t=' + Date.now())).json();
+  const mode = (d.mode||'paper').toLowerCase();
+  document.getElementById('mode').textContent = mode.toUpperCase();
+  document.getElementById('mode').className = 'badge ' + (mode==='live'?'live':'paper');
+  document.getElementById('updated').textContent = 'Updated ' + (d.last_updated || '—') + ' · auto-refresh 30s · public paper desk';
+  const pnlClass = (d.realized_pnl||0) >= 0 ? 'pos' : 'neg';
+  document.getElementById('kpis').innerHTML = [
+    ['Equity', money(d.equity)],['Free cash', money(d.free_cash)],
+    ['Realized P&L', money(d.realized_pnl), pnlClass],['Fees', money(d.fees_paid)],
+    ['Slippage', money(d.slippage_paid)],['Open', d.open_count],
+  ].map(([l,v,c]) => `<div class="kpi"><div class="l">${l}</div><div class="v ${c||''}">${v}</div></div>`).join('');
+  const series = d.equity_series || [];
+  const labels = series.map(x => (x.ts||'').slice(11,19) || '');
+  const values = series.map(x => x.equity);
+  if(!chart){
+    chart = new Chart(document.getElementById('equityChart'), {
+      type:'line', data:{ labels, datasets:[{ data:values, borderColor:'#5b9cff', backgroundColor:'rgba(91,156,255,.12)', fill:true, tension:.25, pointRadius:0 }] },
+      options:{ plugins:{legend:{display:false}}, scales:{ x:{ ticks:{color:'#8b9bb0', maxTicksLimit:8}, grid:{color:'#1e2936'} }, y:{ ticks:{color:'#8b9bb0'}, grid:{color:'#1e2936'} } } }
+    });
+  } else { chart.data.labels=labels; chart.data.datasets[0].data=values; chart.update('none'); }
+  document.querySelector('#opens tbody').innerHTML = (d.positions||[]).map(p => {
+    const cls=(p.unrealized_pnl||0)>=0?'pos':'neg';
+    return `<tr><td><b>${p.ticker||'—'}</b></td><td>${money(p.dollars)}</td><td>${fmt(p.entry_price)}</td><td>${fmt(p.mark_price)}</td><td class="${cls}">${money(p.unrealized_pnl)} (${pct(p.unrealized_pct)})</td><td>${age(p.opened_at)}</td><td class="mono">${short(p.contract)}</td></tr>`;
+  }).join('') || '<tr><td colspan="7" class="meta">No open positions</td></tr>';
+  document.querySelector('#closed tbody').innerHTML = (d.closed||[]).slice().reverse().map(p => {
+    const cls=(p.realized_pnl||0)>=0?'pos':'neg';
+    return `<tr><td><b>${p.ticker||'—'}</b></td><td>${money(p.dollars)}</td><td class="${cls}">${money(p.realized_pnl)} (${pct(p.realized_pct)})</td><td>${p.close_reason||'—'}</td><td>${money(p.fee)}</td><td>${money(p.slippage)}</td><td class="mono">${(p.closed_at||'').replace('T',' ').slice(0,19)}</td></tr>`;
+  }).join('') || '<tr><td colspan="7" class="meta">No closed trades yet</td></tr>';
+  document.getElementById('events').innerHTML = (d.events||[]).map(e => {
+    return `<div><span class="mono">${e.ts||''}</span> · <b>${e.type||e.event||'event'}</b> <span class="meta">${JSON.stringify(e).slice(0,160)}</span></div>`;
+  }).join('') || '<div class="meta">No events</div>';
+}
+refresh(); setInterval(refresh, 30000);
+</script>
+</body>
+</html>
