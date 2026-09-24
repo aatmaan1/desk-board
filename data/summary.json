@@ -1,13 +1,13 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T20:28:16.951830+00:00",
-  "equity": 173.6067,
-  "free_cash": 101.4827,
-  "realized_pnl": -14.2773,
-  "fees_paid": 7.6,
-  "slippage_paid": 1.52,
-  "open_count": 4,
+  "last_updated": "2026-09-24T20:43:20.769741+00:00",
+  "equity": 164.1629,
+  "free_cash": 110.7414,
+  "realized_pnl": -23.8186,
+  "fees_paid": 8.55,
+  "slippage_paid": 1.71,
+  "open_count": 3,
   "positions": [
     {
       "lead_id": "9Nnvxfav-1790277986782",
@@ -16,13 +16,13 @@
       "entry_price": 6.22059e-05,
       "dollars": 19.0,
       "opened_at": 1790277989.380834,
-      "mark_price": 5.299e-05,
-      "last_mark_price": 5.299e-05,
-      "unrealized_pnl": -2.81487929601533,
-      "unrealized_pct": -14.81515418955437,
-      "volume_h6": 254025.95,
-      "volume_h24": 254025.95,
-      "last_liquidity": 19198.26,
+      "mark_price": 5.382e-05,
+      "last_mark_price": 5.382e-05,
+      "unrealized_pnl": -2.561366365569824,
+      "unrealized_pct": -13.480875608262233,
+      "volume_h6": 254150.39,
+      "volume_h24": 254150.39,
+      "last_liquidity": 19364.84,
       "entry_liquidity": 20905.57
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 8.16888e-05,
       "dollars": 19.0,
       "opened_at": 1790277989.381068,
-      "mark_price": 7.586e-05,
-      "last_mark_price": 7.586e-05,
-      "unrealized_pnl": -1.3557207352782759,
-      "unrealized_pct": -7.135372290938294,
-      "volume_h6": 492472.55,
-      "volume_h24": 492472.55,
-      "last_liquidity": 23830.26,
+      "mark_price": 7.649e-05,
+      "last_mark_price": 7.649e-05,
+      "unrealized_pnl": -1.2091890197921873,
+      "unrealized_pct": -6.3641527357483545,
+      "volume_h6": 493191.97,
+      "volume_h24": 493191.97,
+      "last_liquidity": 23939.13,
       "entry_liquidity": 24700.87
     },
     {
@@ -48,30 +48,14 @@
       "entry_price": 0.000104939,
       "dollars": 19.0,
       "opened_at": 1790278986.167081,
-      "mark_price": 0.0001168,
-      "last_mark_price": 0.0001168,
-      "unrealized_pnl": 2.1475237995406853,
-      "unrealized_pct": 11.302756839687818,
-      "volume_h6": 86427.08,
-      "volume_h24": 758892.47,
-      "last_liquidity": 30696.96,
+      "mark_price": 0.000106,
+      "last_mark_price": 0.000106,
+      "unrealized_pnl": 0.19210207835027884,
+      "unrealized_pct": 1.0110635702646256,
+      "volume_h6": 73836.01,
+      "volume_h24": 759211.65,
+      "last_liquidity": 28363.55,
       "entry_liquidity": 29563.23
-    },
-    {
-      "lead_id": "6dPweBFh-1790280791322",
-      "contract": "6dPweBFhc13AjGQ5MBYJUs9EYDJ3zXfGPi61zDAVEwDb",
-      "ticker": "SAGASU",
-      "entry_price": 0.000148369,
-      "dollars": 19.0,
-      "opened_at": 1790280793.435532,
-      "mark_price": 0.0001339,
-      "last_mark_price": 0.0001339,
-      "unrealized_pnl": -1.852887058617366,
-      "unrealized_pct": -9.752037150617717,
-      "volume_h6": 249080.47,
-      "volume_h24": 249080.47,
-      "last_liquidity": 33176.42,
-      "entry_liquidity": 33176.42
     }
   ],
   "closed": [
@@ -122,6 +106,30 @@
       "fee": 0.95,
       "slippage": 0.19,
       "closed_at": "2026-09-24T19:43:03.829625+00:00"
+    },
+    {
+      "lead_id": "6dPweBFh-1790280791322",
+      "contract": "6dPweBFhc13AjGQ5MBYJUs9EYDJ3zXfGPi61zDAVEwDb",
+      "ticker": "SAGASU",
+      "entry_price": 0.000148369,
+      "dollars": 19.0,
+      "opened_at": 1790280793.435532,
+      "mark_price": 8.36e-05,
+      "last_mark_price": 8.36e-05,
+      "unrealized_pnl": -8.294259582527348,
+      "unrealized_pct": -43.653997802775514,
+      "volume_h6": 258571.29,
+      "volume_h24": 258571.29,
+      "last_liquidity": 26232.49,
+      "entry_liquidity": 33176.42,
+      "exit_mid": 8.36e-05,
+      "exit_price": 8.2764e-05,
+      "realized_pnl": -9.541316986702073,
+      "realized_pct": -50.217457824747754,
+      "close_reason": "STOP_LOSS: -43.65% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "closed_at": "2026-09-24T20:43:19.551918+00:00"
     }
   ],
   "equity_series": [
@@ -187,9 +195,43 @@
       "realized_pnl": -14.2773,
       "fees_paid": 7.6,
       "slippage_paid": 1.52
+    },
+    {
+      "ts": "2026-09-24T20:43:20.769609+00:00",
+      "equity": 164.1629,
+      "free_cash": 110.7414,
+      "open": 3,
+      "realized_pnl": -23.8186,
+      "fees_paid": 8.55,
+      "slippage_paid": 1.71
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T20:43:19.552013+00:00",
+      "type": "close",
+      "lead_id": "6dPweBFh-1790280791322",
+      "contract": "6dPweBFhc13AjGQ5MBYJUs9EYDJ3zXfGPi61zDAVEwDb",
+      "ticker": "SAGASU",
+      "entry_price": 0.000148369,
+      "exit_mid": 8.36e-05,
+      "exit_price": 8.2764e-05,
+      "dollars": 19.0,
+      "realized_pnl": -9.541316986702073,
+      "reason": "STOP_LOSS: -43.65% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 110.94139171421769
+    },
+    {
+      "ts": "2026-09-24T20:43:19.174256+00:00",
+      "type": "discovered",
+      "count": 2,
+      "tickers": [
+        "JEANINU",
+        "RUNE"
+      ]
+    },
     {
       "ts": "2026-09-24T20:28:15.403448+00:00",
       "type": "discovered",
