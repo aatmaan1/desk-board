@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <base href="./">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Desk — Trades</title>
@@ -33,7 +34,7 @@
   .meta { color:var(--muted); font-size:12px; }
 </style>
 </head>
-<body>
+<body data-base="./">
 <header>
   <div style="display:flex;gap:10px;align-items:center;">
     <h1>Trading Desk</h1>
@@ -66,7 +67,7 @@ const pct = n => (n==null||isNaN(n)) ? '—' : (n>=0?'+':'') + Number(n).toFixed
 const age = ts => { if(!ts) return '—'; const h=(Date.now()/1000-ts)/3600; return h<1?Math.round(h*60)+'m':h.toFixed(1)+'h'; };
 const short = a => a ? a.slice(0,4)+'…'+a.slice(-4) : '—';
 async function refresh(){
-  const d = await (await fetch('/data/summary.json?t=' + Date.now())).json();
+  const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now())).json();
   const mode = (d.mode||'paper').toLowerCase();
   document.getElementById('mode').textContent = mode.toUpperCase();
   document.getElementById('mode').className = 'badge ' + (mode==='live'?'live':'paper');
