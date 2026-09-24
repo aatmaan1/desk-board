@@ -1,0 +1,5 @@
+publish.log
+publish-loop.out
+*.out
+.last_summary_hash
+.need_push

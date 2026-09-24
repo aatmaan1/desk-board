@@ -32,6 +32,8 @@
   .feed { max-height:320px; overflow:auto; font-size:12px; }
   .feed div { padding:6px 0; border-bottom:1px solid var(--line); }
   .meta { color:var(--muted); font-size:12px; }
+@keyframes flashrow{0%{background:rgba(91,156,255,.35)}100%{background:transparent}}
+tr.flash, #events .flash{animation:flashrow 1.6s ease-out}
 </style>
 </head>
 <body data-base="./">
@@ -61,17 +63,22 @@
 </main>
 <script>
 let chart;
+const seenLeads = new Set();
+const seenEvents = new Set();
+
 const fmt = n => (n==null||isNaN(n)) ? '—' : Number(n).toLocaleString(undefined,{maximumFractionDigits:2});
 const money = n => '$' + fmt(n);
 const pct = n => (n==null||isNaN(n)) ? '—' : (n>=0?'+':'') + Number(n).toFixed(2) + '%';
 const age = ts => { if(!ts) return '—'; const h=(Date.now()/1000-ts)/3600; return h<1?Math.round(h*60)+'m':h.toFixed(1)+'h'; };
 const short = a => a ? a.slice(0,4)+'…'+a.slice(-4) : '—';
 async function refresh(){
-  const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now())).json();
+  try {
+    const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now(), {cache:'no-store'})).json();
   const mode = (d.mode||'paper').toLowerCase();
   document.getElementById('mode').textContent = mode.toUpperCase();
   document.getElementById('mode').className = 'badge ' + (mode==='live'?'live':'paper');
-  document.getElementById('updated').textContent = 'Updated ' + (d.last_updated || '—') + ' · auto-refresh 30s · public paper desk';
+  const polled = new Date().toLocaleTimeString();
+  document.getElementById('updated').textContent = 'Live feed · desk ' + (d.last_updated || '—') + ' · polled ' + polled + ' (page stays open)';
   const pnlClass = (d.realized_pnl||0) >= 0 ? 'pos' : 'neg';
   document.getElementById('kpis').innerHTML = [
     ['Equity', money(d.equity)],['Free cash', money(d.free_cash)],
@@ -89,17 +96,30 @@ async function refresh(){
   } else { chart.data.labels=labels; chart.data.datasets[0].data=values; chart.update('none'); }
   document.querySelector('#opens tbody').innerHTML = (d.positions||[]).map(p => {
     const cls=(p.unrealized_pnl||0)>=0?'pos':'neg';
-    return `<tr><td><b>${p.ticker||'—'}</b></td><td>${money(p.dollars)}</td><td>${fmt(p.entry_price)}</td><td>${fmt(p.mark_price)}</td><td class="${cls}">${money(p.unrealized_pnl)} (${pct(p.unrealized_pct)})</td><td>${age(p.opened_at)}</td><td class="mono">${short(p.contract)}</td></tr>`;
+    const id = p.lead_id || p.contract || p.ticker;
+    const isNew = id && seenLeads.size && !seenLeads.has(id);
+    if (id) seenLeads.add(id);
+    return `<tr class="${isNew?'flash':''}"><td><b>${p.ticker||'—'}</b></td><td>${money(p.dollars)}</td><td>${fmt(p.entry_price)}</td><td>${fmt(p.mark_price)}</td><td class="${cls}">${money(p.unrealized_pnl)} (${pct(p.unrealized_pct)})</td><td>${age(p.opened_at)}</td><td class="mono">${short(p.contract)}</td></tr>`;
   }).join('') || '<tr><td colspan="7" class="meta">No open positions</td></tr>';
+  (d.positions||[]).forEach(p => { const id=p.lead_id||p.contract||p.ticker; if(id) seenLeads.add(id); });
   document.querySelector('#closed tbody').innerHTML = (d.closed||[]).slice().reverse().map(p => {
     const cls=(p.realized_pnl||0)>=0?'pos':'neg';
     return `<tr><td><b>${p.ticker||'—'}</b></td><td>${money(p.dollars)}</td><td class="${cls}">${money(p.realized_pnl)} (${pct(p.realized_pct)})</td><td>${p.close_reason||'—'}</td><td>${money(p.fee)}</td><td>${money(p.slippage)}</td><td class="mono">${(p.closed_at||'').replace('T',' ').slice(0,19)}</td></tr>`;
   }).join('') || '<tr><td colspan="7" class="meta">No closed trades yet</td></tr>';
   document.getElementById('events').innerHTML = (d.events||[]).map(e => {
-    return `<div><span class="mono">${e.ts||''}</span> · <b>${e.type||e.event||'event'}</b> <span class="meta">${JSON.stringify(e).slice(0,160)}</span></div>`;
+    const id = (e.ts||'') + '|' + (e.type||e.event||'') + '|' + (e.lead_id||e.ticker||'');
+    const isNew = id && seenEvents.size && !seenEvents.has(id);
+    if (id) seenEvents.add(id);
+    return `<div class="${isNew?'flash':''}"><span class="mono">${e.ts||''}</span> · <b>${e.type||e.event||'event'}</b> <span class="meta">${JSON.stringify(e).slice(0,160)}</span></div>`;
   }).join('') || '<div class="meta">No events</div>';
+  } catch (err) {
+    document.getElementById('updated').textContent = 'Refresh failed · retrying every 15s';
+    console.warn(err);
+  }
 }
-refresh(); setInterval(refresh, 30000);
+refresh();
+setInterval(refresh, 15000);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
 </script>
 </body>
 </html>
