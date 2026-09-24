@@ -1,9 +1,9 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T22:13:48.441465+00:00",
-  "equity": 123.724,
-  "free_cash": 65.1371,
+  "last_updated": "2026-09-24T22:28:53.041475+00:00",
+  "equity": 121.4264,
+  "free_cash": 64.9371,
   "realized_pnl": -59.1029,
   "fees_paid": 23.75,
   "slippage_paid": 4.75,
@@ -16,13 +16,13 @@
       "entry_price": 5.83376e-05,
       "dollars": 19.0,
       "opened_at": 1790287123.519962,
-      "mark_price": 6.321e-05,
-      "last_mark_price": 6.321e-05,
-      "unrealized_pnl": 1.5868942157373624,
-      "unrealized_pct": 8.352074819670328,
-      "volume_h6": 506746.26,
-      "volume_h24": 506746.26,
-      "last_liquidity": 21583.49,
+      "mark_price": 6.611e-05,
+      "last_mark_price": 6.611e-05,
+      "unrealized_pnl": 2.5313965607087026,
+      "unrealized_pct": 13.323139793203698,
+      "volume_h6": 507592.87,
+      "volume_h24": 507592.87,
+      "last_liquidity": 22082.57,
       "entry_liquidity": 21583.49
     },
     {
@@ -32,14 +32,14 @@
       "entry_price": 6.31149e-05,
       "dollars": 19.0,
       "opened_at": 1790288028.440359,
-      "mark_price": 6.31149e-05,
-      "last_mark_price": 6.31149e-05,
-      "unrealized_pnl": 0.0,
-      "unrealized_pct": 0.0,
-      "volume_h6": null,
-      "volume_h24": null,
-      "last_liquidity": null,
-      "entry_liquidity": null
+      "mark_price": 5.482e-05,
+      "last_mark_price": 5.482e-05,
+      "unrealized_pnl": -2.4970823054460993,
+      "unrealized_pct": -13.142538449716312,
+      "volume_h6": 1643979.2,
+      "volume_h24": 1643979.2,
+      "last_liquidity": 21072.2,
+      "entry_liquidity": 21072.2
     },
     {
       "lead_id": "HiiRvVQm-1790288026190",
@@ -48,14 +48,14 @@
       "entry_price": 0.000127765,
       "dollars": 19.0,
       "opened_at": 1790288028.440957,
-      "mark_price": 0.000127765,
-      "last_mark_price": 0.000127765,
-      "unrealized_pnl": 0.0,
-      "unrealized_pct": 0.0,
-      "volume_h6": null,
-      "volume_h24": null,
-      "last_liquidity": null,
-      "entry_liquidity": null
+      "mark_price": 0.0001241,
+      "last_mark_price": 0.0001241,
+      "unrealized_pnl": -0.5450240676241537,
+      "unrealized_pct": -2.8685477243376507,
+      "volume_h6": 118574.25,
+      "volume_h24": 118574.25,
+      "last_liquidity": 31365.63,
+      "entry_liquidity": 31365.63
     }
   ],
   "closed": [
@@ -450,9 +450,43 @@
       "realized_pnl": -59.1029,
       "fees_paid": 23.75,
       "slippage_paid": 4.75
+    },
+    {
+      "ts": "2026-09-24T22:28:53.041361+00:00",
+      "equity": 121.4264,
+      "free_cash": 64.9371,
+      "open": 3,
+      "realized_pnl": -59.1029,
+      "fees_paid": 23.75,
+      "slippage_paid": 4.75
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T22:28:52.488235+00:00",
+      "type": "rejected",
+      "lead_id": "HyhYW8wC-1790288930857",
+      "contract": "HyhYW8wCTkx3x16EVk1tyJuwjpvbt4WhEbHHXKdLA4sE",
+      "ticker": "MESO",
+      "reason": "RUGCHECK_REJECT",
+      "reasons": [
+        "REJECT: Low liquidity (RugCheck)",
+        "Insider networks detected: 1",
+        "Graph insiders: 189",
+        "RugCheck score: 34",
+        "DexScreener verified liquidity: $36,403"
+      ]
+    },
+    {
+      "ts": "2026-09-24T22:28:50.857858+00:00",
+      "type": "discovered",
+      "count": 3,
+      "tickers": [
+        "LIQUINU",
+        "MESO",
+        "JEANINU"
+      ]
+    },
     {
       "ts": "2026-09-24T22:13:48.440971+00:00",
       "type": "open",
