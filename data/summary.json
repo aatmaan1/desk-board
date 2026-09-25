@@ -1,9 +1,9 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T05:00:19.650673+00:00",
-  "equity": 66.3,
-  "free_cash": 10.6611,
+  "last_updated": "2026-09-25T05:15:21.973755+00:00",
+  "equity": 65.6692,
+  "free_cash": 10.4611,
   "realized_pnl": -99.0589,
   "fees_paid": 38.95,
   "slippage_paid": 7.79,
@@ -16,13 +16,13 @@
       "entry_price": 0.0003636,
       "dollars": 19.0,
       "opened_at": 1790292550.445684,
-      "mark_price": 0.0004332,
-      "last_mark_price": 0.0004332,
-      "unrealized_pnl": 3.6369636963696377,
-      "unrealized_pct": 19.141914191419147,
-      "volume_h6": 818159.7,
-      "volume_h24": 895735.99,
-      "last_liquidity": 59490.85,
+      "mark_price": 0.0004327,
+      "last_mark_price": 0.0004327,
+      "unrealized_pnl": 3.6108360836083606,
+      "unrealized_pct": 19.004400440044,
+      "volume_h6": 781038.48,
+      "volume_h24": 901479.13,
+      "last_liquidity": 59368.6,
       "entry_liquidity": 52898.16
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 0.0023553199999999997,
       "dollars": 19.0,
       "opened_at": 1790297973.580485,
-      "mark_price": 0.001958,
-      "last_mark_price": 0.001958,
-      "unrealized_pnl": -3.2051186250700514,
-      "unrealized_pct": -16.869045395105534,
-      "volume_h6": 133992.22,
-      "volume_h24": 289339.34,
-      "last_liquidity": 167276.16,
+      "mark_price": 0.001955,
+      "last_mark_price": 0.001955,
+      "unrealized_pnl": -3.229319158330924,
+      "unrealized_pct": -16.99641662279434,
+      "volume_h6": 119767.46,
+      "volume_h24": 289382.86,
+      "last_liquidity": 166764.03,
       "entry_liquidity": 184997.85
     },
     {
@@ -48,13 +48,13 @@
       "entry_price": 0.000549339,
       "dollars": 19.0,
       "opened_at": 1790310614.605779,
-      "mark_price": 0.0004975,
-      "last_mark_price": 0.0004975,
-      "unrealized_pnl": -1.7929566260542225,
-      "unrealized_pct": -9.436613821338014,
-      "volume_h6": 3795373.89,
-      "volume_h24": 3795373.89,
-      "last_liquidity": 70590.3,
+      "mark_price": 0.0004865,
+      "last_mark_price": 0.0004865,
+      "unrealized_pnl": -2.173413866483174,
+      "unrealized_pct": -11.439020349911443,
+      "volume_h6": 3828724.15,
+      "volume_h24": 3828724.15,
+      "last_liquidity": 69731.67,
       "entry_liquidity": 70402.57
     }
   ],
@@ -744,6 +744,24 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T05:15:21.974183+00:00",
+      "type": "death_floor",
+      "free_cash": 10.461085749695208,
+      "death_floor": 30.0
+    },
+    {
+      "ts": "2026-09-25T05:15:21.973231+00:00",
+      "type": "discovered",
+      "count": 5,
+      "tickers": [
+        "SRUN",
+        "BRAIN",
+        "SNDK",
+        "ARENA",
+        "REVS"
+      ]
+    },
     {
       "ts": "2026-09-25T05:00:19.651247+00:00",
       "type": "death_floor",
@@ -1614,37 +1632,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 104.90917134605388
-    },
-    {
-      "ts": "2026-09-24T21:28:33.740488+00:00",
-      "type": "rejected",
-      "lead_id": "9uX2e2kY-1790285312264",
-      "contract": "9uX2e2kY83GhA1kCZPbns6gD6d4NMk7uEGkNESmTP6NE",
-      "ticker": "KEK",
-      "reason": "RUGCHECK_REJECT",
-      "reasons": [
-        "REJECT: Low liquidity (RugCheck)",
-        "Insider networks detected: 1",
-        "Graph insiders: 43",
-        "RugCheck score: 34",
-        "DexScreener verified liquidity: $27,736"
-      ]
-    },
-    {
-      "ts": "2026-09-24T21:28:32.623074+00:00",
-      "type": "close",
-      "lead_id": "H61eoVSK-1790284407540",
-      "contract": "H61eoVSK7XmGmAA3NTt5d3Rg4WDxvqMfqpWSeZSJk1aG",
-      "ticker": "NP",
-      "entry_price": 7.217459999999999e-05,
-      "exit_mid": 4.693e-05,
-      "exit_price": 4.64607e-05,
-      "dollars": 19.0,
-      "realized_pnl": -7.909197196797765,
-      "reason": "STOP_LOSS: -34.98% <= -20%",
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 125.24917134605388
     }
   ],
   "rejections": []
