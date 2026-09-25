@@ -1,12 +1,12 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T04:15:09.871326+00:00",
-  "equity": 76.567,
-  "free_cash": 18.4332,
-  "realized_pnl": -93.0268,
-  "fees_paid": 37.05,
-  "slippage_paid": 7.41,
+  "last_updated": "2026-09-25T04:30:14.607408+00:00",
+  "equity": 68.3894,
+  "free_cash": 11.0611,
+  "realized_pnl": -99.0589,
+  "fees_paid": 38.95,
+  "slippage_paid": 7.79,
   "open_count": 3,
   "positions": [
     {
@@ -16,13 +16,13 @@
       "entry_price": 0.0003636,
       "dollars": 19.0,
       "opened_at": 1790292550.445684,
-      "mark_price": 0.0004283,
-      "last_mark_price": 0.0004283,
-      "unrealized_pnl": 3.380913091309131,
-      "unrealized_pct": 17.794279427942794,
-      "volume_h6": 892195.94,
-      "volume_h24": 892195.94,
-      "last_liquidity": 59187.64,
+      "mark_price": 0.0004323,
+      "last_mark_price": 0.0004323,
+      "unrealized_pnl": 3.5899339933993395,
+      "unrealized_pct": 18.894389438943893,
+      "volume_h6": 892484.19,
+      "volume_h24": 892484.19,
+      "last_liquidity": 59374.41,
       "entry_liquidity": 52898.16
     },
     {
@@ -36,26 +36,26 @@
       "last_mark_price": 0.001951,
       "unrealized_pnl": -3.2615865360120893,
       "unrealized_pct": -17.166244926379417,
-      "volume_h6": 178454.25,
-      "volume_h24": 288811.01,
-      "last_liquidity": 166931.02,
+      "volume_h6": 167582.59,
+      "volume_h24": 288927.67,
+      "last_liquidity": 166792.7,
       "entry_liquidity": 184997.85
     },
     {
-      "lead_id": "3znS89gi-1790307902140",
+      "lead_id": "3znS89gi-1790310612417",
       "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
       "ticker": "BRAIN",
-      "entry_price": 0.00072518,
+      "entry_price": 0.000549339,
       "dollars": 19.0,
-      "opened_at": 1790307904.944876,
-      "mark_price": 0.0007639,
-      "last_mark_price": 0.0007639,
-      "unrealized_pnl": 1.014479163793817,
-      "unrealized_pct": 5.339364019967459,
-      "volume_h6": 3636321.5,
-      "volume_h24": 3636321.5,
-      "last_liquidity": 87595.75,
-      "entry_liquidity": 91283.78
+      "opened_at": 1790310614.605779,
+      "mark_price": 0.000549339,
+      "last_mark_price": 0.000549339,
+      "unrealized_pnl": 0.0,
+      "unrealized_pct": 0.0,
+      "volume_h6": null,
+      "volume_h24": null,
+      "last_liquidity": null,
+      "entry_liquidity": null
     }
   ],
   "closed": [
@@ -490,6 +490,30 @@
       "fee": 0.95,
       "slippage": 0.19,
       "closed_at": "2026-09-25T03:45:02.432742+00:00"
+    },
+    {
+      "lead_id": "3znS89gi-1790307902140",
+      "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
+      "ticker": "BRAIN",
+      "entry_price": 0.00072518,
+      "dollars": 19.0,
+      "opened_at": 1790307904.944876,
+      "mark_price": 0.0005439,
+      "last_mark_price": 0.0005439,
+      "unrealized_pnl": -4.749606994125594,
+      "unrealized_pct": -24.997931548029445,
+      "volume_h6": 3705300.28,
+      "volume_h24": 3705300.28,
+      "last_liquidity": 73656.1,
+      "entry_liquidity": 91283.78,
+      "exit_mid": 0.0005439,
+      "exit_price": 0.0005384610000000001,
+      "realized_pnl": -6.032110924184339,
+      "realized_pct": -31.747952232549153,
+      "close_reason": "STOP_LOSS: -25.00% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "closed_at": "2026-09-25T04:30:12.419326+00:00"
     }
   ],
   "equity_series": [
@@ -708,9 +732,57 @@
       "realized_pnl": -93.0268,
       "fees_paid": 37.05,
       "slippage_paid": 7.41
+    },
+    {
+      "ts": "2026-09-25T04:30:14.607338+00:00",
+      "equity": 68.3894,
+      "free_cash": 11.0611,
+      "open": 3,
+      "realized_pnl": -99.0589,
+      "fees_paid": 38.95,
+      "slippage_paid": 7.79
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T04:30:14.605960+00:00",
+      "type": "open",
+      "lead_id": "3znS89gi-1790310612417",
+      "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
+      "ticker": "BRAIN",
+      "mid_price": 0.0005439,
+      "fill_price": 0.000549339,
+      "dollars": 19.0,
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 11.061085749695206
+    },
+    {
+      "ts": "2026-09-25T04:30:12.419403+00:00",
+      "type": "close",
+      "lead_id": "3znS89gi-1790307902140",
+      "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
+      "ticker": "BRAIN",
+      "entry_price": 0.00072518,
+      "exit_mid": 0.0005439,
+      "exit_price": 0.0005384610000000001,
+      "dollars": 19.0,
+      "realized_pnl": -6.032110924184339,
+      "reason": "STOP_LOSS: -25.00% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 31.401085749695206
+    },
+    {
+      "ts": "2026-09-25T04:30:12.418410+00:00",
+      "type": "discovered",
+      "count": 3,
+      "tickers": [
+        "BRAIN",
+        "ARENA",
+        "REVS"
+      ]
+    },
     {
       "ts": "2026-09-25T04:15:09.871783+00:00",
       "type": "death_floor",
@@ -1596,40 +1668,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 70.06139171421768
-    },
-    {
-      "ts": "2026-09-24T21:13:27.541457+00:00",
-      "type": "discovered",
-      "count": 4,
-      "tickers": [
-        "DAP",
-        "JEANINU",
-        "RUNE",
-        "NP"
-      ]
-    },
-    {
-      "ts": "2026-09-24T20:58:25.145548+00:00",
-      "type": "open",
-      "lead_id": "8LHgAXXP-1790283502989",
-      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
-      "ticker": "DAP",
-      "mid_price": 6.177e-05,
-      "fill_price": 6.23877e-05,
-      "dollars": 19.0,
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 90.40139171421768
-    },
-    {
-      "ts": "2026-09-24T20:58:22.990513+00:00",
-      "type": "discovered",
-      "count": 3,
-      "tickers": [
-        "DAP",
-        "JEANINU",
-        "RUNE"
-      ]
     }
   ],
   "rejections": []
