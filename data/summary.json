@@ -1,30 +1,14 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T03:29:59.889795+00:00",
-  "equity": 71.6075,
-  "free_cash": 10.3385,
-  "realized_pnl": -102.8615,
-  "fees_paid": 35.15,
-  "slippage_paid": 7.03,
+  "last_updated": "2026-09-25T03:45:04.946048+00:00",
+  "equity": 76.0756,
+  "free_cash": 18.8332,
+  "realized_pnl": -93.0268,
+  "fees_paid": 37.05,
+  "slippage_paid": 7.41,
   "open_count": 3,
   "positions": [
-    {
-      "lead_id": "HiiRvVQm-1790288026190",
-      "contract": "HiiRvVQmdETji3hRJArjJr6QxLKryYHKkREXrDEwNa4E",
-      "ticker": "LIQUINU",
-      "entry_price": 0.000127765,
-      "dollars": 19.0,
-      "opened_at": 1790288028.440957,
-      "mark_price": 0.0001566,
-      "last_mark_price": 0.0001566,
-      "unrealized_pnl": 4.288067937228506,
-      "unrealized_pct": 22.568778616992134,
-      "volume_h6": 35739.99,
-      "volume_h24": 138944.45,
-      "last_liquidity": 34408.41,
-      "entry_liquidity": 31365.63
-    },
     {
       "lead_id": "4G5YDqDv-1790292548328",
       "contract": "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi",
@@ -32,13 +16,13 @@
       "entry_price": 0.0003636,
       "dollars": 19.0,
       "opened_at": 1790292550.445684,
-      "mark_price": 0.0004309,
-      "last_mark_price": 0.0004309,
-      "unrealized_pnl": 3.5167766776677674,
-      "unrealized_pct": 18.50935093509351,
-      "volume_h6": 885031.51,
-      "volume_h24": 885031.51,
-      "last_liquidity": 59322.17,
+      "mark_price": 0.0004305,
+      "last_mark_price": 0.0004305,
+      "unrealized_pnl": 3.495874587458746,
+      "unrealized_pct": 18.3993399339934,
+      "volume_h6": 889513.65,
+      "volume_h24": 889513.65,
+      "last_liquidity": 59343.87,
       "entry_liquidity": 52898.16
     },
     {
@@ -48,14 +32,30 @@
       "entry_price": 0.0023553199999999997,
       "dollars": 19.0,
       "opened_at": 1790297973.580485,
-      "mark_price": 0.001917,
-      "last_mark_price": 0.001917,
-      "unrealized_pnl": -3.5358592463019862,
-      "unrealized_pct": -18.609785506852557,
-      "volume_h6": 284873.64,
-      "volume_h24": 284873.64,
-      "last_liquidity": 165524.17,
+      "mark_price": 0.001952,
+      "last_mark_price": 0.001952,
+      "unrealized_pnl": -3.253519691591799,
+      "unrealized_pct": -17.123787850483154,
+      "volume_h6": 189507.28,
+      "volume_h24": 288164.85,
+      "last_liquidity": 167104.18,
       "entry_liquidity": 184997.85
+    },
+    {
+      "lead_id": "3znS89gi-1790307902140",
+      "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
+      "ticker": "BRAIN",
+      "entry_price": 0.00072518,
+      "dollars": 19.0,
+      "opened_at": 1790307904.944876,
+      "mark_price": 0.00072518,
+      "last_mark_price": 0.00072518,
+      "unrealized_pnl": 0.0,
+      "unrealized_pct": 0.0,
+      "volume_h6": null,
+      "volume_h24": null,
+      "last_liquidity": null,
+      "entry_liquidity": null
     }
   ],
   "closed": [
@@ -466,6 +466,30 @@
       "fee": 0.95,
       "slippage": 0.19,
       "closed_at": "2026-09-25T01:59:43.902393+00:00"
+    },
+    {
+      "lead_id": "HiiRvVQm-1790288026190",
+      "contract": "HiiRvVQmdETji3hRJArjJr6QxLKryYHKkREXrDEwNa4E",
+      "ticker": "LIQUINU",
+      "entry_price": 0.000127765,
+      "dollars": 19.0,
+      "opened_at": 1790288028.440957,
+      "mark_price": 0.0002036,
+      "last_mark_price": 0.0002036,
+      "unrealized_pnl": 11.277462528861578,
+      "unrealized_pct": 59.35506594137673,
+      "volume_h6": 27017.06,
+      "volume_h24": 141227.05,
+      "last_liquidity": 40056.39,
+      "entry_liquidity": 31365.63,
+      "exit_mid": 0.0002036,
+      "exit_price": 0.000201564,
+      "realized_pnl": 9.834687903572966,
+      "realized_pct": 51.76151528196298,
+      "close_reason": "TAKE_PROFIT: 59.36% >= +25%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "closed_at": "2026-09-25T03:45:02.432742+00:00"
     }
   ],
   "equity_series": [
@@ -675,9 +699,66 @@
       "realized_pnl": -93.222,
       "fees_paid": 34.2,
       "slippage_paid": 6.84
+    },
+    {
+      "ts": "2026-09-25T03:45:04.945987+00:00",
+      "equity": 76.0756,
+      "free_cash": 18.8332,
+      "open": 3,
+      "realized_pnl": -93.0268,
+      "fees_paid": 37.05,
+      "slippage_paid": 7.41
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T03:45:04.945729+00:00",
+      "type": "insufficient_cash",
+      "lead_id": "EXXR9Wt3-1790307902141",
+      "contract": "EXXR9Wt3mjxbjmzhPVj7EcA3zfxZd9uk1WhMioeipump",
+      "requested": 20.14,
+      "available": 18.83319667387954
+    },
+    {
+      "ts": "2026-09-25T03:45:04.944983+00:00",
+      "type": "open",
+      "lead_id": "3znS89gi-1790307902140",
+      "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
+      "ticker": "BRAIN",
+      "mid_price": 0.000718,
+      "fill_price": 0.00072518,
+      "dollars": 19.0,
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 18.83319667387954
+    },
+    {
+      "ts": "2026-09-25T03:45:02.432860+00:00",
+      "type": "close",
+      "lead_id": "HiiRvVQm-1790288026190",
+      "contract": "HiiRvVQmdETji3hRJArjJr6QxLKryYHKkREXrDEwNa4E",
+      "ticker": "LIQUINU",
+      "entry_price": 0.000127765,
+      "exit_mid": 0.0002036,
+      "exit_price": 0.000201564,
+      "dollars": 19.0,
+      "realized_pnl": 9.834687903572966,
+      "reason": "TAKE_PROFIT: 59.36% >= +25%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 39.173196673879545
+    },
+    {
+      "ts": "2026-09-25T03:45:02.141672+00:00",
+      "type": "discovered",
+      "count": 4,
+      "tickers": [
+        "BRAIN",
+        "SHURIKANE",
+        "ARENA",
+        "REVS"
+      ]
+    },
     {
       "ts": "2026-09-25T03:29:59.890541+00:00",
       "type": "death_floor",
@@ -1561,54 +1642,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 101.68270870091976
-    },
-    {
-      "ts": "2026-09-24T20:13:11.323116+00:00",
-      "type": "discovered",
-      "count": 3,
-      "tickers": [
-        "SAGASU",
-        "JEANINU",
-        "RUNE"
-      ]
-    },
-    {
-      "ts": "2026-09-24T19:58:08.136838+00:00",
-      "type": "discovered",
-      "count": 2,
-      "tickers": [
-        "JEANINU",
-        "RUNE"
-      ]
-    },
-    {
-      "ts": "2026-09-24T19:43:06.167170+00:00",
-      "type": "open",
-      "lead_id": "B4cqDdBW-1790278983587",
-      "contract": "B4cqDdBWDf6hgy1rma8u4JpoTnoycDQyg33aR48mfFvE",
-      "ticker": "RUNE",
-      "mid_price": 0.0001039,
-      "fill_price": 0.000104939,
-      "dollars": 19.0,
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 122.22270870091977
-    },
-    {
-      "ts": "2026-09-24T19:43:03.829644+00:00",
-      "type": "close",
-      "lead_id": "B4cqDdBW-1790278009292",
-      "contract": "B4cqDdBWDf6hgy1rma8u4JpoTnoycDQyg33aR48mfFvE",
-      "ticker": "RUNE",
-      "entry_price": 0.00013140099999999998,
-      "exit_mid": 0.0001039,
-      "exit_price": 0.000102861,
-      "dollars": 19.0,
-      "realized_pnl": -5.266757026202234,
-      "reason": "STOP_LOSS: -20.93% <= -20%",
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 142.56270870091976
     }
   ],
   "rejections": []
