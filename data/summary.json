@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -138.1029,
-  "net_pnl_pct": -34.53,
-  "burn_paid": 10.0,
+  "net_pnl": -138.3029,
+  "net_pnl_pct": -34.58,
+  "burn_paid": 10.2,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -70,9 +70,9 @@
     "H6_DOWNTREND": 1
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T08:01:05.458640+00:00",
-  "equity": 261.8971,
-  "free_cash": 261.8971,
+  "last_updated": "2026-09-25T08:04:39.363664+00:00",
+  "equity": 261.6971,
+  "free_cash": 261.6971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -963,6 +963,23 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T08:04:39.363385+00:00",
+      "type": "discovered",
+      "count": 15,
+      "tickers": [
+        "IMU",
+        "SHURIKANE",
+        "COLLECT",
+        "FAMILIARS",
+        "BRAIN",
+        "TTP",
+        "NPC",
+        "GO",
+        "SI",
+        "UPTOBER"
+      ]
+    },
     {
       "ts": "2026-09-25T08:01:04.339838+00:00",
       "type": "discovered",
@@ -1876,21 +1893,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 85.2771418337564
-    },
-    {
-      "ts": "2026-09-24T22:13:47.885310+00:00",
-      "type": "rejected",
-      "lead_id": "HyhYW8wC-1790288026190",
-      "contract": "HyhYW8wCTkx3x16EVk1tyJuwjpvbt4WhEbHHXKdLA4sE",
-      "ticker": "MESO",
-      "reason": "RUGCHECK_REJECT",
-      "reasons": [
-        "REJECT: Low liquidity (RugCheck)",
-        "Insider networks detected: 1",
-        "Graph insiders: 189",
-        "RugCheck score: 34",
-        "DexScreener verified liquidity: $33,551"
-      ]
     }
   ],
   "rejections": [
