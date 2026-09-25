@@ -47,6 +47,7 @@ tr.flash, #events .flash{animation:flashrow 1.6s ease-out}
 <section class="kpis" id="kpis"></section>
 <main>
   <div class="card"><h2>Equity</h2><canvas id="equityChart" height="110"></canvas></div>
+  <div class="card"><h2>Strategy gate (v3)</h2><div id="gate" style="font-size:13px"></div></div>
   <div class="grid2">
     <div class="card"><h2>Open positions</h2>
       <div style="overflow:auto;"><table id="opens"><thead><tr>
@@ -80,11 +81,25 @@ async function refresh(){
   const polled = new Date().toLocaleTimeString();
   document.getElementById('updated').textContent = 'Live feed · desk ' + (d.last_updated || '—') + ' · polled ' + polled + ' (page stays open)';
   const pnlClass = (d.realized_pnl||0) >= 0 ? 'pos' : 'neg';
+  const dep = d.total_deposited != null ? d.total_deposited : 200;
+  const net = d.net_pnl != null ? d.net_pnl : (d.equity - dep);
+  const netClass = net >= 0 ? 'pos' : 'neg';
   document.getElementById('kpis').innerHTML = [
-    ['Equity', money(d.equity)],['Free cash', money(d.free_cash)],
+    ['Equity', money(d.equity)],['Deposited', money(dep)],
+    ['Net P&L', money(net) + ' <span style="font-size:13px">(' + pct(d.net_pnl_pct != null ? d.net_pnl_pct : net/dep*100) + ')</span>', netClass],
+    ['Free cash', money(d.free_cash)],
     ['Realized P&L', money(d.realized_pnl), pnlClass],['Fees', money(d.fees_paid)],
-    ['Slippage', money(d.slippage_paid)],['Open', d.open_count],
+    ['Slippage', money(d.slippage_paid)],['Burn', money(d.burn_paid)],['Open', d.open_count],
   ].map(([l,v,c]) => `<div class="kpi"><div class="l">${l}</div><div class="v ${c||''}">${v}</div></div>`).join('');
+  const lc = d.last_cycle;
+  document.getElementById('gate').innerHTML = lc ? (
+    `<div><b>${lc.opened ? 'OPENED ' + lc.opened : 'NO TRADE'}</b> <span class="mono">${lc.ts||''}</span></div>` +
+    (lc.desk_block ? `<div class="meta">Desk gate: ${lc.desk_block}</div>` : '') +
+    `<div class="meta">Candidates ${lc.discovered ?? '—'} · passed ${(lc.passed||[]).join(', ') || 'none'}</div>` +
+    `<div class="meta" style="margin-top:6px">Top rejection reasons (last 24h): ` +
+    Object.entries(d.rejection_counts_24h||{}).map(([k,v]) => `${k} ${v}`).join(' · ') + `</div>` +
+    ((d.deposits||[]).length ? `<div class="meta" style="margin-top:6px">Deposits: ` + d.deposits.map(x => money(x.amount) + ' ' + (x.ts||'').slice(0,16)).join(' · ') + ' (paper)</div>' : '')
+  ) : '<div class="meta">Waiting for first v3 cycle…</div>';
   const series = d.equity_series || [];
   const labels = series.map(x => (x.ts||'').slice(11,19) || '');
   const values = series.map(x => x.equity);
