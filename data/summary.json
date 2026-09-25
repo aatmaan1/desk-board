@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -148.7029,
-  "net_pnl_pct": -37.18,
-  "burn_paid": 20.6,
+  "net_pnl": -148.9029,
+  "net_pnl_pct": -37.23,
+  "burn_paid": 20.8,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -77,9 +77,9 @@
     "LP_NOT_LOCKED": 2
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T21:41:15.966026+00:00",
-  "equity": 251.2971,
-  "free_cash": 251.2971,
+  "last_updated": "2026-09-25T21:56:11.939962+00:00",
+  "equity": 251.0971,
+  "free_cash": 251.0971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -1554,6 +1554,23 @@
   ],
   "events": [
     {
+      "ts": "2026-09-25T21:56:11.939581+00:00",
+      "type": "discovered",
+      "count": 16,
+      "tickers": [
+        "BLUEPRINT",
+        "NPC",
+        "SWARM",
+        "0XQUIT",
+        "GO",
+        "TTP",
+        "GOON",
+        "ARENA",
+        "BRAIN",
+        "COLLECT"
+      ]
+    },
+    {
       "ts": "2026-09-25T21:41:15.833910+00:00",
       "type": "discovered",
       "count": 13,
@@ -2771,19 +2788,6 @@
       "contract": "EXXR9Wt3mjxbjmzhPVj7EcA3zfxZd9uk1WhMioeipump",
       "requested": 20.14,
       "available": 18.83319667387954
-    },
-    {
-      "ts": "2026-09-25T03:45:04.944983+00:00",
-      "type": "open",
-      "lead_id": "3znS89gi-1790307902140",
-      "contract": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
-      "ticker": "BRAIN",
-      "mid_price": 0.000718,
-      "fill_price": 0.00072518,
-      "dollars": 19.0,
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 18.83319667387954
     }
   ],
   "rejections": [
