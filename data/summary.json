@@ -1,10 +1,10 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T05:15:21.973755+00:00",
-  "equity": 65.6692,
-  "free_cash": 10.4611,
-  "realized_pnl": -99.0589,
+  "last_updated": "2026-09-25T06:15:23.818983+00:00",
+  "equity": 265.6692,
+  "free_cash": 210.4611,
+  "realized_pnl": -120.7189,
   "fees_paid": 38.95,
   "slippage_paid": 7.79,
   "open_count": 3,
@@ -23,7 +23,11 @@
       "volume_h6": 781038.48,
       "volume_h24": 901479.13,
       "last_liquidity": 59368.6,
-      "entry_liquidity": 52898.16
+      "entry_liquidity": 52898.16,
+      "peak_price": 0.0004332,
+      "entry_costs": 1.14,
+      "rules": "v2",
+      "entry_features": null
     },
     {
       "lead_id": "EyWrMXBb-1790297969914",
@@ -39,7 +43,11 @@
       "volume_h6": 119767.46,
       "volume_h24": 289382.86,
       "last_liquidity": 166764.03,
-      "entry_liquidity": 184997.85
+      "entry_liquidity": 184997.85,
+      "peak_price": 0.002645,
+      "entry_costs": 1.14,
+      "rules": "v2",
+      "entry_features": null
     },
     {
       "lead_id": "3znS89gi-1790310612417",
@@ -55,7 +63,11 @@
       "volume_h6": 3828724.15,
       "volume_h24": 3828724.15,
       "last_liquidity": 69731.67,
-      "entry_liquidity": 70402.57
+      "entry_liquidity": 70402.57,
+      "peak_price": 0.000549339,
+      "entry_costs": 1.14,
+      "rules": "v2",
+      "entry_features": null
     }
   ],
   "closed": [
@@ -741,9 +753,46 @@
       "realized_pnl": -99.0589,
       "fees_paid": 38.95,
       "slippage_paid": 7.79
+    },
+    {
+      "ts": "2026-09-25T06:15:23.819542+00:00",
+      "equity": 265.6692,
+      "free_cash": 210.4611,
+      "open": 3,
+      "realized_pnl": -120.7189,
+      "fees_paid": 38.95,
+      "slippage_paid": 7.79,
+      "total_deposited": 400.0,
+      "net_pnl": -134.3308,
+      "note": "deposit 200.00"
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T06:15:23.818765+00:00",
+      "type": "deposit",
+      "amount": 200.0,
+      "note": "paper top-up #1 (no real funds); history preserved",
+      "equity_before": 65.6692,
+      "equity_after": 265.6692,
+      "total_deposited": 400.0,
+      "free_cash": 210.4611,
+      "paper": true
+    },
+    {
+      "ts": "2026-09-25T06:15:08.245621+00:00",
+      "type": "accounting_restatement",
+      "realized_pnl_before": -99.0589,
+      "realized_pnl_after": -120.7189,
+      "entry_costs_added": 21.66,
+      "burn_paid": 8.4,
+      "cash_change": 0.0,
+      "open_positions_peaks": {
+        "ARENA": 0.0004332,
+        "REVS": 0.002645,
+        "BRAIN": 0.000549339
+      }
+    },
     {
       "ts": "2026-09-25T05:15:21.974183+00:00",
       "type": "death_floor",
@@ -1608,30 +1657,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 118.46222848730676
-    },
-    {
-      "ts": "2026-09-24T21:43:37.290877+00:00",
-      "type": "discovered",
-      "count": 4,
-      "tickers": [
-        "ASSCAT",
-        "DAP",
-        "KEK",
-        "JEANINU"
-      ]
-    },
-    {
-      "ts": "2026-09-24T21:28:35.157309+00:00",
-      "type": "open",
-      "lead_id": "8LHgAXXP-1790285312264",
-      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
-      "ticker": "DAP",
-      "mid_price": 0.0001058,
-      "fill_price": 0.000106858,
-      "dollars": 19.0,
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 104.90917134605388
     }
   ],
   "rejections": []
