@@ -18,8 +18,8 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -136.289,
-  "net_pnl_pct": -34.07,
+  "net_pnl": -137.5029,
+  "net_pnl_pct": -34.38,
   "burn_paid": 9.4,
   "hwm_equity": 265.6692,
   "accounting_notes": [
@@ -67,35 +67,14 @@
     "H1_TXNS_LT": 2
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T07:28:22.191625+00:00",
-  "equity": 263.711,
-  "free_cash": 237.3169,
-  "realized_pnl": -133.1431,
-  "fees_paid": 40.85,
-  "slippage_paid": 8.17,
-  "open_count": 1,
-  "positions": [
-    {
-      "lead_id": "4G5YDqDv-1790292548328",
-      "contract": "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi",
-      "ticker": "ARENA",
-      "entry_price": 0.0003636,
-      "dollars": 19.0,
-      "opened_at": 1790292550.445684,
-      "mark_price": 0.0005051,
-      "last_mark_price": 0.0005051,
-      "unrealized_pnl": 7.394114411441142,
-      "unrealized_pct": 38.916391639163905,
-      "volume_h6": 108781.46,
-      "volume_h24": 926978.81,
-      "last_liquidity": 64219.32,
-      "entry_liquidity": 52898.16,
-      "peak_price": 0.0005051,
-      "entry_costs": 1.14,
-      "rules": "v2",
-      "entry_features": null
-    }
-  ],
+  "last_updated": "2026-09-25T07:29:22.458057+00:00",
+  "equity": 262.4971,
+  "free_cash": 262.4971,
+  "realized_pnl": -128.1029,
+  "fees_paid": 41.8,
+  "slippage_paid": 8.36,
+  "open_count": 0,
+  "positions": [],
   "closed": [
     {
       "lead_id": "3Qq6YU3a-1790277986782",
@@ -610,6 +589,35 @@
       "slippage": 0.19,
       "hold_min": 105.8,
       "closed_at": "2026-09-25T06:16:04.688692+00:00"
+    },
+    {
+      "lead_id": "4G5YDqDv-1790292548328",
+      "contract": "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi",
+      "ticker": "ARENA",
+      "entry_price": 0.0003636,
+      "dollars": 19.0,
+      "opened_at": 1790292550.445684,
+      "mark_price": 0.0005051,
+      "last_mark_price": 0.0005051,
+      "unrealized_pnl": 7.394114411441142,
+      "unrealized_pct": 38.916391639163905,
+      "volume_h6": 108828.67,
+      "volume_h24": 927123.45,
+      "last_liquidity": 64243.94,
+      "entry_liquidity": 52898.16,
+      "peak_price": 0.0005051,
+      "entry_costs": 1.14,
+      "rules": "v2",
+      "entry_features": null,
+      "exit_mid": 0.0005051,
+      "exit_price": 0.0005000489999999999,
+      "realized_pnl": 5.040173267326729,
+      "realized_pct": 26.527227722772256,
+      "close_reason": "MAX_AGE: 8.00h >= 8.0h",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "hold_min": 480.2,
+      "closed_at": "2026-09-25T07:29:22.456492+00:00"
     }
   ],
   "equity_series": [
@@ -904,9 +912,40 @@
       "slippage_paid": 8.17,
       "total_deposited": 400.0,
       "net_pnl": -136.7123
+    },
+    {
+      "ts": "2026-09-25T07:29:22.458429+00:00",
+      "equity": 262.4971,
+      "free_cash": 262.4971,
+      "open": 0,
+      "realized_pnl": -128.1029,
+      "fees_paid": 41.8,
+      "slippage_paid": 8.36,
+      "total_deposited": 400.0,
+      "net_pnl": -137.5029,
+      "note": "exit-monitor close"
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T07:29:22.456700+00:00",
+      "type": "close",
+      "lead_id": "4G5YDqDv-1790292548328",
+      "contract": "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi",
+      "ticker": "ARENA",
+      "entry_price": 0.0003636,
+      "exit_mid": 0.0005051,
+      "exit_price": 0.0005000489999999999,
+      "dollars": 19.0,
+      "realized_pnl": 5.040173267326729,
+      "reason": "MAX_AGE: 8.00h >= 8.0h",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "entry_costs": 1.14,
+      "rules": "v2",
+      "hold_min": 480.2,
+      "free_cash": 262.49706309872175
+    },
     {
       "ts": "2026-09-25T07:16:04.372521+00:00",
       "type": "discovered",
@@ -1805,22 +1844,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 92.81442096528762
-    },
-    {
-      "ts": "2026-09-24T21:58:42.369122+00:00",
-      "type": "close",
-      "lead_id": "64xwhN5R-1790286217290",
-      "contract": "64xwhN5Rshirb1rB6KAC5Qw26zhYhPEXGPxLkpNmpump",
-      "ticker": "ASSCAT",
-      "entry_price": 0.00010907999999999999,
-      "exit_mid": 2.393e-06,
-      "exit_price": 2.36907e-06,
-      "dollars": 19.0,
-      "realized_pnl": -19.727345709570958,
-      "reason": "STOP_LOSS: -97.81% <= -20%",
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 113.15442096528763
     }
   ],
   "rejections": [
