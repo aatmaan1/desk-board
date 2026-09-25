@@ -1,9 +1,9 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T00:14:22.454737+00:00",
-  "equity": 89.9324,
-  "free_cash": 30.121,
+  "last_updated": "2026-09-25T00:29:24.987160+00:00",
+  "equity": 89.7504,
+  "free_cash": 29.921,
   "realized_pnl": -87.959,
   "fees_paid": 31.35,
   "slippage_paid": 6.27,
@@ -16,13 +16,13 @@
       "entry_price": 5.83376e-05,
       "dollars": 19.0,
       "opened_at": 1790287123.519962,
-      "mark_price": 4.986e-05,
-      "last_mark_price": 4.986e-05,
-      "unrealized_pnl": -2.76107347576863,
-      "unrealized_pct": -14.531965661940157,
-      "volume_h6": 83583.71,
-      "volume_h24": 511418.17,
-      "last_liquidity": 19005.4,
+      "mark_price": 4.956e-05,
+      "last_mark_price": 4.956e-05,
+      "unrealized_pnl": -2.8587806149035964,
+      "unrealized_pct": -15.046213762650506,
+      "volume_h6": 78148.06,
+      "volume_h24": 511485.42,
+      "last_liquidity": 18936.58,
       "entry_liquidity": 21583.49
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 0.000127765,
       "dollars": 19.0,
       "opened_at": 1790288028.440957,
-      "mark_price": 0.000147,
-      "last_mark_price": 0.000147,
-      "unrealized_pnl": 2.860446914256641,
-      "unrealized_pct": 15.05498375924548,
-      "volume_h6": 88113.73,
-      "volume_h24": 126543.94,
-      "last_liquidity": 33810.26,
+      "mark_price": 0.0001521,
+      "last_mark_price": 0.0001521,
+      "unrealized_pnl": 3.6188705827104455,
+      "unrealized_pct": 19.046687277423395,
+      "volume_h6": 85056.0,
+      "volume_h24": 126953.23,
+      "last_liquidity": 34219.12,
       "entry_liquidity": 31365.63
     },
     {
@@ -48,13 +48,13 @@
       "entry_price": 0.0003636,
       "dollars": 19.0,
       "opened_at": 1790292550.445684,
-      "mark_price": 0.0004155,
-      "last_mark_price": 0.0004155,
-      "unrealized_pnl": 2.7120462046204628,
-      "unrealized_pct": 14.273927392739278,
-      "volume_h6": 216863.48,
-      "volume_h24": 216863.48,
-      "last_liquidity": 56937.41,
+      "mark_price": 0.0004032,
+      "last_mark_price": 0.0004032,
+      "unrealized_pnl": 2.0693069306930685,
+      "unrealized_pct": 10.891089108910887,
+      "volume_h6": 342694.87,
+      "volume_h24": 342694.87,
+      "last_liquidity": 56396.76,
       "entry_liquidity": 52898.16
     }
   ],
@@ -621,6 +621,22 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T00:29:24.987669+00:00",
+      "type": "death_floor",
+      "free_cash": 29.920959850112254,
+      "death_floor": 30.0
+    },
+    {
+      "ts": "2026-09-25T00:29:24.634874+00:00",
+      "type": "discovered",
+      "count": 3,
+      "tickers": [
+        "ARENA",
+        "HAROLD",
+        "WAGE"
+      ]
+    },
     {
       "ts": "2026-09-25T00:14:21.888981+00:00",
       "type": "close",
