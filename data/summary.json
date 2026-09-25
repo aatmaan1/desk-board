@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -140.1029,
-  "net_pnl_pct": -35.03,
-  "burn_paid": 12.0,
+  "net_pnl": -140.3029,
+  "net_pnl_pct": -35.08,
+  "burn_paid": 12.2,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -75,9 +75,9 @@
     "M5_DUMPING": 1
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T10:19:41.173615+00:00",
-  "equity": 259.8971,
-  "free_cash": 259.8971,
+  "last_updated": "2026-09-25T10:34:39.326734+00:00",
+  "equity": 259.6971,
+  "free_cash": 259.6971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -1079,6 +1079,23 @@
   ],
   "events": [
     {
+      "ts": "2026-09-25T10:34:39.326330+00:00",
+      "type": "discovered",
+      "count": 15,
+      "tickers": [
+        "UNPEG",
+        "SWARM",
+        "GO",
+        "NPC",
+        "COLLECT",
+        "TTP",
+        "BRAIN",
+        "FAMILIARS",
+        "UPTOBER",
+        "SI"
+      ]
+    },
+    {
       "ts": "2026-09-25T10:19:39.422335+00:00",
       "type": "discovered",
       "count": 12,
@@ -2027,15 +2044,6 @@
       "count": 3,
       "tickers": [
         "ARENA",
-        "REVS",
-        "JEANINU"
-      ]
-    },
-    {
-      "ts": "2026-09-24T23:14:03.483251+00:00",
-      "type": "discovered",
-      "count": 2,
-      "tickers": [
         "REVS",
         "JEANINU"
       ]
