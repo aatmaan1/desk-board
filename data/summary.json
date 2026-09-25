@@ -1,13 +1,13 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-24T23:59:19.424047+00:00",
-  "equity": 105.599,
-  "free_cash": 31.0396,
-  "realized_pnl": -68.2404,
-  "fees_paid": 30.4,
-  "slippage_paid": 6.08,
-  "open_count": 4,
+  "last_updated": "2026-09-25T00:14:22.454737+00:00",
+  "equity": 89.9324,
+  "free_cash": 30.121,
+  "realized_pnl": -87.959,
+  "fees_paid": 31.35,
+  "slippage_paid": 6.27,
+  "open_count": 3,
   "positions": [
     {
       "lead_id": "qe5iaQ3G-1790287122003",
@@ -16,13 +16,13 @@
       "entry_price": 5.83376e-05,
       "dollars": 19.0,
       "opened_at": 1790287123.519962,
-      "mark_price": 5.147e-05,
-      "last_mark_price": 5.147e-05,
-      "unrealized_pnl": -2.236711829077645,
-      "unrealized_pct": -11.77216752146129,
-      "volume_h6": 126208.03,
-      "volume_h24": 511227.06,
-      "last_liquidity": 19318.77,
+      "mark_price": 4.986e-05,
+      "last_mark_price": 4.986e-05,
+      "unrealized_pnl": -2.76107347576863,
+      "unrealized_pct": -14.531965661940157,
+      "volume_h6": 83583.71,
+      "volume_h24": 511418.17,
+      "last_liquidity": 19005.4,
       "entry_liquidity": 21583.49
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 0.000127765,
       "dollars": 19.0,
       "opened_at": 1790288028.440957,
-      "mark_price": 0.0001146,
-      "last_mark_price": 0.0001146,
-      "unrealized_pnl": -1.9577740382733946,
-      "unrealized_pct": -10.304073885649444,
-      "volume_h6": 93420.35,
-      "volume_h24": 124293.94,
-      "last_liquidity": 29964.6,
+      "mark_price": 0.000147,
+      "last_mark_price": 0.000147,
+      "unrealized_pnl": 2.860446914256641,
+      "unrealized_pct": 15.05498375924548,
+      "volume_h6": 88113.73,
+      "volume_h24": 126543.94,
+      "last_liquidity": 33810.26,
       "entry_liquidity": 31365.63
     },
     {
@@ -48,30 +48,14 @@
       "entry_price": 0.0003636,
       "dollars": 19.0,
       "opened_at": 1790292550.445684,
-      "mark_price": 0.0004163,
-      "last_mark_price": 0.0004163,
-      "unrealized_pnl": 2.7538503850385023,
-      "unrealized_pct": 14.493949394939488,
-      "volume_h6": 185093.6,
-      "volume_h24": 185093.6,
-      "last_liquidity": 56886.0,
+      "mark_price": 0.0004155,
+      "last_mark_price": 0.0004155,
+      "unrealized_pnl": 2.7120462046204628,
+      "unrealized_pct": 14.273927392739278,
+      "volume_h6": 216863.48,
+      "volume_h24": 216863.48,
+      "last_liquidity": 56937.41,
       "entry_liquidity": 52898.16
-    },
-    {
-      "lead_id": "9TdmrDoT-1790294357368",
-      "contract": "9TdmrDoTNUCzHuuhMfdfDbATg6tTgenNHFpUCvAMpump",
-      "ticker": "LOUIS",
-      "entry_price": 0.00010504,
-      "dollars": 19.0,
-      "opened_at": 1790294359.423222,
-      "mark_price": 0.00010504,
-      "last_mark_price": 0.00010504,
-      "unrealized_pnl": 0.0,
-      "unrealized_pct": 0.0,
-      "volume_h6": null,
-      "volume_h24": null,
-      "last_liquidity": null,
-      "entry_liquidity": null
     }
   ],
   "closed": [
@@ -410,6 +394,30 @@
       "fee": 0.95,
       "slippage": 0.19,
       "closed_at": "2026-09-24T23:59:17.751669+00:00"
+    },
+    {
+      "lead_id": "9TdmrDoT-1790294357368",
+      "contract": "9TdmrDoTNUCzHuuhMfdfDbATg6tTgenNHFpUCvAMpump",
+      "ticker": "LOUIS",
+      "entry_price": 0.00010504,
+      "dollars": 19.0,
+      "opened_at": 1790294359.423222,
+      "mark_price": 2.353e-06,
+      "last_mark_price": 2.353e-06,
+      "unrealized_pnl": -18.574381188118814,
+      "unrealized_pct": -97.75990099009901,
+      "volume_h6": 818678.96,
+      "volume_h24": 818678.96,
+      "last_liquidity": 2533.64,
+      "entry_liquidity": 2533.64,
+      "exit_mid": 2.353e-06,
+      "exit_price": 2.3294700000000003e-06,
+      "realized_pnl": -19.718637376237623,
+      "realized_pct": -103.78230198019803,
+      "close_reason": "STOP_LOSS: -97.76% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "closed_at": "2026-09-25T00:14:21.888890+00:00"
     }
   ],
   "equity_series": [
@@ -601,9 +609,42 @@
       "realized_pnl": -68.2404,
       "fees_paid": 30.4,
       "slippage_paid": 6.08
+    },
+    {
+      "ts": "2026-09-25T00:14:22.454630+00:00",
+      "equity": 89.9324,
+      "free_cash": 30.121,
+      "open": 3,
+      "realized_pnl": -87.959,
+      "fees_paid": 31.35,
+      "slippage_paid": 6.27
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T00:14:21.888981+00:00",
+      "type": "close",
+      "lead_id": "9TdmrDoT-1790294357368",
+      "contract": "9TdmrDoTNUCzHuuhMfdfDbATg6tTgenNHFpUCvAMpump",
+      "ticker": "LOUIS",
+      "entry_price": 0.00010504,
+      "exit_mid": 2.353e-06,
+      "exit_price": 2.3294700000000003e-06,
+      "dollars": 19.0,
+      "realized_pnl": -19.718637376237623,
+      "reason": "STOP_LOSS: -97.76% <= -20%",
+      "fee": 0.95,
+      "slippage": 0.19,
+      "free_cash": 30.320959850112253
+    },
+    {
+      "ts": "2026-09-25T00:14:21.530863+00:00",
+      "type": "discovered",
+      "count": 1,
+      "tickers": [
+        "ARENA"
+      ]
+    },
     {
       "ts": "2026-09-24T23:59:19.423309+00:00",
       "type": "open",
