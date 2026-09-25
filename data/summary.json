@@ -1,9 +1,9 @@
 {
   "mode": "paper",
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T04:45:16.983265+00:00",
-  "equity": 66.3704,
-  "free_cash": 10.8611,
+  "last_updated": "2026-09-25T05:00:19.650673+00:00",
+  "equity": 66.3,
+  "free_cash": 10.6611,
   "realized_pnl": -99.0589,
   "fees_paid": 38.95,
   "slippage_paid": 7.79,
@@ -16,13 +16,13 @@
       "entry_price": 0.0003636,
       "dollars": 19.0,
       "opened_at": 1790292550.445684,
-      "mark_price": 0.000432,
-      "last_mark_price": 0.000432,
-      "unrealized_pnl": 3.574257425742573,
-      "unrealized_pct": 18.811881188118807,
-      "volume_h6": 894490.14,
-      "volume_h24": 894490.14,
-      "last_liquidity": 59543.94,
+      "mark_price": 0.0004332,
+      "last_mark_price": 0.0004332,
+      "unrealized_pnl": 3.6369636963696377,
+      "unrealized_pct": 19.141914191419147,
+      "volume_h6": 818159.7,
+      "volume_h24": 895735.99,
+      "last_liquidity": 59490.85,
       "entry_liquidity": 52898.16
     },
     {
@@ -32,13 +32,13 @@
       "entry_price": 0.0023553199999999997,
       "dollars": 19.0,
       "opened_at": 1790297973.580485,
-      "mark_price": 0.001963,
-      "last_mark_price": 0.001963,
-      "unrealized_pnl": -3.1647844029685976,
-      "unrealized_pct": -16.656760015624197,
-      "volume_h6": 135416.92,
-      "volume_h24": 288970.6,
-      "last_liquidity": 167791.84,
+      "mark_price": 0.001958,
+      "last_mark_price": 0.001958,
+      "unrealized_pnl": -3.2051186250700514,
+      "unrealized_pct": -16.869045395105534,
+      "volume_h6": 133992.22,
+      "volume_h24": 289339.34,
+      "last_liquidity": 167276.16,
       "entry_liquidity": 184997.85
     },
     {
@@ -48,13 +48,13 @@
       "entry_price": 0.000549339,
       "dollars": 19.0,
       "opened_at": 1790310614.605779,
-      "mark_price": 0.0004944,
-      "last_mark_price": 0.0004944,
-      "unrealized_pnl": -1.9001763938114733,
-      "unrealized_pct": -10.000928388481437,
-      "volume_h6": 3738849.76,
-      "volume_h24": 3738849.76,
-      "last_liquidity": 70402.57,
+      "mark_price": 0.0004975,
+      "last_mark_price": 0.0004975,
+      "unrealized_pnl": -1.7929566260542225,
+      "unrealized_pct": -9.436613821338014,
+      "volume_h6": 3795373.89,
+      "volume_h24": 3795373.89,
+      "last_liquidity": 70590.3,
       "entry_liquidity": 70402.57
     }
   ],
@@ -744,6 +744,22 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-25T05:00:19.651247+00:00",
+      "type": "death_floor",
+      "free_cash": 10.661085749695207,
+      "death_floor": 30.0
+    },
+    {
+      "ts": "2026-09-25T05:00:19.407964+00:00",
+      "type": "discovered",
+      "count": 3,
+      "tickers": [
+        "SNDK",
+        "ARENA",
+        "REVS"
+      ]
+    },
     {
       "ts": "2026-09-25T04:45:16.983713+00:00",
       "type": "death_floor",
@@ -1629,38 +1645,6 @@
       "fee": 0.95,
       "slippage": 0.19,
       "free_cash": 125.24917134605388
-    },
-    {
-      "ts": "2026-09-24T21:28:32.622824+00:00",
-      "type": "close",
-      "lead_id": "8LHgAXXP-1790283502989",
-      "contract": "8LHgAXXPbMVqd3wmAQbTu4NxuRRe3qowgUSLiKmFpump",
-      "ticker": "DAP",
-      "entry_price": 6.23877e-05,
-      "exit_mid": 0.0001058,
-      "exit_price": 0.000104742,
-      "dollars": 19.0,
-      "realized_pnl": 11.758883914617781,
-      "reason": "TAKE_PROFIT: 69.58% >= +25%",
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 114.15836854285165
-    },
-    {
-      "ts": "2026-09-24T21:28:32.622279+00:00",
-      "type": "close",
-      "lead_id": "9Nnvxfav-1790277986782",
-      "contract": "9NnvxfavSswySguwuQ4Pa2wVZxM58x24rCXMb8rKpump",
-      "ticker": "SUPERBOWL",
-      "entry_price": 6.22059e-05,
-      "exit_mid": 4.788e-05,
-      "exit_price": 4.74012e-05,
-      "dollars": 19.0,
-      "realized_pnl": -5.661907085983805,
-      "reason": "STOP_LOSS: -23.03% <= -20%",
-      "fee": 0.95,
-      "slippage": 0.19,
-      "free_cash": 83.39948462823386
     }
   ],
   "rejections": []
