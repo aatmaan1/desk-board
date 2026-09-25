@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -139.5029,
-  "net_pnl_pct": -34.88,
-  "burn_paid": 11.4,
+  "net_pnl": -139.7029,
+  "net_pnl_pct": -34.93,
+  "burn_paid": 11.6,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -30,31 +30,22 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-25T09:34:49.442699+00:00",
+    "ts": "2026-09-25T09:50:14.612976+00:00",
     "rules": "v3",
-    "discovered": 6,
-    "prefilter": {
-      "h1_already_priced": 3,
-      "liq_window": 28,
-      "age_window": 14
-    },
+    "discovered": 0,
+    "prefilter": {},
     "creator_sources": {
       "pump": "ok",
       "rpc": "ok",
       "swap": "ok"
     },
-    "rejections": {
-      "BLACKLIST_STOPPED": 2,
-      "LIQ_LT": 2,
-      "H1_BUY_SELL_WEAK": 1,
-      "REENTRY_COOLDOWN": 1
-    },
+    "rejections": {},
     "passed": [],
     "opened": null,
-    "equity": 260.5,
-    "free_cash": 260.5,
+    "equity": 260.3,
+    "free_cash": 260.3,
     "open": 0,
-    "net_pnl": -139.5
+    "net_pnl": -139.7
   },
   "rejection_counts_24h": {
     "H1_BUY_SELL_WEAK": 57,
@@ -73,9 +64,9 @@
     "M5_DUMPING": 1
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-25T09:34:49.442320+00:00",
-  "equity": 260.4971,
-  "free_cash": 260.4971,
+  "last_updated": "2026-09-25T09:50:14.612625+00:00",
+  "equity": 260.2971,
+  "free_cash": 260.2971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -1040,6 +1031,17 @@
       "slippage_paid": 8.36,
       "total_deposited": 400.0,
       "net_pnl": -139.5029
+    },
+    {
+      "ts": "2026-09-25T09:50:14.612498+00:00",
+      "equity": 260.2971,
+      "free_cash": 260.2971,
+      "open": 0,
+      "realized_pnl": -128.1029,
+      "fees_paid": 41.8,
+      "slippage_paid": 8.36,
+      "total_deposited": 400.0,
+      "net_pnl": -139.7029
     }
   ],
   "events": [
