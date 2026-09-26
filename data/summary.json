@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -158.5029,
-  "net_pnl_pct": -39.63,
-  "burn_paid": 30.4,
+  "net_pnl": -158.7029,
+  "net_pnl_pct": -39.68,
+  "burn_paid": 30.6,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -30,13 +30,13 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-26T09:56:48.203401+00:00",
+    "ts": "2026-09-26T10:11:49.356269+00:00",
     "rules": "v3",
-    "discovered": 13,
+    "discovered": 14,
     "prefilter": {
-      "h1_already_priced": 4,
-      "age_window": 26,
-      "liq_window": 33
+      "h1_already_priced": 3,
+      "age_window": 23,
+      "liq_window": 36
     },
     "creator_sources": {
       "pump": "http_404",
@@ -44,40 +44,42 @@
       "swap": "ok"
     },
     "rejections": {
-      "PUMP_GRAD_TOO_NEW": 2,
-      "M5_SELLING": 2,
       "H1_BUY_SELL_WEAK": 4,
+      "AGE_TOO_NEW": 1,
+      "PUMP_GRAD_TOO_NEW": 1,
+      "VOL24_WASH_SUSPECT": 1,
       "NO_H1_MOMENTUM": 3,
+      "M5_SELLING": 2,
       "LIQ_LT": 2
     },
     "passed": [],
     "opened": null,
-    "equity": 241.5,
-    "free_cash": 241.5,
+    "equity": 241.3,
+    "free_cash": 241.3,
     "open": 0,
-    "net_pnl": -158.5
+    "net_pnl": -158.7
   },
   "rejection_counts_24h": {
-    "H1_BUY_SELL_WEAK": 314,
+    "H1_BUY_SELL_WEAK": 317,
     "LIQ_LT": 213,
-    "NO_H1_MOMENTUM": 188,
-    "BLACKLIST_STOPPED": 104,
-    "PUMP_GRAD_TOO_NEW": 88,
-    "REENTRY_COOLDOWN": 67,
-    "AGE_TOO_NEW": 51,
-    "M5_SELLING": 49,
+    "NO_H1_MOMENTUM": 191,
+    "BLACKLIST_STOPPED": 102,
+    "PUMP_GRAD_TOO_NEW": 89,
+    "REENTRY_COOLDOWN": 66,
+    "AGE_TOO_NEW": 52,
+    "M5_SELLING": 51,
     "H6_DOWNTREND": 27,
     "H1_TXNS_LT": 26,
     "CREATOR_FACTORY_PER": 9,
     "VOL_H1_LOW": 6,
     "M5_DUMPING": 5,
-    "AWAIT_CONFIRM": 4,
-    "VOL24_WASH_SUSPECT": 4
+    "VOL24_WASH_SUSPECT": 5,
+    "AWAIT_CONFIRM": 4
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-26T09:56:48.202807+00:00",
-  "equity": 241.4971,
-  "free_cash": 241.4971,
+  "last_updated": "2026-09-26T10:11:49.355902+00:00",
+  "equity": 241.2971,
+  "free_cash": 241.2971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -2087,9 +2089,37 @@
       "slippage_paid": 8.36,
       "total_deposited": 400.0,
       "net_pnl": -158.5029
+    },
+    {
+      "ts": "2026-09-26T10:11:49.355772+00:00",
+      "equity": 241.2971,
+      "free_cash": 241.2971,
+      "open": 0,
+      "realized_pnl": -128.1029,
+      "fees_paid": 41.8,
+      "slippage_paid": 8.36,
+      "total_deposited": 400.0,
+      "net_pnl": -158.7029
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-26T10:11:48.010098+00:00",
+      "type": "discovered",
+      "count": 14,
+      "tickers": [
+        "E/ACC",
+        "XRENT",
+        "MEMECARDS",
+        "YAP",
+        "SWARM",
+        "CREAM",
+        "SJP",
+        "NPC",
+        "BAGWORK",
+        "GO"
+      ]
+    },
     {
       "ts": "2026-09-26T09:56:48.032246+00:00",
       "type": "discovered",
@@ -3375,26 +3405,204 @@
         "BRAIN",
         "GOON"
       ]
-    },
-    {
-      "ts": "2026-09-25T13:34:39.344128+00:00",
-      "type": "discovered",
-      "count": 14,
-      "tickers": [
-        "BROKE",
-        "NPC",
-        "GO",
-        "FAMILIARS",
-        "SI",
-        "TTP",
-        "COLLECT",
-        "GOON",
-        "BRAIN",
-        "UPTOBER"
-      ]
     }
   ],
   "rejections": [
+    {
+      "ts": "2026-09-26T10:11:49.354265+00:00",
+      "rejected_at": "2026-09-26T10:11:49.354266+00:00",
+      "ticker": "DOGRILLA",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "H1_TXNS_LT_150",
+        "H1_BUY_SELL_WEAK",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL_H1_LOW"
+      ],
+      "liq": 24977,
+      "age_h": 17.41
+    },
+    {
+      "ts": "2026-09-26T10:11:49.354218+00:00",
+      "rejected_at": "2026-09-26T10:11:49.354220+00:00",
+      "ticker": "ARENA",
+      "stage": "market",
+      "reason": "NO_H1_MOMENTUM",
+      "reasons": [
+        "NO_H1_MOMENTUM",
+        "VOL_H1_LOW"
+      ],
+      "liq": 72813,
+      "age_h": 35.44
+    },
+    {
+      "ts": "2026-09-26T10:11:49.354147+00:00",
+      "rejected_at": "2026-09-26T10:11:49.354149+00:00",
+      "ticker": "MINT",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "H1_TXNS_LT_150",
+        "M5_SELLING",
+        "M5_DUMPING"
+      ],
+      "liq": 22844,
+      "age_h": 11.24
+    },
+    {
+      "ts": "2026-09-26T10:11:49.354090+00:00",
+      "rejected_at": "2026-09-26T10:11:49.354092+00:00",
+      "ticker": "0XQUIT",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "M5_SELLING",
+        "NO_H1_MOMENTUM",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 35604,
+      "age_h": 23.44
+    },
+    {
+      "ts": "2026-09-26T10:11:49.354038+00:00",
+      "rejected_at": "2026-09-26T10:11:49.354040+00:00",
+      "ticker": "GO",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "VOL_H1_LOW"
+      ],
+      "liq": 221664,
+      "age_h": 68.36
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353994+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353995+00:00",
+      "ticker": "BAGWORK",
+      "stage": "market",
+      "reason": "NO_H1_MOMENTUM",
+      "reasons": [
+        "NO_H1_MOMENTUM",
+        "M5_DUMPING",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 64129,
+      "age_h": 19.95
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353930+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353931+00:00",
+      "ticker": "NPC",
+      "stage": "market",
+      "reason": "M5_SELLING",
+      "reasons": [
+        "M5_SELLING",
+        "NO_H1_MOMENTUM",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 130578,
+      "age_h": 55.71
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353853+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353875+00:00",
+      "ticker": "SJP",
+      "stage": "market",
+      "reason": "M5_SELLING",
+      "reasons": [
+        "M5_SELLING"
+      ],
+      "liq": 59815,
+      "age_h": 12.02
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353806+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353808+00:00",
+      "ticker": "CREAM",
+      "stage": "market",
+      "reason": "NO_H1_MOMENTUM",
+      "reasons": [
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 69831,
+      "age_h": 9.88
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353747+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353749+00:00",
+      "ticker": "SWARM",
+      "stage": "market",
+      "reason": "VOL24_WASH_SUSPECT",
+      "reasons": [
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 70697,
+      "age_h": 25.41
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353698+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353699+00:00",
+      "ticker": "YAP",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "M5_SELLING",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 157021,
+      "age_h": 20.01
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353642+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353644+00:00",
+      "ticker": "MEMECARDS",
+      "stage": "market",
+      "reason": "PUMP_GRAD_TOO_NEW_3.6h",
+      "reasons": [
+        "PUMP_GRAD_TOO_NEW_3.6h",
+        "H1_BUY_SELL_WEAK"
+      ],
+      "liq": 72292,
+      "age_h": 3.57
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353564+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353567+00:00",
+      "ticker": "XRENT",
+      "stage": "market",
+      "reason": "AGE_TOO_NEW_0.5h",
+      "reasons": [
+        "AGE_TOO_NEW_0.5h",
+        "PUMP_GRAD_TOO_NEW_0.5h",
+        "LIQ_LT_35K",
+        "M5_DUMPING"
+      ],
+      "liq": 22677,
+      "age_h": 0.53
+    },
+    {
+      "ts": "2026-09-26T10:11:49.353410+00:00",
+      "rejected_at": "2026-09-26T10:11:49.353425+00:00",
+      "ticker": "E/ACC",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "H6_DOWNTREND",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 556218,
+      "age_h": 12.94
+    },
     {
       "ts": "2026-09-26T09:56:48.200598+00:00",
       "rejected_at": "2026-09-26T09:56:48.200599+00:00",
@@ -3758,211 +3966,6 @@
       ],
       "liq": 537763,
       "age_h": 12.44
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860971+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860974+00:00",
-      "ticker": "DOGRILLA",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW"
-      ],
-      "liq": 25569,
-      "age_h": 16.66
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860915+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860918+00:00",
-      "ticker": "ARENA",
-      "stage": "market",
-      "reason": "NO_H1_MOMENTUM",
-      "reasons": [
-        "NO_H1_MOMENTUM",
-        "VOL_H1_LOW"
-      ],
-      "liq": 73593,
-      "age_h": 34.69
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860801+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860803+00:00",
-      "ticker": "MINT",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "VOL_H1_LOW"
-      ],
-      "liq": 22240,
-      "age_h": 10.49
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860741+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860743+00:00",
-      "ticker": "COLLECT",
-      "stage": "market",
-      "reason": "H1_TXNS_LT_150",
-      "reasons": [
-        "H1_TXNS_LT_150",
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW"
-      ],
-      "liq": 178442,
-      "age_h": 32.47
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860673+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860675+00:00",
-      "ticker": "0XQUIT",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 35374,
-      "age_h": 22.69
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860595+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860597+00:00",
-      "ticker": "GO",
-      "stage": "market",
-      "reason": "H1_TXNS_LT_150",
-      "reasons": [
-        "H1_TXNS_LT_150",
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "VOL_H1_LOW"
-      ],
-      "liq": 217513,
-      "age_h": 67.61
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860528+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860529+00:00",
-      "ticker": "BAGWORK",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "M5_SELLING",
-        "NO_H1_MOMENTUM",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 69052,
-      "age_h": 19.2
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860452+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860454+00:00",
-      "ticker": "NPC",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "M5_SELLING",
-        "NO_H1_MOMENTUM"
-      ],
-      "liq": 137507,
-      "age_h": 54.96
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860362+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860367+00:00",
-      "ticker": "PEACHY",
-      "stage": "market",
-      "reason": "PUMP_GRAD_TOO_NEW_3.6h",
-      "reasons": [
-        "PUMP_GRAD_TOO_NEW_3.6h",
-        "NO_H1_MOMENTUM",
-        "M5_DUMPING"
-      ],
-      "liq": 35204,
-      "age_h": 3.61
-    },
-    {
-      "ts": "2026-09-26T09:26:48.860018+00:00",
-      "rejected_at": "2026-09-26T09:26:48.860041+00:00",
-      "ticker": "SJP",
-      "stage": "confirm",
-      "reason": "AWAIT_CONFIRM_1/2",
-      "reasons": [
-        "AWAIT_CONFIRM_1/2"
-      ],
-      "liq": 59491,
-      "age_h": 11.27
-    },
-    {
-      "ts": "2026-09-26T09:26:47.969587+00:00",
-      "rejected_at": "2026-09-26T09:26:47.969590+00:00",
-      "ticker": "CREAM",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "M5_SELLING",
-        "NO_H1_MOMENTUM",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 85375,
-      "age_h": 9.13
-    },
-    {
-      "ts": "2026-09-26T09:26:47.969406+00:00",
-      "rejected_at": "2026-09-26T09:26:47.969415+00:00",
-      "ticker": "E/ACC",
-      "stage": "market",
-      "reason": "NO_H1_MOMENTUM",
-      "reasons": [
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 545033,
-      "age_h": 12.19
-    },
-    {
-      "ts": "2026-09-26T09:11:52.980411+00:00",
-      "rejected_at": "2026-09-26T09:11:52.980413+00:00",
-      "ticker": "DOGRILLA",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW"
-      ],
-      "liq": 26103,
-      "age_h": 16.41
-    },
-    {
-      "ts": "2026-09-26T09:11:52.980364+00:00",
-      "rejected_at": "2026-09-26T09:11:52.980365+00:00",
-      "ticker": "MINT",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "VOL_H1_LOW",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 20291,
-      "age_h": 10.24
     }
   ]
 }
