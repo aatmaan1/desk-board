@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -152.3029,
-  "net_pnl_pct": -38.08,
-  "burn_paid": 24.2,
+  "net_pnl": -152.5029,
+  "net_pnl_pct": -38.13,
+  "burn_paid": 24.4,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -30,13 +30,13 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-26T02:11:11.883407+00:00",
+    "ts": "2026-09-26T02:26:19.191399+00:00",
     "rules": "v3",
-    "discovered": 13,
+    "discovered": 7,
     "prefilter": {
-      "liq_window": 35,
-      "age_window": 26,
-      "h1_already_priced": 5
+      "liq_window": 34,
+      "age_window": 15,
+      "h1_already_priced": 4
     },
     "creator_sources": {
       "pump": "http_404",
@@ -44,30 +44,27 @@
       "swap": "ok"
     },
     "rejections": {
-      "NO_H1_MOMENTUM": 2,
-      "M5_SELLING": 1,
+      "AGE_TOO_NEW": 1,
       "PUMP_GRAD_TOO_NEW": 1,
-      "H1_BUY_SELL_WEAK": 4,
       "REENTRY_COOLDOWN": 1,
-      "H6_DOWNTREND": 1,
-      "LIQ_LT": 3
+      "LIQ_LT": 4
     },
     "passed": [],
     "opened": null,
-    "equity": 247.7,
-    "free_cash": 247.7,
+    "equity": 247.5,
+    "free_cash": 247.5,
     "open": 0,
-    "net_pnl": -152.3
+    "net_pnl": -152.5
   },
   "rejection_counts_24h": {
     "H1_BUY_SELL_WEAK": 305,
-    "LIQ_LT": 165,
+    "LIQ_LT": 169,
     "NO_H1_MOMENTUM": 155,
     "BLACKLIST_STOPPED": 131,
-    "PUMP_GRAD_TOO_NEW": 83,
-    "REENTRY_COOLDOWN": 55,
+    "PUMP_GRAD_TOO_NEW": 84,
+    "REENTRY_COOLDOWN": 56,
     "M5_SELLING": 51,
-    "AGE_TOO_NEW": 41,
+    "AGE_TOO_NEW": 42,
     "H1_TXNS_LT": 20,
     "H6_DOWNTREND": 18,
     "CREATOR_FACTORY_PER": 9,
@@ -77,9 +74,9 @@
     "LP_NOT_LOCKED": 3
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-26T02:11:11.882753+00:00",
-  "equity": 247.6971,
-  "free_cash": 247.6971,
+  "last_updated": "2026-09-26T02:26:19.191009+00:00",
+  "equity": 247.4971,
+  "free_cash": 247.4971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -1748,9 +1745,34 @@
       "slippage_paid": 8.36,
       "total_deposited": 400.0,
       "net_pnl": -152.3029
+    },
+    {
+      "ts": "2026-09-26T02:26:19.190893+00:00",
+      "equity": 247.4971,
+      "free_cash": 247.4971,
+      "open": 0,
+      "realized_pnl": -128.1029,
+      "fees_paid": 41.8,
+      "slippage_paid": 8.36,
+      "total_deposited": 400.0,
+      "net_pnl": -152.5029
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-26T02:26:18.817648+00:00",
+      "type": "discovered",
+      "count": 7,
+      "tickers": [
+        "ROON",
+        "SJP",
+        "ARENA",
+        "BLUEPRINT",
+        "DRMR",
+        "GROKBOOK",
+        "DOGRILLA"
+      ]
+    },
     {
       "ts": "2026-09-26T02:11:11.875554+00:00",
       "type": "discovered",
@@ -3078,28 +3100,117 @@
       "rules": "v2",
       "hold_min": 105.8,
       "free_cash": 238.31688983139495
-    },
-    {
-      "ts": "2026-09-25T06:16:04.687931+00:00",
-      "type": "close",
-      "lead_id": "EyWrMXBb-1790297969914",
-      "contract": "EyWrMXBb5DXppWs5uNa6repSEDoDSachbjeixU9KREVS",
-      "ticker": "REVS",
-      "entry_price": 0.0023553199999999997,
-      "exit_mid": 0.001932,
-      "exit_price": 0.00191268,
-      "dollars": 19.0,
-      "realized_pnl": -5.6607080141976445,
-      "reason": "STOP_LOSS: -17.97% <= -15%",
-      "fee": 0.95,
-      "slippage": 0.19,
-      "entry_costs": 1.14,
-      "rules": "v2",
-      "hold_min": 316.5,
-      "free_cash": 224.94039198580234
     }
   ],
   "rejections": [
+    {
+      "ts": "2026-09-26T02:26:19.189566+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189567+00:00",
+      "ticker": "DOGRILLA",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "H1_TXNS_LT_150",
+        "NO_H1_MOMENTUM",
+        "VOL_H1_LOW"
+      ],
+      "liq": 27605,
+      "age_h": 9.65
+    },
+    {
+      "ts": "2026-09-26T02:26:19.189515+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189517+00:00",
+      "ticker": "GROKBOOK",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "H1_TXNS_LT_150",
+        "H1_BUY_SELL_WEAK",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL_H1_LOW",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 21099,
+      "age_h": 10.35
+    },
+    {
+      "ts": "2026-09-26T02:26:19.189453+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189455+00:00",
+      "ticker": "DRMR",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "H1_TXNS_LT_150",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL_H1_LOW"
+      ],
+      "liq": 23391,
+      "age_h": 39.39
+    },
+    {
+      "ts": "2026-09-26T02:26:19.189394+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189396+00:00",
+      "ticker": "BLUEPRINT",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "H1_BUY_SELL_WEAK",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "M5_DUMPING",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 33792,
+      "age_h": 9.19
+    },
+    {
+      "ts": "2026-09-26T02:26:19.189320+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189322+00:00",
+      "ticker": "ARENA",
+      "stage": "market",
+      "reason": "REENTRY_COOLDOWN_18.9h",
+      "reasons": [
+        "REENTRY_COOLDOWN_18.9h",
+        "H6_DOWNTREND"
+      ],
+      "liq": 71253,
+      "age_h": 27.69
+    },
+    {
+      "ts": "2026-09-26T02:26:19.189220+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189223+00:00",
+      "ticker": "SJP",
+      "stage": "market",
+      "reason": "PUMP_GRAD_TOO_NEW_4.3h",
+      "reasons": [
+        "PUMP_GRAD_TOO_NEW_4.3h",
+        "NO_H1_MOMENTUM",
+        "M5_DUMPING"
+      ],
+      "liq": 45236,
+      "age_h": 4.26
+    },
+    {
+      "ts": "2026-09-26T02:26:19.189065+00:00",
+      "rejected_at": "2026-09-26T02:26:19.189079+00:00",
+      "ticker": "ROON",
+      "stage": "market",
+      "reason": "AGE_TOO_NEW_1.4h",
+      "reasons": [
+        "AGE_TOO_NEW_1.4h",
+        "PUMP_GRAD_TOO_NEW_1.4h",
+        "H1_BUY_SELL_WEAK",
+        "NO_H1_MOMENTUM"
+      ],
+      "liq": 47580,
+      "age_h": 1.41
+    },
     {
       "ts": "2026-09-26T02:11:11.880526+00:00",
       "rejected_at": "2026-09-26T02:11:11.880528+00:00",
@@ -3586,113 +3697,6 @@
       ],
       "liq": 44500,
       "age_h": 3.51
-    },
-    {
-      "ts": "2026-09-26T01:41:19.062292+00:00",
-      "rejected_at": "2026-09-26T01:41:19.062303+00:00",
-      "ticker": "MUSEXT",
-      "stage": "market",
-      "reason": "PUMP_GRAD_TOO_NEW_2.1h",
-      "reasons": [
-        "PUMP_GRAD_TOO_NEW_2.1h",
-        "M5_SELLING",
-        "NO_H1_MOMENTUM",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 60587,
-      "age_h": 2.12
-    },
-    {
-      "ts": "2026-09-26T01:26:11.940566+00:00",
-      "rejected_at": "2026-09-26T01:26:11.940568+00:00",
-      "ticker": "DOGRILLA",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW"
-      ],
-      "liq": 29476,
-      "age_h": 8.65
-    },
-    {
-      "ts": "2026-09-26T01:26:11.940508+00:00",
-      "rejected_at": "2026-09-26T01:26:11.940510+00:00",
-      "ticker": "GROKBOOK",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 24181,
-      "age_h": 9.35
-    },
-    {
-      "ts": "2026-09-26T01:26:11.940433+00:00",
-      "rejected_at": "2026-09-26T01:26:11.940435+00:00",
-      "ticker": "SI",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW"
-      ],
-      "liq": 43419,
-      "age_h": 45.31
-    },
-    {
-      "ts": "2026-09-26T01:26:11.940370+00:00",
-      "rejected_at": "2026-09-26T01:26:11.940375+00:00",
-      "ticker": "DRMR",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND"
-      ],
-      "liq": 22006,
-      "age_h": 38.38
-    },
-    {
-      "ts": "2026-09-26T01:26:11.940287+00:00",
-      "rejected_at": "2026-09-26T01:26:11.940290+00:00",
-      "ticker": "ARENA",
-      "stage": "market",
-      "reason": "REENTRY_COOLDOWN_17.9h",
-      "reasons": [
-        "REENTRY_COOLDOWN_17.9h",
-        "M5_SELLING",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW"
-      ],
-      "liq": 70023,
-      "age_h": 26.68
-    },
-    {
-      "ts": "2026-09-26T01:26:11.940202+00:00",
-      "rejected_at": "2026-09-26T01:26:11.940204+00:00",
-      "ticker": "0XQUIT",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 26529,
-      "age_h": 14.68
     }
   ]
 }
