@@ -18,9 +18,9 @@
       "total_deposited": 400.0
     }
   ],
-  "net_pnl": -175.7029,
-  "net_pnl_pct": -43.93,
-  "burn_paid": 47.6,
+  "net_pnl": -175.9029,
+  "net_pnl_pct": -43.98,
+  "burn_paid": 47.8,
   "hwm_equity": 265.6692,
   "accounting_notes": [
     {
@@ -30,9 +30,9 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-27T14:48:04.025058+00:00",
+    "ts": "2026-09-27T15:03:23.402031+00:00",
     "rules": "v3",
-    "discovered": 3,
+    "discovered": 0,
     "prefilter": {
       "age_window": 18,
       "liq_window": 22,
@@ -41,28 +41,24 @@
     "creator_sources": {
       "pump": "http_404"
     },
-    "rejections": {
-      "H6_DOWNTREND": 1,
-      "H1_BUY_SELL_WEAK": 1,
-      "PUMP_GRAD_TOO_NEW": 1
-    },
+    "rejections": {},
     "passed": [],
     "opened": null,
-    "equity": 224.3,
-    "free_cash": 224.3,
+    "equity": 224.1,
+    "free_cash": 224.1,
     "open": 0,
-    "net_pnl": -175.7
+    "net_pnl": -175.9
   },
   "rejection_counts_24h": {
-    "H1_BUY_SELL_WEAK": 213,
-    "NO_H1_MOMENTUM": 186,
-    "LIQ_LT": 128,
-    "H1_TXNS_LT": 90,
+    "H1_BUY_SELL_WEAK": 211,
+    "NO_H1_MOMENTUM": 184,
+    "LIQ_LT": 126,
+    "H1_TXNS_LT": 88,
     "PUMP_GRAD_TOO_NEW": 56,
     "AGE_TOO_NEW": 44,
     "M5_SELLING": 43,
     "H6_DOWNTREND": 20,
-    "VOL_H1_LOW": 17,
+    "VOL_H1_LOW": 16,
     "AWAIT_CONFIRM": 11,
     "EDGE_BELOW_COSTS": 10,
     "VOL24_WASH_SUSPECT": 8,
@@ -71,9 +67,9 @@
     "CONFIRM_PRICE_LOWER": 1
   },
   "started_at": "2026-09-24T19:26:24.769125+00:00",
-  "last_updated": "2026-09-27T14:48:04.024704+00:00",
-  "equity": 224.2971,
-  "free_cash": 224.2971,
+  "last_updated": "2026-09-27T15:03:23.401701+00:00",
+  "equity": 224.0971,
+  "free_cash": 224.0971,
   "realized_pnl": -128.1029,
   "fees_paid": 41.8,
   "slippage_paid": 8.36,
@@ -3029,6 +3025,17 @@
       "slippage_paid": 8.36,
       "total_deposited": 400.0,
       "net_pnl": -175.7029
+    },
+    {
+      "ts": "2026-09-27T15:03:23.401591+00:00",
+      "equity": 224.0971,
+      "free_cash": 224.0971,
+      "open": 0,
+      "realized_pnl": -128.1029,
+      "fees_paid": 41.8,
+      "slippage_paid": 8.36,
+      "total_deposited": 400.0,
+      "net_pnl": -175.9029
     }
   ],
   "events": [
