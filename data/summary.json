@@ -5008,7 +5008,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-27T18:18:03.671998+00:00",
+    "updated": "2026-09-27T18:19:14.340386+00:00",
     "desk": {
       "main_equity": 221.5,
       "sleeves_net_pnl": -0.25,
@@ -5023,6 +5023,20 @@
     },
     "brake": null,
     "sleeves": [
+      {
+        "name": "midcap_breakout",
+        "mode": "paper",
+        "open": 0,
+        "closed": 0,
+        "wins": 0,
+        "realized": 0.0,
+        "unrealized": 0.0,
+        "net_pnl": 0.0,
+        "ticket_usd": 40.0,
+        "rt_cost_pct": 1.1,
+        "positions": [],
+        "recent_closed": []
+      },
       {
         "name": "midcap_trend",
         "mode": "paper",
