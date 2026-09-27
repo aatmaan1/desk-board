@@ -46,6 +46,7 @@ tr.flash, #events .flash{animation:flashrow 1.6s ease-out}
 </header>
 <section class="kpis" id="kpis"></section>
 <div class="card" style="margin:12px 0"><h2>Fast book (separate $5,000 paper ledger, intraday perps)</h2><div id="fastbook" style="font-size:13px">Loading…</div></div>
+<div class="card" style="margin:12px 0"><h2>Copy-trade sleeve (FOMO top traders)</h2><div id="copytrade" style="font-size:13px">Loading…</div></div>
 <div class="card" style="margin:12px 0"><h2>Paper sleeves (sub-ledgers; P&amp;L accrues to the desk)</h2><div id="sleeves" style="font-size:13px">Loading…</div></div>
 <main>
   <div class="card"><h2>Equity</h2><canvas id="equityChart" height="110"></canvas></div>
@@ -180,6 +181,26 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) refr
     el.innerHTML = h;
   }catch(e){ document.getElementById('fastbook').textContent='fast-book data unavailable'; }
   setTimeout(fastbook, 60000);
+})();
+</script>
+<script>
+(async function copytrade(){
+  try{
+    const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now(), {cache:'no-store'})).json();
+    const X = d.copytrade; const el = document.getElementById('copytrade');
+    if(!X){ el.textContent='No copy-trade data yet.'; return; }
+    const f = v => (v>=0?'+':'') + Number(v).toFixed(2);
+    let h = `<div><b>${String(X.mode).toUpperCase()}</b>${X.mode==='shadow'?' (simulated only, no book impact)':''} · rule: ${X.rule} · $${X.ticket_usd} tickets, max ${X.max_open} open · alerts 24h ${X.alerts_24h} · signals ${X.signals_total} · skipped 24h ${X.skips_24h}</div>`;
+    h += `<div>Would-be trades ${X.opened_total} · closed ${X.closed_n} (wins ${X.wins}) · realized ${f(X.realized_pnl)} · unrealized ${f(X.unrealized_pnl)} · today ${f(X.today_pnl)} · last poll ${(X.last_poll||'').slice(0,16)}Z</div>`;
+    if(X.open.length){ h += '<table><thead><tr><th>Token</th><th>Opened (UTC)</th><th>Traders</th><th>uPnL $</th></tr></thead><tbody>';
+      for(const p of X.open) h += `<tr><td>${p.ticker}</td><td>${p.opened_at.slice(0,16)}</td><td>${p.n_traders}</td><td>${f(p.upnl)}</td></tr>`;
+      h += '</tbody></table>'; }
+    if(X.recent_closed.length){ h += '<table><thead><tr><th>Token</th><th>Closed (UTC)</th><th>P&L $</th><th>Hold h</th><th>Exit</th></tr></thead><tbody>';
+      for(const c of X.recent_closed) h += `<tr><td>${c.ticker}</td><td>${c.closed_at.slice(0,16)}</td><td>${f(c.pnl)}</td><td>${c.hold_h}</td><td>${c.reason}</td></tr>`;
+      h += '</tbody></table>'; }
+    el.innerHTML = h;
+  }catch(e){ document.getElementById('copytrade').textContent='copy-trade data unavailable'; }
+  setTimeout(copytrade, 60000);
 })();
 </script>
 </body>
