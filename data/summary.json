@@ -5091,7 +5091,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T18:34:00+00:00",
+    "updated": "2026-09-27T18:35:10+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -5106,6 +5106,11 @@
     "recent_closed": [],
     "closed_count": 0,
     "wins": 0,
+    "regime_switcher_shadow": {
+      "n": 0,
+      "pnl": 0,
+      "note": "shadow only: subset of fast_breakout trades the frozen regime switcher would take (24h ER>0.45 up)"
+    },
     "leadlag_shadow": {
       "n": 0,
       "mean_net_bp": null,
@@ -5117,7 +5122,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 276,
+    "alerts_24h": 275,
     "signals_total": 0,
     "opened_total": 0,
     "open": [],
@@ -5128,7 +5133,7 @@
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-27T18:32:58.938970+00:00",
+    "last_poll": "2026-09-27T18:34:30.081415+00:00",
     "feed_last_alert": "2026-09-27T18:30:16+00:00"
   }
 }
