@@ -189,6 +189,23 @@
   ],
   "events": [
     {
+      "ts": "2026-09-27T21:36:13.326406+00:00",
+      "type": "copy_open",
+      "mint": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump",
+      "ticker": "PAID",
+      "opened_at": "2026-09-27T21:36:13.326252+00:00",
+      "opened_t": 1790544970.012123,
+      "signal_ts": "2026-09-27T21:34:53+00:00",
+      "n_traders": 3,
+      "alert_mcap": 22030000.0,
+      "entry_mid": 0.02397,
+      "entry_fill": 0.0242097,
+      "ticket": 40.0,
+      "peak_mid": 0.02397,
+      "liq": 1034816.99,
+      "mode": "shadow"
+    },
+    {
       "ts": "2026-09-27T21:33:02.831263+00:00",
       "type": "discovered",
       "count": 12,
@@ -970,7 +987,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T21:35:00+00:00",
+    "updated": "2026-09-27T21:36:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1001,10 +1018,17 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 220,
-    "signals_total": 0,
-    "opened_total": 0,
-    "open": [],
+    "alerts_24h": 222,
+    "signals_total": 1,
+    "opened_total": 1,
+    "open": [
+      {
+        "ticker": "PAID",
+        "opened_at": "2026-09-27T21:36:13.326252+00:00",
+        "n_traders": 3,
+        "upnl": 0
+      }
+    ],
     "closed_n": 0,
     "wins": 0,
     "realized_pnl": 0,
@@ -1012,8 +1036,8 @@
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-27T21:34:40.009703+00:00",
-    "feed_last_alert": "2026-09-27T21:19:34+00:00"
+    "last_poll": "2026-09-27T21:36:11.396631+00:00",
+    "feed_last_alert": "2026-09-27T21:35:47+00:00"
   },
   "desk1000": {
     "paper": true,
