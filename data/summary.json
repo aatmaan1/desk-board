@@ -5074,5 +5074,28 @@
       }
     ],
     "notes": {}
+  },
+  "fast": {
+    "paper": true,
+    "updated": "2026-09-27T18:28:00+00:00",
+    "name": "fast_breakout_1h",
+    "start_equity": 5000.0,
+    "equity": 5000.0,
+    "net_pnl": 0.0,
+    "net_pnl_pct": 0.0,
+    "hwm": 5000.0,
+    "fees": 0.0,
+    "funding": 0.0,
+    "brake": null,
+    "rules": "1h Donchian-24 breakout, long-only, close>EMA96 & ATR14>ATR24; 3.5xATR trailing stop; 72h max hold; 9 OKX perps, equity/9 per slot at 1x; taker costs; 20% DD halt, 5% daily-loss brake; polls 60s",
+    "positions": [],
+    "recent_closed": [],
+    "closed_count": 0,
+    "wins": 0,
+    "leadlag_shadow": {
+      "n": 0,
+      "mean_net_bp": null,
+      "note": "shadow only: BTC 1m move >0.3% -> meme perp 3-min follow, no P&L booked"
+    }
   }
 }
