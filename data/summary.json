@@ -4990,7 +4990,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-27T18:11:18.095347+00:00",
+    "updated": "2026-09-27T18:13:27.597117+00:00",
     "desk": {
       "main_equity": 221.7,
       "sleeves_net_pnl": -0.44,
@@ -4999,7 +4999,9 @@
       "desk_net_pnl": -178.74,
       "main_free_cash": 221.6971,
       "sleeve_open_cost": 40.12,
-      "desk_day_pnl": -11.84
+      "burn_paid": 50.2,
+      "burn_today_excluded": 0.0,
+      "desk_day_pnl": -11.4
     },
     "brake": null,
     "sleeves": [
