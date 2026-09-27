@@ -5038,7 +5038,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-27T19:18:06.265051+00:00",
+    "updated": "2026-09-27T19:21:05.691775+00:00",
     "desk": {
       "main_equity": 220.5,
       "sleeves_net_pnl": -0.25,
@@ -5110,7 +5110,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T19:20:00+00:00",
+    "updated": "2026-09-27T19:21:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -5152,7 +5152,7 @@
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-27T19:20:05.773927+00:00",
+    "last_poll": "2026-09-27T19:21:36.904092+00:00",
     "feed_last_alert": "2026-09-27T19:18:50+00:00"
   }
 }
