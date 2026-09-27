@@ -45,6 +45,7 @@ tr.flash, #events .flash{animation:flashrow 1.6s ease-out}
   <div class="meta" id="updated">Loading…</div>
 </header>
 <section class="kpis" id="kpis"></section>
+<div class="card" style="margin:12px 0"><h2>$1,000 paper desk (from 2026-09-28): allocation by sleeve</h2><div id="desk1000" style="font-size:13px">Loading…</div></div>
 <div class="card" style="margin:12px 0"><h2>Fast book (separate $5,000 paper ledger, intraday perps)</h2><div id="fastbook" style="font-size:13px">Loading…</div></div>
 <div class="card" style="margin:12px 0"><h2>Copy-trade sleeve (FOMO top traders)</h2><div id="copytrade" style="font-size:13px">Loading…</div></div>
 <div class="card" style="margin:12px 0"><h2>Paper sleeves (sub-ledgers; P&amp;L accrues to the desk)</h2><div id="sleeves" style="font-size:13px">Loading…</div></div>
@@ -201,6 +202,27 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) refr
     el.innerHTML = h;
   }catch(e){ document.getElementById('copytrade').textContent='copy-trade data unavailable'; }
   setTimeout(copytrade, 60000);
+})();
+</script>
+<script>
+(async function desk1000(){
+  try{
+    const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now(), {cache:'no-store'})).json();
+    const X = d.desk1000; const el = document.getElementById('desk1000');
+    if(!X){ el.textContent='No $1,000 desk data yet.'; return; }
+    const f=(x)=> (x>=0?'+':'')+Number(x).toFixed(2);
+    let h = `<div>PAPER · deposited <b>$${Number(X.deposited).toFixed(2)}</b> · desk equity <b>$${Number(X.desk_equity).toFixed(2)}</b> · P&amp;L ${f(X.desk_pnl)} (${X.desk_pnl_pct}%) · HWM $${X.hwm} · ${X.drawdown_halt_pct}% drawdown halt · HALT: ${X.halt||'none'} · started ${String(X.started_at).slice(0,16)}Z · updated ${X.updated.slice(0,16)}Z</div>`;
+    h += '<table><thead><tr><th>Sleeve</th><th>Mode</th><th>Allocation</th><th>Equity</th><th>P&amp;L</th><th>Open</th><th>Closed</th><th>In use</th><th>Ticket</th><th>Max open</th></tr></thead><tbody>';
+    for(const s of X.sleeves){ h += `<tr><td>${s.sleeve}</td><td>${s.mode}</td><td>$${s.alloc}</td><td>$${Number(s.equity).toFixed(2)}</td><td>${f(s.pnl)}</td><td>${s.open}</td><td>${s.closed}</td><td>$${Number(s.open_cost).toFixed(2)}</td><td>${s.ticket_usd?('$'+s.ticket_usd):'–'}</td><td>${s.max_open??'–'}</td></tr>`; }
+    h += '</tbody></table>';
+    const pos = X.sleeves.flatMap(s=>(s.positions||[]).map(p=>({...p,sleeve:s.sleeve})));
+    h += pos.length ? '<div><b>Open trades:</b> ' + pos.map(p=>`${p.sleeve} ${p.symbol} $${p.dollars} @ ${Number(p.entry).toPrecision(5)} (mark ${Number(p.mark).toPrecision(5)})`).join(' · ') + '</div>' : '<div>Open trades: none</div>';
+    h += '<div>Shadow (logging only): ' + Object.keys(X.shadow||{}).join(', ') + ' · retired: ' + Object.keys(X.retired||{}).join(', ') + '</div>';
+    const A = (X.archive||{}).summary;
+    if(A){ const m=A.main_book; h += `<div style="margin-top:6px;color:#888">Archived old desk (pre-$1,000, ${A.archived_at.slice(0,16)}Z): deposited $${m.total_deposited}, final equity $${Number(m.equity).toFixed(2)}, net ${f(m.net_pnl)} (${m.net_pnl_pct}%), ${A.main_book_trades.closed} trades / ${A.main_book_trades.wins} wins; old desk incl. sleeves $${Number(A.old_desk_equity).toFixed(2)}. <a href="data/archive-2026-09-28-pre1000.json">archive JSON</a></div>`; }
+    el.innerHTML = h;
+  }catch(e){ document.getElementById('desk1000').textContent='desk data unavailable'; }
+  setTimeout(desk1000, 60000);
 })();
 </script>
 </body>
