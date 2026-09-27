@@ -5008,18 +5008,18 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-27T18:13:27.597117+00:00",
+    "updated": "2026-09-27T18:18:03.671998+00:00",
     "desk": {
-      "main_equity": 221.7,
-      "sleeves_net_pnl": -0.44,
-      "desk_equity": 221.26,
+      "main_equity": 221.5,
+      "sleeves_net_pnl": -0.25,
+      "desk_equity": 221.24,
       "total_deposited": 400.0,
-      "desk_net_pnl": -178.74,
-      "main_free_cash": 221.6971,
+      "desk_net_pnl": -178.76,
+      "main_free_cash": 221.4971,
       "sleeve_open_cost": 40.12,
-      "burn_paid": 50.2,
-      "burn_today_excluded": 0.0,
-      "desk_day_pnl": -11.4
+      "burn_paid": 50.4,
+      "burn_today_excluded": 0.2,
+      "desk_day_pnl": -11.21
     },
     "brake": null,
     "sleeves": [
@@ -5030,8 +5030,8 @@
         "closed": 0,
         "wins": 0,
         "realized": 0.0,
-        "unrealized": -0.44,
-        "net_pnl": -0.44,
+        "unrealized": -0.25,
+        "net_pnl": -0.25,
         "ticket_usd": 40.0,
         "rt_cost_pct": 1.1,
         "positions": [
@@ -5040,8 +5040,8 @@
             "opened_at": "2026-09-27T18:09:12.534663+00:00",
             "dollars": 40.0,
             "entry": 2.135325,
-            "mark": 2.13,
-            "upnl_pct": -0.25,
+            "mark": 2.14,
+            "upnl_pct": 0.22,
             "stop": 1.893779504918325
           }
         ],
