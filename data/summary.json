@@ -4987,5 +4987,61 @@
       "liq": 310860,
       "age_h": 43.54
     }
-  ]
+  ],
+  "sleeves": {
+    "paper": true,
+    "updated": "2026-09-27T18:11:18.095347+00:00",
+    "desk": {
+      "main_equity": 221.7,
+      "sleeves_net_pnl": -0.44,
+      "desk_equity": 221.26,
+      "total_deposited": 400.0,
+      "desk_net_pnl": -178.74,
+      "main_free_cash": 221.6971,
+      "sleeve_open_cost": 40.12,
+      "desk_day_pnl": -11.84
+    },
+    "brake": null,
+    "sleeves": [
+      {
+        "name": "midcap_trend",
+        "mode": "paper",
+        "open": 1,
+        "closed": 0,
+        "wins": 0,
+        "realized": 0.0,
+        "unrealized": -0.44,
+        "net_pnl": -0.44,
+        "ticket_usd": 40.0,
+        "rt_cost_pct": 1.1,
+        "positions": [
+          {
+            "symbol": "TRUMP",
+            "opened_at": "2026-09-27T18:09:12.534663+00:00",
+            "dollars": 40.0,
+            "entry": 2.135325,
+            "mark": 2.13,
+            "upnl_pct": -0.25,
+            "stop": 1.893779504918325
+          }
+        ],
+        "recent_closed": []
+      },
+      {
+        "name": "pons_postgrad",
+        "mode": "shadow",
+        "open": 0,
+        "closed": 0,
+        "wins": 0,
+        "realized": 0.0,
+        "unrealized": 0.0,
+        "net_pnl": 0.0,
+        "ticket_usd": 15.0,
+        "rt_cost_pct": 3.13,
+        "positions": [],
+        "recent_closed": []
+      }
+    ],
+    "notes": {}
+  }
 }
