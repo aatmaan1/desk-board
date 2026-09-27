@@ -45,6 +45,7 @@ tr.flash, #events .flash{animation:flashrow 1.6s ease-out}
   <div class="meta" id="updated">Loading…</div>
 </header>
 <section class="kpis" id="kpis"></section>
+<div class="card" style="margin:12px 0"><h2>Paper sleeves (sub-ledgers; P&amp;L accrues to the desk)</h2><div id="sleeves" style="font-size:13px">Loading…</div></div>
 <main>
   <div class="card"><h2>Equity</h2><canvas id="equityChart" height="110"></canvas></div>
   <div class="card"><h2>Strategy gate (v3)</h2><div id="gate" style="font-size:13px"></div></div>
@@ -135,6 +136,30 @@ async function refresh(){
 refresh();
 setInterval(refresh, 15000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+</script>
+<script>
+(async function sleeves(){
+  try{
+    const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now(), {cache:'no-store'})).json();
+    const S = d.sleeves; const el = document.getElementById('sleeves');
+    if(!S){ el.textContent='No sleeve data yet.'; return; }
+    const f=(x)=> (x>=0?'+':'')+Number(x).toFixed(2);
+    let h = `<div>Desk equity (main + sleeves): <b>$${Number(S.desk.desk_equity).toFixed(2)}</b> · deposited $${S.desk.total_deposited} · desk net ${f(S.desk.desk_net_pnl)} · day ${f(S.desk.desk_day_pnl||0)} · brake: ${S.brake||'none'} · updated ${S.updated.slice(0,16)}Z</div>`;
+    h += '<table><thead><tr><th>Sleeve</th><th>Mode</th><th>Open</th><th>Closed</th><th>Wins</th><th>Realized</th><th>Unrealized</th><th>Net</th><th>Ticket</th><th>RT cost</th></tr></thead><tbody>';
+    for(const s of S.sleeves){ h += `<tr><td>${s.name}</td><td>${s.mode}</td><td>${s.open}</td><td>${s.closed}</td><td>${s.wins}</td><td>${f(s.realized)}</td><td>${f(s.unrealized)}</td><td>${f(s.net_pnl)}</td><td>$${s.ticket_usd}</td><td>${s.rt_cost_pct}%</td></tr>`; }
+    h += '</tbody></table>';
+    const pos = S.sleeves.flatMap(s=>s.positions.map(p=>({...p,sleeve:s.name})));
+    if(pos.length){ h += '<h3 style="font-size:13px">Open sleeve positions</h3><table><thead><tr><th>Sleeve</th><th>Symbol</th><th>Opened (UTC)</th><th>$</th><th>Entry</th><th>Mark</th><th>uPnL%</th><th>Stop</th></tr></thead><tbody>';
+      for(const p of pos) h += `<tr><td>${p.sleeve}</td><td>${p.symbol}</td><td>${p.opened_at.slice(0,16)}</td><td>${p.dollars}</td><td>${Number(p.entry).toPrecision(5)}</td><td>${Number(p.mark).toPrecision(5)}</td><td>${f(p.upnl_pct)}</td><td>${p.stop?Number(p.stop).toPrecision(5):''}</td></tr>`;
+      h += '</tbody></table>'; }
+    const cl = S.sleeves.flatMap(s=>s.recent_closed.map(c=>({...c,sleeve:s.name})));
+    if(cl.length){ h += '<h3 style="font-size:13px">Recent sleeve closes</h3><table><thead><tr><th>Sleeve</th><th>Symbol</th><th>Closed (UTC)</th><th>P&L</th><th>%</th><th>Hold h</th><th>Exit</th></tr></thead><tbody>';
+      for(const c of cl) h += `<tr><td>${c.sleeve}</td><td>${c.symbol}</td><td>${c.closed_at.slice(0,16)}</td><td>${f(c.pnl)}</td><td>${f(c.pnl_pct)}</td><td>${c.hold_h}</td><td>${c.exit_reason}</td></tr>`;
+      h += '</tbody></table>'; }
+    el.innerHTML = h;
+  }catch(e){ document.getElementById('sleeves').textContent='sleeve data unavailable'; }
+  setTimeout(sleeves, 60000);
+})();
 </script>
 </body>
 </html>
