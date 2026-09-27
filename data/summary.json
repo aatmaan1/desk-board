@@ -5008,7 +5008,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-27T18:19:14.340386+00:00",
+    "updated": "2026-09-27T18:20:05.273122+00:00",
     "desk": {
       "main_equity": 221.5,
       "sleeves_net_pnl": -0.25,
@@ -5063,7 +5063,7 @@
       },
       {
         "name": "pons_postgrad",
-        "mode": "shadow",
+        "mode": "paper",
         "open": 0,
         "closed": 0,
         "wins": 0,
