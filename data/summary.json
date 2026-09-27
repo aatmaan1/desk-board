@@ -12,9 +12,9 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -3.2,
-  "net_pnl_pct": -0.32,
-  "burn_paid": 3.2,
+  "net_pnl": -3.4,
+  "net_pnl_pct": -0.34,
+  "burn_paid": 3.4,
   "hwm_equity": 1000.0,
   "accounting_notes": [
     {
@@ -66,9 +66,9 @@
     "EDGE_BELOW_COSTS": 1
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-27T23:18:03.627464+00:00",
-  "equity": 996.8,
-  "free_cash": 996.8,
+  "last_updated": "2026-09-27T23:33:02.821686+00:00",
+  "equity": 996.6,
+  "free_cash": 996.6,
   "realized_pnl": 0.0,
   "fees_paid": 0.0,
   "slippage_paid": 0.0,
@@ -266,6 +266,23 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-27T23:33:02.821390+00:00",
+      "type": "discovered",
+      "count": 13,
+      "tickers": [
+        "XMRPAD",
+        "VAULT",
+        "E/ACC",
+        "DUMP",
+        "JACK",
+        "CAKE",
+        "20XX",
+        "Q4",
+        "BAGWORK",
+        "ZSHIB "
+      ]
+    },
     {
       "ts": "2026-09-27T23:18:02.787784+00:00",
       "type": "discovered",
@@ -1175,7 +1192,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T23:32:00+00:00",
+    "updated": "2026-09-27T23:33:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
