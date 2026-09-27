@@ -1,0 +1,144 @@
+{
+ "archived_at": "2026-09-27T19:31:30.295846+00:00",
+ "paper": true,
+ "reason": "fresh $1,000 paper desk 2026-09-28",
+ "main_book": {
+  "started_at": "2026-09-24T19:26:24.769125+00:00",
+  "total_deposited": 400.0,
+  "equity": 220.4971,
+  "free_cash": 220.4971,
+  "net_pnl": -179.5029,
+  "net_pnl_pct": -44.88,
+  "realized_pnl": -128.1029,
+  "fees_paid": 41.8,
+  "slippage_paid": 8.36,
+  "burn_paid": 51.4,
+  "hwm_equity": 265.6692,
+  "last_updated": "2026-09-27T19:18:03.405186+00:00"
+ },
+ "main_book_trades": {
+  "closed": 22,
+  "wins": 5,
+  "open": 0
+ },
+ "deposits": [
+  {
+   "ts": "2026-09-24T19:26:24.769125+00:00",
+   "amount": 200.0,
+   "note": "initial paper bank (init event)",
+   "total_deposited": 200.0
+  },
+  {
+   "ts": "2026-09-25T06:15:23.818765+00:00",
+   "amount": 200.0,
+   "note": "paper top-up #1 (no real funds); history preserved",
+   "equity_before": 65.6692,
+   "equity_after": 265.6692,
+   "total_deposited": 400.0
+  }
+ ],
+ "sleeves": {
+  "midcap_breakout": {
+   "mode": "paper",
+   "ticket_usd": 40.0,
+   "open": 0,
+   "closed": 0,
+   "realized": 0.0,
+   "net_pnl": 0.0,
+   "fees": 0.0,
+   "trades": []
+  },
+  "midcap_trend": {
+   "mode": "paper",
+   "ticket_usd": 40.0,
+   "open": 0,
+   "closed": 1,
+   "realized": -0.2526,
+   "net_pnl": -0.2526,
+   "fees": 0.24,
+   "trades": [
+    {
+     "key": "TRUMP",
+     "symbol": "TRUMP",
+     "opened_at": 1790532552.5346627,
+     "entry_mid": 2.13,
+     "entry_fill": 2.135325,
+     "dollars": 40.0,
+     "reason": "EMA12x48_4h_trend200_btc",
+     "closed_at": 1790537502.4070344,
+     "exit_mid": 2.14,
+     "exit_fill": 2.13465,
+     "exit_reason": "ARCHIVE_CLOSEOUT at mark (last_ledger_mark) - fresh $1,000 desk 2026-09-28, strategy retired",
+     "pnl": -0.2526,
+     "pnl_pct": -0.63,
+     "hold_h": 1.37
+    }
+   ]
+  },
+  "pons_postgrad": {
+   "mode": "shadow",
+   "ticket_usd": 15.0,
+   "open": 0,
+   "closed": 0,
+   "realized": 0.0,
+   "net_pnl": 0.0,
+   "fees": 0.0,
+   "trades": []
+  }
+ },
+ "midcap_trend_closeout": [
+  {
+   "key": "TRUMP",
+   "symbol": "TRUMP",
+   "opened_at": 1790532552.5346627,
+   "entry_mid": 2.13,
+   "entry_fill": 2.135325,
+   "dollars": 40.0,
+   "reason": "EMA12x48_4h_trend200_btc",
+   "closed_at": 1790537502.4070344,
+   "exit_mid": 2.14,
+   "exit_fill": 2.13465,
+   "exit_reason": "ARCHIVE_CLOSEOUT at mark (last_ledger_mark) - fresh $1,000 desk 2026-09-28, strategy retired",
+   "pnl": -0.2526,
+   "pnl_pct": -0.63,
+   "hold_h": 1.37,
+   "mark_source": "last_ledger_mark"
+  }
+ ],
+ "copytrade_shadow": {
+  "mode": "shadow",
+  "signals_total": 0,
+  "opened_total": 0,
+  "closed_n": 0,
+  "realized_pnl": 0
+ },
+ "old_desk_equity": 220.2445,
+ "old_desk_net_pnl": -179.7555,
+ "moved": [
+  "book.json",
+  "equity.jsonl",
+  "events.jsonl",
+  "cycles.jsonl",
+  "daystate.json",
+  "watchlist.json",
+  "sleeves/cycles.jsonl",
+  "sleeves/daystate.json",
+  "sleeves/midcap_breakout.json",
+  "sleeves/midcap_breakout_signals.json",
+  "sleeves/midcap_trend.json",
+  "sleeves/midcap_trend_signals.json",
+  "sleeves/pons_postgrad.json"
+ ],
+ "kept_in_place": [
+  "creator_cache.json",
+  "rejections.jsonl",
+  "prefilter_drops.jsonl",
+  "fomo_alerts.jsonl",
+  "copytrade.json",
+  "copytrade_status.json (shadow, continues)",
+  "sleeves/pons_shadow.json (shadow, continues)",
+  "sleeves/midcap_universe.json (cache)",
+  "fast/ (separate $5k book)",
+  "robinhood/"
+ ]
+}
