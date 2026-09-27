@@ -1130,7 +1130,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T22:49:00+00:00",
+    "updated": "2026-09-27T22:50:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1161,7 +1161,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 213,
+    "alerts_24h": 212,
     "signals_total": 1,
     "opened_total": 1,
     "open": [
@@ -1169,17 +1169,17 @@
         "ticker": "PAID",
         "opened_at": "2026-09-27T21:36:13.326252+00:00",
         "n_traders": 3,
-        "upnl": 2.26
+        "upnl": 2.48
       }
     ],
     "closed_n": 0,
     "wins": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": 2.26,
+    "unrealized_pnl": 2.48,
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-27T22:48:39.053140+00:00",
+    "last_poll": "2026-09-27T22:50:17.596622+00:00",
     "feed_last_alert": "2026-09-27T22:24:57+00:00"
   },
   "desk1000": {
