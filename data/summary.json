@@ -5110,7 +5110,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T19:24:00+00:00",
+    "updated": "2026-09-27T19:25:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -5152,7 +5152,7 @@
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-27T19:23:08.215990+00:00",
+    "last_poll": "2026-09-27T19:24:39.527123+00:00",
     "feed_last_alert": "2026-09-27T19:18:50+00:00"
   }
 }
