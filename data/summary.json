@@ -1217,7 +1217,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-27T23:50:00+00:00",
+    "updated": "2026-09-27T23:51:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1256,17 +1256,17 @@
         "ticker": "PAID",
         "opened_at": "2026-09-27T21:36:13.326252+00:00",
         "n_traders": 3,
-        "upnl": 1.94
+        "upnl": 2.23
       }
     ],
     "closed_n": 0,
     "wins": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": 1.94,
+    "unrealized_pnl": 2.23,
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-27T23:49:58.958463+00:00",
+    "last_poll": "2026-09-27T23:51:30.362840+00:00",
     "feed_last_alert": "2026-09-27T23:49:26+00:00"
   },
   "desk1000": {
