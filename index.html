@@ -45,6 +45,7 @@ tr.flash, #events .flash{animation:flashrow 1.6s ease-out}
   <div class="meta" id="updated">Loading…</div>
 </header>
 <section class="kpis" id="kpis"></section>
+<div class="card" style="margin:12px 0"><h2>Fast book (separate $5,000 paper ledger, intraday perps)</h2><div id="fastbook" style="font-size:13px">Loading…</div></div>
 <div class="card" style="margin:12px 0"><h2>Paper sleeves (sub-ledgers; P&amp;L accrues to the desk)</h2><div id="sleeves" style="font-size:13px">Loading…</div></div>
 <main>
   <div class="card"><h2>Equity</h2><canvas id="equityChart" height="110"></canvas></div>
@@ -159,6 +160,26 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) refr
     el.innerHTML = h;
   }catch(e){ document.getElementById('sleeves').textContent='sleeve data unavailable'; }
   setTimeout(sleeves, 60000);
+})();
+</script>
+<script>
+(async function fastbook(){
+  try{
+    const d = await (await fetch((document.body.dataset.base||'') + 'data/summary.json?t=' + Date.now(), {cache:'no-store'})).json();
+    const F = d.fast; const el = document.getElementById('fastbook');
+    if(!F){ el.textContent='No fast-book data yet.'; return; }
+    const f = v => (v>=0?'+':'') + Number(v).toFixed(2);
+    let h = `<div>PAPER · <b>${F.name}</b> · equity <b>$${Number(F.equity).toFixed(2)}</b> of $${F.start_equity} (${f(F.net_pnl)} / ${f(F.net_pnl_pct)}%) · fees $${F.fees} · funding ${f(F.funding)} · closed ${F.closed_count} (wins ${F.wins}) · brake: ${F.brake||'none'} · updated ${F.updated.slice(0,16)}Z</div><div style="opacity:.8">${F.rules}</div>`;
+    if(F.positions.length){ h += '<table><thead><tr><th>Symbol</th><th>Side</th><th>Notional</th><th>Entry</th><th>Mark</th><th>Stop</th><th>uPnL $</th><th>Opened (UTC)</th></tr></thead><tbody>';
+      for(const p of F.positions) h += `<tr><td>${p.sym}</td><td>${p.side}</td><td>$${p.notional}</td><td>${Number(p.entry).toPrecision(5)}</td><td>${Number(p.mark).toPrecision(5)}</td><td>${Number(p.stop).toPrecision(5)}</td><td>${f(p.upnl)}</td><td>${p.opened_at.slice(0,16)}</td></tr>`;
+      h += '</tbody></table>'; }
+    if(F.recent_closed.length){ h += '<table><thead><tr><th>Symbol</th><th>Closed (UTC)</th><th>P&L $</th><th>% notional</th><th>Hold h</th><th>Exit</th></tr></thead><tbody>';
+      for(const c of F.recent_closed) h += `<tr><td>${c.sym}</td><td>${c.closed_at.slice(0,16)}</td><td>${f(c.pnl)}</td><td>${f(c.pnl_pct_notional)}</td><td>${c.hold_h}</td><td>${c.exit_reason}</td></tr>`;
+      h += '</tbody></table>'; }
+    if(F.leadlag_shadow) h += `<div style="opacity:.8">Lead-lag shadow: n=${F.leadlag_shadow.n}, mean net ${F.leadlag_shadow.mean_net_bp??'–'} bp (${F.leadlag_shadow.note})</div>`;
+    el.innerHTML = h;
+  }catch(e){ document.getElementById('fastbook').textContent='fast-book data unavailable'; }
+  setTimeout(fastbook, 60000);
 })();
 </script>
 </body>
