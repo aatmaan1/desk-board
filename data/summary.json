@@ -69,7 +69,7 @@
     "EDGE_BELOW_COSTS": 3
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T17:09:23.795873+00:00",
+  "last_updated": "2026-09-28T17:10:31.274783+00:00",
   "equity": 997.1021,
   "free_cash": 916.4655,
   "realized_pnl": -2.6845,
@@ -3339,18 +3339,18 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-28T17:04:38.165904+00:00",
+    "updated": "2026-09-28T17:09:38.177509+00:00",
     "desk": {
-      "main_equity": 995.19,
+      "main_equity": 997.1,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 995.19,
+      "desk_equity": 997.1,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -4.81,
+      "desk_net_pnl": -2.9,
       "main_free_cash": 916.4655,
       "sleeve_open_cost": 0,
       "burn_paid": 17.4,
       "burn_today_excluded": 13.8,
-      "desk_day_pnl": 12.79
+      "desk_day_pnl": 14.7
     },
     "brake": null,
     "sleeves": [
@@ -3387,7 +3387,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T17:09:00+00:00",
+    "updated": "2026-09-28T17:10:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -3444,7 +3444,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T17:08:10.101747+00:00",
+    "last_poll": "2026-09-28T17:09:41.287030+00:00",
     "feed_last_alert": "2026-09-28T16:58:23+00:00"
   },
   "desk1000": {
@@ -3452,9 +3452,9 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 995.19,
-    "desk_pnl": -4.81,
-    "desk_pnl_pct": -0.48,
+    "desk_equity": 997.1,
+    "desk_pnl": -2.9,
+    "desk_pnl_pct": -0.29,
     "hwm": 1002.89,
     "drawdown_halt_pct": 20.0,
     "halt": null,
@@ -3484,9 +3484,9 @@
         "closed": 1,
         "open_cost": 63.45,
         "realized": -2.68,
-        "unrealized": 16.23,
-        "pnl": 13.54,
-        "equity": 263.54,
+        "unrealized": 18.14,
+        "pnl": 15.45,
+        "equity": 265.45,
         "ticket_usd": 62.5,
         "max_open": 2,
         "positions": [
@@ -3494,7 +3494,7 @@
             "symbol": "BABYCALI",
             "dollars": 62.5,
             "entry": 0.0107969,
-            "mark": 0.0136
+            "mark": 0.01393
           }
         ]
       },
@@ -3667,6 +3667,6 @@
         ]
       }
     },
-    "updated": "2026-09-28T17:04:38.165375+00:00"
+    "updated": "2026-09-28T17:09:38.177037+00:00"
   }
 }
