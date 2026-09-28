@@ -1854,7 +1854,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T05:22:00+00:00",
+    "updated": "2026-09-28T05:23:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1893,13 +1893,13 @@
         "ticker": "e/acc",
         "opened_at": "2026-09-28T00:54:51.233378+00:00",
         "n_traders": 3,
-        "upnl": 8.38
+        "upnl": 7.99
       }
     ],
     "closed_n": 1,
     "wins": 1,
     "realized_pnl": 7.65,
-    "unrealized_pnl": 8.38,
+    "unrealized_pnl": 7.99,
     "today_pnl": 7.65,
     "recent_closed": [
       {
@@ -1911,7 +1911,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T05:22:01.351736+00:00",
+    "last_poll": "2026-09-28T05:23:32.759063+00:00",
     "feed_last_alert": "2026-09-28T05:05:29+00:00"
   },
   "desk1000": {
