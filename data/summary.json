@@ -1460,17 +1460,17 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-28T02:18:02.328644+00:00",
+    "updated": "2026-09-28T02:19:03.591371+00:00",
     "desk": {
-      "main_equity": 994.6,
+      "main_equity": 994.4,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 994.6,
+      "desk_equity": 994.4,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -5.4,
-      "main_free_cash": 994.6,
+      "desk_net_pnl": -5.6,
+      "main_free_cash": 994.4,
       "sleeve_open_cost": 0,
-      "burn_paid": 5.4,
-      "burn_today_excluded": 1.8,
+      "burn_paid": 5.6,
+      "burn_today_excluded": 2.0,
       "desk_day_pnl": 0.2
     },
     "brake": null,
@@ -1508,7 +1508,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T02:18:00+00:00",
+    "updated": "2026-09-28T02:19:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
