@@ -1554,7 +1554,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T02:58:00+00:00",
+    "updated": "2026-09-28T02:59:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1585,7 +1585,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 234,
+    "alerts_24h": 233,
     "signals_total": 2,
     "opened_total": 2,
     "open": [
@@ -1593,23 +1593,23 @@
         "ticker": "PAID",
         "opened_at": "2026-09-27T21:36:13.326252+00:00",
         "n_traders": 3,
-        "upnl": 2.8
+        "upnl": 2.82
       },
       {
         "ticker": "e/acc",
         "opened_at": "2026-09-28T00:54:51.233378+00:00",
         "n_traders": 3,
-        "upnl": -4.65
+        "upnl": -4.56
       }
     ],
     "closed_n": 0,
     "wins": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": -1.84,
+    "unrealized_pnl": -1.74,
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T02:58:08.936337+00:00",
+    "last_poll": "2026-09-28T02:59:40.534655+00:00",
     "feed_last_alert": "2026-09-28T02:36:26+00:00"
   },
   "desk1000": {
