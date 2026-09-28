@@ -56,7 +56,7 @@
     "EDGE_BELOW_COSTS": 3
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T17:28:10.081478+00:00",
+  "last_updated": "2026-09-28T17:29:17.528694+00:00",
   "equity": 1010.5634,
   "free_cash": 916.2655,
   "realized_pnl": -2.6845,
@@ -3376,7 +3376,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T17:28:00+00:00",
+    "updated": "2026-09-28T17:29:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
