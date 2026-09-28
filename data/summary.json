@@ -12,9 +12,9 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": 1.5541,
-  "net_pnl_pct": 0.16,
-  "burn_paid": 17.0,
+  "net_pnl": 1.1226,
+  "net_pnl_pct": 0.11,
+  "burn_paid": 17.2,
   "hwm_equity": 1002.8855,
   "accounting_notes": [
     {
@@ -23,44 +23,42 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-28T16:34:11.106370+00:00",
+    "ts": "2026-09-28T16:49:12.700402+00:00",
     "rules": "v3",
-    "discovered": 13,
+    "discovered": 11,
     "prefilter": {
-      "liq_window": 23,
-      "age_window": 26,
-      "h1_already_priced": 3
+      "liq_window": 18,
+      "age_window": 35,
+      "h1_already_priced": 5
     },
     "creator_sources": {
       "pump": "http_404"
     },
     "rejections": {
       "REENTRY_COOLDOWN": 1,
-      "ALREADY_OPEN": 1,
+      "NO_H1_MOMENTUM": 3,
       "M5_SELLING": 1,
-      "NO_H1_MOMENTUM": 1,
+      "H1_BUY_SELL_WEAK": 3,
       "AGE_TOO_NEW": 1,
-      "H1_BUY_SELL_WEAK": 4,
-      "H6_DOWNTREND": 1,
-      "LIQ_LT": 2,
+      "LIQ_LT": 1,
       "H1_TXNS_LT": 1
     },
     "passed": [],
     "opened": null,
-    "equity": 1001.79,
-    "free_cash": 916.87,
+    "equity": 1001.12,
+    "free_cash": 916.67,
     "open": 1,
-    "net_pnl": 1.79
+    "net_pnl": 1.12
   },
   "rejection_counts_24h": {
-    "LIQ_LT": 284,
-    "H1_BUY_SELL_WEAK": 216,
-    "NO_H1_MOMENTUM": 149,
-    "H1_TXNS_LT": 88,
+    "LIQ_LT": 285,
+    "H1_BUY_SELL_WEAK": 219,
+    "NO_H1_MOMENTUM": 152,
+    "H1_TXNS_LT": 89,
     "PUMP_GRAD_TOO_NEW": 69,
-    "AGE_TOO_NEW": 52,
-    "M5_SELLING": 49,
-    "REENTRY_COOLDOWN": 26,
+    "AGE_TOO_NEW": 53,
+    "M5_SELLING": 50,
+    "REENTRY_COOLDOWN": 27,
     "H6_DOWNTREND": 15,
     "AWAIT_CONFIRM": 10,
     "VOL_H1_LOW": 7,
@@ -70,9 +68,9 @@
     "INSIDER_SUPPLY_HIGH": 3
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T16:48:36.425635+00:00",
-  "equity": 1001.5541,
-  "free_cash": 916.8655,
+  "last_updated": "2026-09-28T16:49:12.700048+00:00",
+  "equity": 1001.1226,
+  "free_cash": 916.6655,
   "realized_pnl": -2.6845,
   "fees_paid": 2.85,
   "slippage_paid": 1.875,
@@ -85,13 +83,13 @@
       "entry_price": 0.0107969,
       "dollars": 62.5,
       "opened_at": 1790611455.559883,
-      "mark_price": 0.01463,
-      "last_mark_price": 0.01463,
-      "unrealized_pnl": 22.188660634070896,
-      "unrealized_pct": 35.50185701451343,
-      "volume_h6": 885807.32,
-      "volume_h24": 2637435.15,
-      "last_liquidity": 367228.36,
+      "mark_price": 0.01459,
+      "last_mark_price": 0.01459,
+      "unrealized_pnl": 21.957112689753544,
+      "unrealized_pct": 35.13138030360567,
+      "volume_h6": 884531.58,
+      "volume_h24": 2620918.08,
+      "last_liquidity": 366700.7,
       "entry_liquidity": 312676.72,
       "peak_price": 0.01486,
       "entry_costs": 0.95,
@@ -1240,9 +1238,37 @@
       "slippage_paid": 1.875,
       "total_deposited": 1000.0,
       "net_pnl": 1.7857
+    },
+    {
+      "ts": "2026-09-28T16:49:12.699932+00:00",
+      "equity": 1001.1226,
+      "free_cash": 916.6655,
+      "open": 1,
+      "realized_pnl": -2.6845,
+      "fees_paid": 2.85,
+      "slippage_paid": 1.875,
+      "total_deposited": 1000.0,
+      "net_pnl": 1.1226
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-28T16:49:12.404597+00:00",
+      "type": "discovered",
+      "count": 11,
+      "tickers": [
+        "XPAD",
+        "E/ACC",
+        "SWORDCAT",
+        "BOB",
+        "SUBS",
+        "BUKANGI",
+        "MOIN",
+        "Q4",
+        "DELREY",
+        "VAULT"
+      ]
+    },
     {
       "ts": "2026-09-28T16:34:10.662727+00:00",
       "type": "discovered",
@@ -2723,26 +2749,165 @@
       "peak_mid": 0.02397,
       "liq": 1034816.99,
       "mode": "shadow"
-    },
-    {
-      "ts": "2026-09-27T21:33:02.831263+00:00",
-      "type": "discovered",
-      "count": 12,
-      "tickers": [
-        "MARTIANS",
-        "E/ACC",
-        "20XX",
-        "MIGR",
-        "BAGWORK",
-        "Q4",
-        "JACK",
-        "ZSHIB ",
-        "AFK",
-        "JIANCO"
-      ]
     }
   ],
   "rejections": [
+    {
+      "ts": "2026-09-28T16:49:12.697449+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697450+00:00",
+      "ticker": "JIANCO",
+      "stage": "market",
+      "reason": "H1_TXNS_LT_150",
+      "reasons": [
+        "H1_TXNS_LT_150",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL_H1_LOW"
+      ],
+      "liq": 49545,
+      "age_h": 64.71
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697410+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697411+00:00",
+      "ticker": "VAULT",
+      "stage": "market",
+      "reason": "NO_H1_MOMENTUM",
+      "reasons": [
+        "NO_H1_MOMENTUM",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 39268,
+      "age_h": 20.71
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697374+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697375+00:00",
+      "ticker": "DELREY",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 49496,
+      "age_h": 27.39
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697335+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697337+00:00",
+      "ticker": "Q4",
+      "stage": "market",
+      "reason": "LIQ_LT_35K",
+      "reasons": [
+        "LIQ_LT_35K",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND"
+      ],
+      "liq": 26926,
+      "age_h": 28.95
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697291+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697292+00:00",
+      "ticker": "MOIN",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "M5_DUMPING",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 58792,
+      "age_h": 20.0
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697244+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697245+00:00",
+      "ticker": "BUKANGI",
+      "stage": "market",
+      "reason": "NO_H1_MOMENTUM",
+      "reasons": [
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "M5_DUMPING",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 59573,
+      "age_h": 26.89
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697182+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697183+00:00",
+      "ticker": "SUBS",
+      "stage": "market",
+      "reason": "AGE_TOO_NEW_1.3h",
+      "reasons": [
+        "AGE_TOO_NEW_1.3h",
+        "PUMP_GRAD_TOO_NEW_1.3h"
+      ],
+      "liq": 35202,
+      "age_h": 1.34
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697136+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697138+00:00",
+      "ticker": "BOB",
+      "stage": "market",
+      "reason": "H1_BUY_SELL_WEAK",
+      "reasons": [
+        "H1_BUY_SELL_WEAK",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 75997,
+      "age_h": 16.41
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697086+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697088+00:00",
+      "ticker": "SWORDCAT",
+      "stage": "market",
+      "reason": "M5_SELLING",
+      "reasons": [
+        "M5_SELLING",
+        "NO_H1_MOMENTUM"
+      ],
+      "liq": 99837,
+      "age_h": 7.6
+    },
+    {
+      "ts": "2026-09-28T16:49:12.697020+00:00",
+      "rejected_at": "2026-09-28T16:49:12.697023+00:00",
+      "ticker": "E/ACC",
+      "stage": "market",
+      "reason": "NO_H1_MOMENTUM",
+      "reasons": [
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "M5_DUMPING"
+      ],
+      "liq": 457891,
+      "age_h": 67.57
+    },
+    {
+      "ts": "2026-09-28T16:49:12.696869+00:00",
+      "rejected_at": "2026-09-28T16:49:12.696876+00:00",
+      "ticker": "XPAD",
+      "stage": "market",
+      "reason": "REENTRY_COOLDOWN_8.3h",
+      "reasons": [
+        "REENTRY_COOLDOWN_8.3h",
+        "NO_H1_MOMENTUM",
+        "H6_DOWNTREND",
+        "VOL24_WASH_SUSPECT"
+      ],
+      "liq": 80452,
+      "age_h": 15.13
+    },
     {
       "ts": "2026-09-28T16:34:11.104357+00:00",
       "rejected_at": "2026-09-28T16:34:11.104375+00:00",
@@ -3155,177 +3320,22 @@
       ],
       "liq": 49119,
       "age_h": 63.96
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558469+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558470+00:00",
-      "ticker": "INSTA",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_BUY_SELL_WEAK",
-        "H6_DOWNTREND",
-        "VOL_H1_LOW",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 20034,
-      "age_h": 17.0
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558425+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558426+00:00",
-      "ticker": "JACK",
-      "stage": "market",
-      "reason": "H1_TXNS_LT_150",
-      "reasons": [
-        "H1_TXNS_LT_150",
-        "H1_BUY_SELL_WEAK",
-        "VOL_H1_LOW"
-      ],
-      "liq": 36939,
-      "age_h": 39.47
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558385+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558386+00:00",
-      "ticker": "ZSHIB ",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "H1_TXNS_LT_150",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND"
-      ],
-      "liq": 21192,
-      "age_h": 24.57
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558338+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558340+00:00",
-      "ticker": "BYTE",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K",
-        "NO_H1_MOMENTUM"
-      ],
-      "liq": 21608,
-      "age_h": 11.93
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558288+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558289+00:00",
-      "ticker": "Q4",
-      "stage": "market",
-      "reason": "LIQ_LT_35K",
-      "reasons": [
-        "LIQ_LT_35K"
-      ],
-      "liq": 28653,
-      "age_h": 28.2
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558238+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558239+00:00",
-      "ticker": "VAULT",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 42677,
-      "age_h": 19.96
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558188+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558189+00:00",
-      "ticker": "CAKE",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "M5_DUMPING"
-      ],
-      "liq": 69342,
-      "age_h": 39.65
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558120+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558123+00:00",
-      "ticker": "DELREY",
-      "stage": "market",
-      "reason": "M5_SELLING",
-      "reasons": [
-        "M5_SELLING",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 51672,
-      "age_h": 26.65
-    },
-    {
-      "ts": "2026-09-28T16:04:15.558038+00:00",
-      "rejected_at": "2026-09-28T16:04:15.558041+00:00",
-      "ticker": "BUKANGI",
-      "stage": "market",
-      "reason": "H6_DOWNTREND",
-      "reasons": [
-        "H6_DOWNTREND",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 74605,
-      "age_h": 26.14
-    },
-    {
-      "ts": "2026-09-28T16:04:15.557865+00:00",
-      "rejected_at": "2026-09-28T16:04:15.557877+00:00",
-      "ticker": "MOIN",
-      "stage": "market",
-      "reason": "H1_BUY_SELL_WEAK",
-      "reasons": [
-        "H1_BUY_SELL_WEAK",
-        "M5_SELLING",
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND",
-        "VOL24_WASH_SUSPECT"
-      ],
-      "liq": 73943,
-      "age_h": 19.26
-    },
-    {
-      "ts": "2026-09-28T16:04:14.761779+00:00",
-      "rejected_at": "2026-09-28T16:04:14.761781+00:00",
-      "ticker": "E/ACC",
-      "stage": "market",
-      "reason": "NO_H1_MOMENTUM",
-      "reasons": [
-        "NO_H1_MOMENTUM",
-        "H6_DOWNTREND"
-      ],
-      "liq": 484955,
-      "age_h": 66.82
     }
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-28T16:44:38.248306+00:00",
+    "updated": "2026-09-28T16:49:38.186291+00:00",
     "desk": {
-      "main_equity": 1002.42,
+      "main_equity": 1001.12,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 1002.42,
+      "desk_equity": 1001.12,
       "total_deposited": 1000.0,
-      "desk_net_pnl": 2.42,
-      "main_free_cash": 916.8655,
+      "desk_net_pnl": 1.12,
+      "main_free_cash": 916.6655,
       "sleeve_open_cost": 0,
-      "burn_paid": 17.0,
-      "burn_today_excluded": 13.4,
-      "desk_day_pnl": 19.62
+      "burn_paid": 17.2,
+      "burn_today_excluded": 13.6,
+      "desk_day_pnl": 18.52
     },
     "brake": null,
     "sleeves": [
@@ -3362,7 +3372,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T16:48:00+00:00",
+    "updated": "2026-09-28T16:49:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -3427,14 +3437,14 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 1002.42,
-    "desk_pnl": 2.42,
-    "desk_pnl_pct": 0.24,
+    "desk_equity": 1001.12,
+    "desk_pnl": 1.12,
+    "desk_pnl_pct": 0.11,
     "hwm": 1002.89,
     "drawdown_halt_pct": 20.0,
     "halt": null,
-    "burn_paid": 17.0,
-    "free_cash": 916.87,
+    "burn_paid": 17.2,
+    "free_cash": 916.67,
     "sleeves": [
       {
         "sleeve": "midcap_breakout",
@@ -3459,9 +3469,9 @@
         "closed": 1,
         "open_cost": 63.45,
         "realized": -2.68,
-        "unrealized": 23.06,
-        "pnl": 20.37,
-        "equity": 270.37,
+        "unrealized": 21.96,
+        "pnl": 19.27,
+        "equity": 269.27,
         "ticket_usd": 62.5,
         "max_open": 2,
         "positions": [
@@ -3469,7 +3479,7 @@
             "symbol": "BABYCALI",
             "dollars": 62.5,
             "entry": 0.0107969,
-            "mark": 0.01478
+            "mark": 0.01459
           }
         ]
       },
@@ -3482,8 +3492,8 @@
         "open_cost": 0.0,
         "realized": 0.0,
         "unrealized": 0.0,
-        "pnl": -17.0,
-        "equity": 133.0,
+        "pnl": -17.2,
+        "equity": 132.8,
         "note": "simulated burn $0.8/h charged here"
       }
     ],
@@ -3642,6 +3652,6 @@
         ]
       }
     },
-    "updated": "2026-09-28T16:44:38.247774+00:00"
+    "updated": "2026-09-28T16:49:38.185781+00:00"
   }
 }
