@@ -2719,7 +2719,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T10:51:00+00:00",
+    "updated": "2026-09-28T10:52:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -2750,7 +2750,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 220,
+    "alerts_24h": 218,
     "signals_total": 2,
     "opened_total": 2,
     "open": [],
@@ -2776,7 +2776,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T10:51:15.714686+00:00",
+    "last_poll": "2026-09-28T10:52:47.012173+00:00",
     "feed_last_alert": "2026-09-28T10:41:01+00:00"
   },
   "desk1000": {
