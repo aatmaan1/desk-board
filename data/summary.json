@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -5.4523,
-  "net_pnl_pct": -0.55,
+  "net_pnl": -13.0845,
+  "net_pnl_pct": -1.31,
   "burn_paid": 10.4,
   "hwm_equity": 1000.759,
   "accounting_notes": [
@@ -67,14 +67,15 @@
     "CONFIRM_PRICE_LOWER": 1
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T08:30:20.920330+00:00",
-  "equity": 994.5477,
-  "free_cash": 926.15,
-  "realized_pnl": 0.0,
-  "fees_paid": 0.95,
-  "slippage_paid": 0.625,
-  "open_count": 1,
-  "positions": [
+  "last_updated": "2026-09-28T08:31:21.180492+00:00",
+  "equity": 986.9155,
+  "free_cash": 986.9155,
+  "realized_pnl": -2.6845,
+  "fees_paid": 1.9,
+  "slippage_paid": 1.25,
+  "open_count": 0,
+  "positions": [],
+  "closed": [
     {
       "lead_id": "FFzTy32b-1790582652122",
       "contract": "FFzTy32bZbPA8zRLbbiWoNzW2emGv86tUxaoqhz1pump",
@@ -82,13 +83,13 @@
       "entry_price": 0.000860318,
       "dollars": 62.5,
       "opened_at": 1790582652.902601,
-      "mark_price": 0.0009415,
-      "last_mark_price": 0.0009415,
-      "unrealized_pnl": 5.897673883378004,
-      "unrealized_pct": 9.436278213404806,
-      "volume_h6": 1680553.59,
-      "volume_h24": 2430763.51,
-      "last_liquidity": 92366.28,
+      "mark_price": 0.0008581,
+      "last_mark_price": 0.0008581,
+      "unrealized_pnl": -0.16113227899451218,
+      "unrealized_pct": -0.25781164639121945,
+      "volume_h6": 1673462.21,
+      "volume_h24": 2435433.19,
+      "last_liquidity": 88100.23,
       "entry_liquidity": 87549.29,
       "peak_price": 0.001027,
       "entry_costs": 0.95,
@@ -169,10 +170,18 @@
             "NOT_A_PUMP_COIN"
           ]
         }
-      }
+      },
+      "exit_mid": 0.0008581,
+      "exit_price": 0.000849519,
+      "realized_pnl": -2.684520956204568,
+      "realized_pct": -4.295233529927309,
+      "close_reason": "BREAKEVEN_STOP: peak +19.4%, now -0.26%",
+      "fee": 0.95,
+      "slippage": 0.625,
+      "hold_min": 27.1,
+      "closed_at": "2026-09-28T08:31:21.179645+00:00"
     }
   ],
-  "closed": [],
   "equity_series": [
     {
       "ts": "2026-09-27T19:31:30.295846+00:00",
@@ -757,9 +766,40 @@
       "slippage_paid": 0.625,
       "total_deposited": 1000.0,
       "net_pnl": -9.1719
+    },
+    {
+      "ts": "2026-09-28T08:31:21.180739+00:00",
+      "equity": 986.9155,
+      "free_cash": 986.9155,
+      "open": 0,
+      "realized_pnl": -2.6845,
+      "fees_paid": 1.9,
+      "slippage_paid": 1.25,
+      "total_deposited": 1000.0,
+      "net_pnl": -13.0845,
+      "note": "exit-monitor close"
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-28T08:31:21.179765+00:00",
+      "type": "close",
+      "lead_id": "FFzTy32b-1790582652122",
+      "contract": "FFzTy32bZbPA8zRLbbiWoNzW2emGv86tUxaoqhz1pump",
+      "ticker": "XPAD",
+      "entry_price": 0.000860318,
+      "exit_mid": 0.0008581,
+      "exit_price": 0.000849519,
+      "dollars": 62.5,
+      "realized_pnl": -2.684520956204568,
+      "reason": "BREAKEVEN_STOP: peak +19.4%, now -0.26%",
+      "fee": 0.95,
+      "slippage": 0.625,
+      "entry_costs": 0.95,
+      "rules": "v3",
+      "hold_min": 27.1,
+      "free_cash": 986.915479043793
+    },
     {
       "ts": "2026-09-28T08:19:10.559661+00:00",
       "type": "discovered",
@@ -2421,7 +2461,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T08:31:00+00:00",
+    "updated": "2026-09-28T08:32:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -2478,7 +2518,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T08:29:55.172260+00:00",
+    "last_poll": "2026-09-28T08:31:26.337945+00:00",
     "feed_last_alert": "2026-09-28T08:28:47+00:00"
   },
   "desk1000": {
