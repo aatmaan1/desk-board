@@ -1506,7 +1506,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-28T02:53:02.409664+00:00",
+    "updated": "2026-09-28T02:58:02.611390+00:00",
     "desk": {
       "main_equity": 994.0,
       "sleeves_net_pnl": 0.0,
@@ -1554,7 +1554,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T02:57:00+00:00",
+    "updated": "2026-09-28T02:58:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1593,23 +1593,23 @@
         "ticker": "PAID",
         "opened_at": "2026-09-27T21:36:13.326252+00:00",
         "n_traders": 3,
-        "upnl": 3.25
+        "upnl": 2.8
       },
       {
         "ticker": "e/acc",
         "opened_at": "2026-09-28T00:54:51.233378+00:00",
         "n_traders": 3,
-        "upnl": -4.41
+        "upnl": -4.65
       }
     ],
     "closed_n": 0,
     "wins": 0,
     "realized_pnl": 0,
-    "unrealized_pnl": -1.17,
+    "unrealized_pnl": -1.84,
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T02:56:37.543488+00:00",
+    "last_poll": "2026-09-28T02:58:08.936337+00:00",
     "feed_last_alert": "2026-09-28T02:36:26+00:00"
   },
   "desk1000": {
@@ -1825,6 +1825,6 @@
         ]
       }
     },
-    "updated": "2026-09-28T02:53:02.409058+00:00"
+    "updated": "2026-09-28T02:58:02.610675+00:00"
   }
 }
