@@ -1362,7 +1362,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-28T01:18:21.113335+00:00",
+    "updated": "2026-09-28T01:23:02.855538+00:00",
     "desk": {
       "main_equity": 995.2,
       "sleeves_net_pnl": 0.0,
@@ -1410,7 +1410,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T01:22:00+00:00",
+    "updated": "2026-09-28T01:23:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -1441,7 +1441,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 228,
+    "alerts_24h": 226,
     "signals_total": 2,
     "opened_total": 2,
     "open": [
@@ -1465,7 +1465,7 @@
     "today_pnl": 0,
     "recent_closed": [],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T01:21:07.607195+00:00",
+    "last_poll": "2026-09-28T01:22:39.043908+00:00",
     "feed_last_alert": "2026-09-28T01:20:35+00:00"
   },
   "desk1000": {
@@ -1681,6 +1681,6 @@
         ]
       }
     },
-    "updated": "2026-09-28T01:18:21.632555+00:00"
+    "updated": "2026-09-28T01:23:02.855153+00:00"
   }
 }
