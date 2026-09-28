@@ -12,10 +12,10 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": 11.8421,
-  "net_pnl_pct": 1.18,
+  "net_pnl": 12.4789,
+  "net_pnl_pct": 1.25,
   "burn_paid": 18.0,
-  "hwm_equity": 1012.4158,
+  "hwm_equity": 1012.4789,
   "accounting_notes": [
     {
       "ts": "2026-09-27T19:31:30.295846+00:00",
@@ -65,8 +65,8 @@
     "EDGE_BELOW_COSTS": 3
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T17:49:21.738780+00:00",
-  "equity": 1011.8421,
+  "last_updated": "2026-09-28T17:50:22.013156+00:00",
+  "equity": 1012.4789,
   "free_cash": 915.8655,
   "realized_pnl": -2.6845,
   "fees_paid": 2.85,
@@ -80,15 +80,15 @@
       "entry_price": 0.0107969,
       "dollars": 62.5,
       "opened_at": 1790611455.559883,
-      "mark_price": 0.01658,
-      "last_mark_price": 0.01658,
-      "unrealized_pnl": 33.476622919541725,
-      "unrealized_pct": 53.56259667126676,
-      "volume_h6": 957288.13,
-      "volume_h24": 2676085.0,
-      "last_liquidity": 392576.03,
+      "mark_price": 0.01669,
+      "last_mark_price": 0.01669,
+      "unrealized_pnl": 34.11337976641443,
+      "unrealized_pct": 54.581407626263086,
+      "volume_h6": 961560.45,
+      "volume_h24": 2681117.54,
+      "last_liquidity": 393917.39,
       "entry_liquidity": 312676.72,
-      "peak_price": 0.01661,
+      "peak_price": 0.01669,
       "entry_costs": 0.95,
       "rules": "v3",
       "entry_features": {
@@ -3397,7 +3397,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T17:50:00+00:00",
+    "updated": "2026-09-28T17:51:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -3428,7 +3428,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 182,
+    "alerts_24h": 181,
     "signals_total": 2,
     "opened_total": 2,
     "open": [],
@@ -3454,7 +3454,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T17:49:11.078591+00:00",
+    "last_poll": "2026-09-28T17:50:42.220335+00:00",
     "feed_last_alert": "2026-09-28T17:42:27+00:00"
   },
   "desk1000": {
