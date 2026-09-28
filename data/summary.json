@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": 2.7698,
-  "net_pnl_pct": 0.28,
+  "net_pnl": 1.612,
+  "net_pnl_pct": 0.16,
   "burn_paid": 17.0,
   "hwm_equity": 1002.8855,
   "accounting_notes": [
@@ -70,8 +70,8 @@
     "INSIDER_SUPPLY_HIGH": 3
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T16:38:19.359534+00:00",
-  "equity": 1002.7698,
+  "last_updated": "2026-09-28T16:40:27.075401+00:00",
+  "equity": 1001.612,
   "free_cash": 916.8655,
   "realized_pnl": -2.6845,
   "fees_paid": 2.85,
@@ -85,13 +85,13 @@
       "entry_price": 0.0107969,
       "dollars": 62.5,
       "opened_at": 1790611455.559883,
-      "mark_price": 0.01484,
-      "last_mark_price": 0.01484,
-      "unrealized_pnl": 23.404287341736985,
-      "unrealized_pct": 37.446859746779175,
-      "volume_h6": 884667.57,
-      "volume_h24": 2754362.3,
-      "last_liquidity": 370659.49,
+      "mark_price": 0.01464,
+      "last_mark_price": 0.01464,
+      "unrealized_pnl": 22.24654762015023,
+      "unrealized_pct": 35.59447619224037,
+      "volume_h6": 885551.44,
+      "volume_h24": 2759698.15,
+      "last_liquidity": 368125.07,
       "entry_liquidity": 312676.72,
       "peak_price": 0.01486,
       "entry_costs": 0.95,
@@ -3314,18 +3314,18 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-28T16:35:21.578641+00:00",
+    "updated": "2026-09-28T16:40:18.688132+00:00",
     "desk": {
-      "main_equity": 1002.71,
+      "main_equity": 1002.77,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 1002.71,
+      "desk_equity": 1002.77,
       "total_deposited": 1000.0,
-      "desk_net_pnl": 2.71,
+      "desk_net_pnl": 2.77,
       "main_free_cash": 916.8655,
       "sleeve_open_cost": 0,
       "burn_paid": 17.0,
       "burn_today_excluded": 13.4,
-      "desk_day_pnl": 19.91
+      "desk_day_pnl": 19.97
     },
     "brake": null,
     "sleeves": [
@@ -3362,7 +3362,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T16:39:00+00:00",
+    "updated": "2026-09-28T16:40:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -3427,10 +3427,10 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 1002.71,
-    "desk_pnl": 2.71,
-    "desk_pnl_pct": 0.27,
-    "hwm": 1002.71,
+    "desk_equity": 1002.77,
+    "desk_pnl": 2.77,
+    "desk_pnl_pct": 0.28,
+    "hwm": 1002.89,
     "drawdown_halt_pct": 20.0,
     "halt": null,
     "burn_paid": 17.0,
@@ -3459,9 +3459,9 @@
         "closed": 1,
         "open_cost": 63.45,
         "realized": -2.68,
-        "unrealized": 23.35,
-        "pnl": 20.66,
-        "equity": 270.66,
+        "unrealized": 23.4,
+        "pnl": 20.72,
+        "equity": 270.72,
         "ticket_usd": 62.5,
         "max_open": 2,
         "positions": [
@@ -3469,7 +3469,7 @@
             "symbol": "BABYCALI",
             "dollars": 62.5,
             "entry": 0.0107969,
-            "mark": 0.01483
+            "mark": 0.01484
           }
         ]
       },
@@ -3642,6 +3642,6 @@
         ]
       }
     },
-    "updated": "2026-09-28T16:35:21.578249+00:00"
+    "updated": "2026-09-28T16:40:18.687639+00:00"
   }
 }
