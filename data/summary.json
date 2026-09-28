@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -5.3797,
-  "net_pnl_pct": -0.54,
+  "net_pnl": -5.2126,
+  "net_pnl_pct": -0.52,
   "burn_paid": 10.4,
   "hwm_equity": 1000.0,
   "accounting_notes": [
@@ -67,8 +67,8 @@
     "CONFIRM_PRICE_LOWER": 1
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-28T08:21:18.469469+00:00",
-  "equity": 994.6203,
+  "last_updated": "2026-09-28T08:22:18.782093+00:00",
+  "equity": 994.7874,
   "free_cash": 926.15,
   "realized_pnl": 0.0,
   "fees_paid": 0.95,
@@ -82,13 +82,13 @@
       "entry_price": 0.000860318,
       "dollars": 62.5,
       "opened_at": 1790582652.902601,
-      "mark_price": 0.0009425,
-      "last_mark_price": 0.0009425,
-      "unrealized_pnl": 5.9703214392817525,
-      "unrealized_pct": 9.552514302850804,
-      "volume_h6": 1794990.25,
-      "volume_h24": 2398492.77,
-      "last_liquidity": 92436.01,
+      "mark_price": 0.0009448,
+      "last_mark_price": 0.0009448,
+      "unrealized_pnl": 6.137410817860371,
+      "unrealized_pct": 9.819857308576593,
+      "volume_h6": 1758718.62,
+      "volume_h24": 2407060.54,
+      "last_liquidity": 92541.9,
       "entry_liquidity": 87549.29,
       "peak_price": 0.0009515,
       "entry_costs": 0.95,
@@ -2421,7 +2421,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-28T08:21:00+00:00",
+    "updated": "2026-09-28T08:22:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -2478,7 +2478,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-28T08:20:48.191728+00:00",
+    "last_poll": "2026-09-28T08:22:19.405741+00:00",
     "feed_last_alert": "2026-09-28T08:18:33+00:00"
   },
   "desk1000": {
