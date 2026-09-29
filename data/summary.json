@@ -12,9 +12,9 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -90.4625,
-  "net_pnl_pct": -9.05,
-  "burn_paid": 23.4,
+  "net_pnl": -90.6625,
+  "net_pnl_pct": -9.07,
+  "burn_paid": 23.6,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
     {
@@ -23,33 +23,33 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-29T10:22:55.262205+00:00",
+    "ts": "2026-09-29T10:38:02.061488+00:00",
     "rules": "v3",
-    "discovered": 9,
+    "discovered": 7,
     "prefilter": {
-      "liq_window": 32,
-      "age_window": 25,
+      "liq_window": 25,
+      "age_window": 17,
       "h1_already_priced": 1,
       "age_unknown": 1
     },
     "desk_block": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
     "opened": null,
-    "equity": 909.54,
-    "free_cash": 909.54,
+    "equity": 909.34,
+    "free_cash": 909.34,
     "open": 0,
-    "net_pnl": -90.46
+    "net_pnl": -90.66
   },
   "rejection_counts_24h": {
-    "LIQ_LT": 232,
-    "H1_BUY_SELL_WEAK": 191,
-    "NO_H1_MOMENTUM": 104,
-    "H1_TXNS_LT": 68,
-    "PUMP_GRAD_TOO_NEW": 52,
-    "AGE_TOO_NEW": 45,
+    "LIQ_LT": 229,
+    "H1_BUY_SELL_WEAK": 190,
+    "NO_H1_MOMENTUM": 102,
+    "H1_TXNS_LT": 67,
+    "PUMP_GRAD_TOO_NEW": 50,
+    "AGE_TOO_NEW": 44,
     "M5_SELLING": 39,
     "REENTRY_COOLDOWN": 29,
-    "DESK:HALT_FLAG": 25,
-    "H6_DOWNTREND": 14,
+    "DESK:HALT_FLAG": 26,
+    "H6_DOWNTREND": 13,
     "VOL_H1_LOW": 7,
     "AWAIT_CONFIRM": 7,
     "ALREADY_OPEN": 5,
@@ -57,9 +57,9 @@
     "CONFIRM_PRICE_LOWER": 2
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-29T10:22:55.261926+00:00",
-  "equity": 909.5375,
-  "free_cash": 909.5375,
+  "last_updated": "2026-09-29T10:38:02.061287+00:00",
+  "equity": 909.3375,
+  "free_cash": 909.3375,
   "realized_pnl": -67.0625,
   "fees_paid": 3.8,
   "slippage_paid": 2.5,
@@ -1587,9 +1587,34 @@
       "slippage_paid": 2.5,
       "total_deposited": 1000.0,
       "net_pnl": -90.4625
+    },
+    {
+      "ts": "2026-09-29T10:38:02.061202+00:00",
+      "equity": 909.3375,
+      "free_cash": 909.3375,
+      "open": 0,
+      "realized_pnl": -67.0625,
+      "fees_paid": 3.8,
+      "slippage_paid": 2.5,
+      "total_deposited": 1000.0,
+      "net_pnl": -90.6625
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-29T10:38:02.060541+00:00",
+      "type": "discovered",
+      "count": 7,
+      "tickers": [
+        "INUINK",
+        "HOOKEDCAT",
+        "FROINK",
+        "SITRUMP",
+        "MOIN",
+        "CAT/ACC",
+        "MOG"
+      ]
+    },
     {
       "ts": "2026-09-29T10:22:55.261129+00:00",
       "type": "discovered",
@@ -2980,20 +3005,6 @@
         "JACK",
         "ZSHIB "
       ]
-    },
-    {
-      "ts": "2026-09-28T05:04:24.753823+00:00",
-      "type": "discovered",
-      "count": 7,
-      "tickers": [
-        "XPAD",
-        "INSTA",
-        "Q4",
-        "MOG",
-        "ZSHIB ",
-        "CATSTR",
-        "JIANCO"
-      ]
     }
   ],
   "rejections": [
@@ -3569,17 +3580,17 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T10:33:03.653760+00:00",
+    "updated": "2026-09-29T10:38:03.564183+00:00",
     "desk": {
-      "main_equity": 909.54,
+      "main_equity": 909.34,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 909.54,
+      "desk_equity": 909.34,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -90.46,
-      "main_free_cash": 909.5375,
+      "desk_net_pnl": -90.66,
+      "main_free_cash": 909.3375,
       "sleeve_open_cost": 0,
-      "burn_paid": 23.4,
-      "burn_today_excluded": 5.2,
+      "burn_paid": 23.6,
+      "burn_today_excluded": 5.4,
       "desk_day_pnl": -103.62
     },
     "brake": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
@@ -3617,12 +3628,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T10:37:00+00:00",
+    "updated": "2026-09-29T10:38:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5001.79,
-    "net_pnl": 1.79,
-    "net_pnl_pct": 0.04,
+    "equity": 5001.4,
+    "net_pnl": 1.4,
+    "net_pnl_pct": 0.03,
     "hwm": 5014.44,
     "fees": 0.56,
     "funding": -0.11,
@@ -3634,9 +3645,9 @@
         "side": "long",
         "notional": 555.56,
         "entry": 3.569e-06,
-        "mark": 3.603e-06,
+        "mark": 3.599e-06,
         "stop": 3.38e-06,
-        "upnl": 4.45,
+        "upnl": 3.83,
         "opened_at": "2026-09-29T07:01:00+00:00"
       },
       {
@@ -3644,9 +3655,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2385,
+        "mark": 0.2386,
         "stop": 0.22416395,
-        "upnl": -2.0,
+        "upnl": -1.76,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3695,7 +3706,7 @@
       }
     ],
     "skips_24h": 1,
-    "last_poll": "2026-09-29T10:36:13.044499+00:00",
+    "last_poll": "2026-09-29T10:37:44.035097+00:00",
     "feed_last_alert": "2026-09-29T10:26:33+00:00"
   },
   "desk1000": {
@@ -3703,14 +3714,14 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 909.54,
-    "desk_pnl": -90.46,
-    "desk_pnl_pct": -9.05,
+    "desk_equity": 909.34,
+    "desk_pnl": -90.66,
+    "desk_pnl_pct": -9.07,
     "hwm": 1019.89,
     "drawdown_halt_pct": 20.0,
     "halt": "SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
-    "burn_paid": 23.4,
-    "free_cash": 909.54,
+    "burn_paid": 23.6,
+    "free_cash": 909.34,
     "sleeves": [
       {
         "sleeve": "midcap_breakout",
@@ -3751,8 +3762,8 @@
         "open_cost": 0.0,
         "realized": 0.0,
         "unrealized": 0.0,
-        "pnl": -23.4,
-        "equity": 126.6,
+        "pnl": -23.6,
+        "equity": 126.4,
         "note": "simulated burn $0.8/h charged here"
       }
     ],
@@ -3911,6 +3922,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T10:33:03.653332+00:00"
+    "updated": "2026-09-29T10:38:03.563783+00:00"
   }
 }
