@@ -12,9 +12,9 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -90.2625,
-  "net_pnl_pct": -9.03,
-  "burn_paid": 23.2,
+  "net_pnl": -90.4625,
+  "net_pnl_pct": -9.05,
+  "burn_paid": 23.4,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
     {
@@ -23,27 +23,32 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-29T10:08:16.291493+00:00",
+    "ts": "2026-09-29T10:22:55.262205+00:00",
     "rules": "v3",
-    "discovered": 0,
-    "prefilter": {},
+    "discovered": 9,
+    "prefilter": {
+      "liq_window": 32,
+      "age_window": 25,
+      "h1_already_priced": 1,
+      "age_unknown": 1
+    },
     "desk_block": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
     "opened": null,
-    "equity": 909.74,
-    "free_cash": 909.74,
+    "equity": 909.54,
+    "free_cash": 909.54,
     "open": 0,
-    "net_pnl": -90.26
+    "net_pnl": -90.46
   },
   "rejection_counts_24h": {
-    "LIQ_LT": 235,
-    "H1_BUY_SELL_WEAK": 192,
-    "NO_H1_MOMENTUM": 107,
-    "H1_TXNS_LT": 69,
-    "PUMP_GRAD_TOO_NEW": 54,
-    "AGE_TOO_NEW": 46,
+    "LIQ_LT": 232,
+    "H1_BUY_SELL_WEAK": 191,
+    "NO_H1_MOMENTUM": 104,
+    "H1_TXNS_LT": 68,
+    "PUMP_GRAD_TOO_NEW": 52,
+    "AGE_TOO_NEW": 45,
     "M5_SELLING": 39,
     "REENTRY_COOLDOWN": 29,
-    "DESK:HALT_FLAG": 24,
+    "DESK:HALT_FLAG": 25,
     "H6_DOWNTREND": 14,
     "VOL_H1_LOW": 7,
     "AWAIT_CONFIRM": 7,
@@ -52,9 +57,9 @@
     "CONFIRM_PRICE_LOWER": 2
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-29T10:08:16.291238+00:00",
-  "equity": 909.7375,
-  "free_cash": 909.7375,
+  "last_updated": "2026-09-29T10:22:55.261926+00:00",
+  "equity": 909.5375,
+  "free_cash": 909.5375,
   "realized_pnl": -67.0625,
   "fees_paid": 3.8,
   "slippage_paid": 2.5,
@@ -1571,9 +1576,36 @@
       "slippage_paid": 2.5,
       "total_deposited": 1000.0,
       "net_pnl": -90.2625
+    },
+    {
+      "ts": "2026-09-29T10:22:55.261839+00:00",
+      "equity": 909.5375,
+      "free_cash": 909.5375,
+      "open": 0,
+      "realized_pnl": -67.0625,
+      "fees_paid": 3.8,
+      "slippage_paid": 2.5,
+      "total_deposited": 1000.0,
+      "net_pnl": -90.4625
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-29T10:22:55.261129+00:00",
+      "type": "discovered",
+      "count": 9,
+      "tickers": [
+        "INUINK",
+        "HOOKEDCAT",
+        "PARASITE",
+        "SWORDCAT",
+        "FROINK",
+        "SITRUMP",
+        "SICAT",
+        "MOIN",
+        "MOG"
+      ]
+    },
     {
       "ts": "2026-09-29T09:53:05.869936+00:00",
       "type": "discovered",
@@ -2962,23 +2994,6 @@
         "CATSTR",
         "JIANCO"
       ]
-    },
-    {
-      "ts": "2026-09-28T04:49:14.424946+00:00",
-      "type": "discovered",
-      "count": 16,
-      "tickers": [
-        "E/ACC",
-        "BYTE",
-        "BEZEL",
-        "XPAD",
-        "INSTA",
-        "DELREY",
-        "CAKE",
-        "CLAUDECHAN",
-        "NEARPAD",
-        "Q4"
-      ]
     }
   ],
   "rejections": [
@@ -3554,17 +3569,17 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T10:18:03.564604+00:00",
+    "updated": "2026-09-29T10:23:03.560944+00:00",
     "desk": {
-      "main_equity": 909.74,
+      "main_equity": 909.54,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 909.74,
+      "desk_equity": 909.54,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -90.26,
-      "main_free_cash": 909.7375,
+      "desk_net_pnl": -90.46,
+      "main_free_cash": 909.5375,
       "sleeve_open_cost": 0,
-      "burn_paid": 23.2,
-      "burn_today_excluded": 5.0,
+      "burn_paid": 23.4,
+      "burn_today_excluded": 5.2,
       "desk_day_pnl": -103.62
     },
     "brake": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
@@ -3602,12 +3617,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T10:22:00+00:00",
+    "updated": "2026-09-29T10:23:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5007.85,
-    "net_pnl": 7.85,
-    "net_pnl_pct": 0.16,
+    "equity": 5008.47,
+    "net_pnl": 8.47,
+    "net_pnl_pct": 0.17,
     "hwm": 5014.44,
     "fees": 0.56,
     "funding": -0.11,
@@ -3619,9 +3634,9 @@
         "side": "long",
         "notional": 555.56,
         "entry": 3.569e-06,
-        "mark": 3.624e-06,
+        "mark": 3.628e-06,
         "stop": 3.38e-06,
-        "upnl": 7.72,
+        "upnl": 8.34,
         "opened_at": "2026-09-29T07:01:00+00:00"
       },
       {
@@ -3688,14 +3703,14 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 909.74,
-    "desk_pnl": -90.26,
-    "desk_pnl_pct": -9.03,
+    "desk_equity": 909.54,
+    "desk_pnl": -90.46,
+    "desk_pnl_pct": -9.05,
     "hwm": 1019.89,
     "drawdown_halt_pct": 20.0,
     "halt": "SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
-    "burn_paid": 23.2,
-    "free_cash": 909.74,
+    "burn_paid": 23.4,
+    "free_cash": 909.54,
     "sleeves": [
       {
         "sleeve": "midcap_breakout",
@@ -3736,8 +3751,8 @@
         "open_cost": 0.0,
         "realized": 0.0,
         "unrealized": 0.0,
-        "pnl": -23.2,
-        "equity": 126.8,
+        "pnl": -23.4,
+        "equity": 126.6,
         "note": "simulated burn $0.8/h charged here"
       }
     ],
@@ -3896,6 +3911,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T10:18:03.564141+00:00"
+    "updated": "2026-09-29T10:23:03.560535+00:00"
   }
 }
