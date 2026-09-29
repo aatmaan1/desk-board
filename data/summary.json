@@ -1861,6 +1861,14 @@
   ],
   "events": [
     {
+      "ts": "2026-09-29T16:45:01.301727+00:00",
+      "type": "copy_skip",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "ticker": "PUMP",
+      "reason": "BRAKE_HALT_FLAG",
+      "mode": "shadow"
+    },
+    {
       "ts": "2026-09-29T16:23:23.383774+00:00",
       "type": "discovered",
       "count": 3,
@@ -3114,23 +3122,6 @@
         "JACK",
         "NEARPAD"
       ]
-    },
-    {
-      "ts": "2026-09-28T09:34:14.450291+00:00",
-      "type": "discovered",
-      "count": 13,
-      "tickers": [
-        "E/ACC",
-        "XPAD",
-        "BUKANGI",
-        "DELREY",
-        "MOIN",
-        "VAULT",
-        "INSTA",
-        "CAKE",
-        "JACK",
-        "Q4"
-      ]
     }
   ],
   "rejections": [
@@ -3754,12 +3745,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T16:44:00+00:00",
+    "updated": "2026-09-29T16:45:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4998.9,
-    "net_pnl": -1.1,
-    "net_pnl_pct": -0.02,
+    "equity": 4997.51,
+    "net_pnl": -2.49,
+    "net_pnl_pct": -0.05,
     "hwm": 5065.37,
     "fees": 0.83,
     "funding": -0.22,
@@ -3771,9 +3762,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2349,
+        "mark": 0.2343,
         "stop": 0.22696395,
-        "upnl": -10.37,
+        "upnl": -11.77,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3806,8 +3797,8 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 216,
-    "signals_total": 4,
+    "alerts_24h": 219,
+    "signals_total": 5,
     "opened_total": 2,
     "open": [],
     "closed_n": 2,
@@ -3831,9 +3822,9 @@
         "closed_at": "2026-09-28T06:55:42.818211+00:00"
       }
     ],
-    "skips_24h": 2,
-    "last_poll": "2026-09-29T16:43:30.114613+00:00",
-    "feed_last_alert": "2026-09-29T16:41:53+00:00"
+    "skips_24h": 3,
+    "last_poll": "2026-09-29T16:45:01.301329+00:00",
+    "feed_last_alert": "2026-09-29T16:44:55+00:00"
   },
   "desk1000": {
     "paper": true,
