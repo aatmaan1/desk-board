@@ -3570,12 +3570,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T08:48:00+00:00",
+    "updated": "2026-09-29T08:49:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5007.07,
-    "net_pnl": 7.07,
-    "net_pnl_pct": 0.14,
+    "equity": 5008.93,
+    "net_pnl": 8.93,
+    "net_pnl_pct": 0.18,
     "hwm": 5010.95,
     "fees": 0.56,
     "funding": -0.11,
@@ -3587,9 +3587,9 @@
         "side": "long",
         "notional": 555.56,
         "entry": 3.569e-06,
-        "mark": 3.616e-06,
+        "mark": 3.619e-06,
         "stop": 3.36e-06,
-        "upnl": 6.48,
+        "upnl": 6.94,
         "opened_at": "2026-09-29T07:01:00+00:00"
       },
       {
@@ -3597,9 +3597,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2399,
+        "mark": 0.2405,
         "stop": 0.22386395,
-        "upnl": 1.26,
+        "upnl": 2.65,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
