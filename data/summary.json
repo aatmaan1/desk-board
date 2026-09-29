@@ -1844,6 +1844,14 @@
   ],
   "events": [
     {
+      "ts": "2026-09-29T16:22:15.462654+00:00",
+      "type": "copy_skip",
+      "mint": "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump",
+      "ticker": "PARASITE",
+      "reason": "BRAKE_HALT_FLAG",
+      "mode": "shadow"
+    },
+    {
       "ts": "2026-09-29T16:07:55.184629+00:00",
       "type": "discovered",
       "count": 9,
@@ -3113,23 +3121,6 @@
         "CAKE",
         "Q4"
       ]
-    },
-    {
-      "ts": "2026-09-28T09:04:14.417251+00:00",
-      "type": "discovered",
-      "count": 11,
-      "tickers": [
-        "E/ACC",
-        "XPAD",
-        "BUKANGI",
-        "DELREY",
-        "INSTA",
-        "CAKE",
-        "Q4",
-        "NEARPAD",
-        "JACK",
-        "JIANCO"
-      ]
     }
   ],
   "rejections": [
@@ -3753,7 +3744,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T16:21:00+00:00",
+    "updated": "2026-09-29T16:22:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5003.79,
@@ -3806,7 +3797,7 @@
     "ticket_usd": 40.0,
     "max_open": 2,
     "alerts_24h": 206,
-    "signals_total": 3,
+    "signals_total": 4,
     "opened_total": 2,
     "open": [],
     "closed_n": 2,
@@ -3830,9 +3821,9 @@
         "closed_at": "2026-09-28T06:55:42.818211+00:00"
       }
     ],
-    "skips_24h": 1,
-    "last_poll": "2026-09-29T16:20:44.434761+00:00",
-    "feed_last_alert": "2026-09-29T16:19:44+00:00"
+    "skips_24h": 2,
+    "last_poll": "2026-09-29T16:22:15.461956+00:00",
+    "feed_last_alert": "2026-09-29T16:20:52+00:00"
   },
   "desk1000": {
     "paper": true,
