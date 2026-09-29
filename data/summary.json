@@ -3646,17 +3646,17 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T12:18:03.584957+00:00",
+    "updated": "2026-09-29T12:23:39.454243+00:00",
     "desk": {
-      "main_equity": 908.14,
+      "main_equity": 907.94,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 908.14,
+      "desk_equity": 907.94,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -91.86,
-      "main_free_cash": 908.1375,
+      "desk_net_pnl": -92.06,
+      "main_free_cash": 907.9375,
       "sleeve_open_cost": 0,
-      "burn_paid": 24.8,
-      "burn_today_excluded": 6.6,
+      "burn_paid": 25.0,
+      "burn_today_excluded": 6.8,
       "desk_day_pnl": -103.62
     },
     "brake": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
@@ -3694,11 +3694,11 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T12:23:00+00:00",
+    "updated": "2026-09-29T12:24:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5012.84,
-    "net_pnl": 12.84,
+    "equity": 5012.76,
+    "net_pnl": 12.76,
     "net_pnl_pct": 0.26,
     "hwm": 5021.62,
     "fees": 0.56,
@@ -3711,9 +3711,9 @@
         "side": "long",
         "notional": 555.56,
         "entry": 3.569e-06,
-        "mark": 3.643e-06,
+        "mark": 3.644e-06,
         "stop": 3.42e-06,
-        "upnl": 10.67,
+        "upnl": 10.83,
         "opened_at": "2026-09-29T07:01:00+00:00"
       },
       {
@@ -3721,9 +3721,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2406,
+        "mark": 0.2405,
         "stop": 0.22506395,
-        "upnl": 2.89,
+        "upnl": 2.65,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3746,7 +3746,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 189,
+    "alerts_24h": 190,
     "signals_total": 3,
     "opened_total": 2,
     "open": [],
@@ -3772,8 +3772,8 @@
       }
     ],
     "skips_24h": 1,
-    "last_poll": "2026-09-29T12:22:29.269060+00:00",
-    "feed_last_alert": "2026-09-29T12:10:02+00:00"
+    "last_poll": "2026-09-29T12:24:00.270137+00:00",
+    "feed_last_alert": "2026-09-29T12:23:04+00:00"
   },
   "desk1000": {
     "paper": true,
@@ -3988,6 +3988,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T12:22:55.203339+00:00"
+    "updated": "2026-09-29T12:23:39.453786+00:00"
   }
 }
