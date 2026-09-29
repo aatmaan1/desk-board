@@ -3350,7 +3350,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T04:08:11.670720+00:00",
+    "updated": "2026-09-29T04:13:17.602791+00:00",
     "desk": {
       "main_equity": 914.54,
       "sleeves_net_pnl": 0.0,
@@ -3363,7 +3363,7 @@
       "burn_today_excluded": 0.2,
       "desk_day_pnl": -103.62
     },
-    "brake": "DAILY_LOSS_LIMIT: desk day $-103.62",
+    "brake": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
     "sleeves": [
       {
         "name": "midcap_breakout",
@@ -3398,7 +3398,7 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T04:12:00+00:00",
+    "updated": "2026-09-29T04:13:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
     "equity": 5000.0,
@@ -3455,7 +3455,7 @@
       }
     ],
     "skips_24h": 0,
-    "last_poll": "2026-09-29T04:12:04.445603+00:00",
+    "last_poll": "2026-09-29T04:13:35.572552+00:00",
     "feed_last_alert": "2026-09-29T04:11:15+00:00"
   },
   "desk1000": {
@@ -3671,6 +3671,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T04:08:11.670246+00:00"
+    "updated": "2026-09-29T04:13:17.602295+00:00"
   }
 }
