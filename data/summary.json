@@ -3724,17 +3724,17 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T14:33:03.638183+00:00",
+    "updated": "2026-09-29T14:38:39.567813+00:00",
     "desk": {
-      "main_equity": 906.34,
+      "main_equity": 906.14,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 906.34,
+      "desk_equity": 906.14,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -93.66,
-      "main_free_cash": 906.3375,
+      "desk_net_pnl": -93.86,
+      "main_free_cash": 906.1375,
       "sleeve_open_cost": 0,
-      "burn_paid": 26.6,
-      "burn_today_excluded": 8.4,
+      "burn_paid": 26.8,
+      "burn_today_excluded": 8.6,
       "desk_day_pnl": -103.62
     },
     "brake": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
@@ -3772,12 +3772,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T14:38:00+00:00",
+    "updated": "2026-09-29T14:39:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5036.15,
-    "net_pnl": 36.15,
-    "net_pnl_pct": 0.72,
+    "equity": 5039.57,
+    "net_pnl": 39.57,
+    "net_pnl_pct": 0.79,
     "hwm": 5065.37,
     "fees": 0.56,
     "funding": -0.17,
@@ -3789,9 +3789,9 @@
         "side": "long",
         "notional": 555.56,
         "entry": 3.569e-06,
-        "mark": 3.769e-06,
+        "mark": 3.782e-06,
         "stop": 3.66e-06,
-        "upnl": 30.27,
+        "upnl": 32.29,
         "opened_at": "2026-09-29T07:01:00+00:00"
       },
       {
@@ -3799,9 +3799,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2422,
+        "mark": 0.2428,
         "stop": 0.22696395,
-        "upnl": 6.61,
+        "upnl": 8.0,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3850,7 +3850,7 @@
       }
     ],
     "skips_24h": 1,
-    "last_poll": "2026-09-29T14:37:32.488856+00:00",
+    "last_poll": "2026-09-29T14:39:03.496680+00:00",
     "feed_last_alert": "2026-09-29T14:32:51+00:00"
   },
   "desk1000": {
@@ -4066,6 +4066,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T14:38:16.486779+00:00"
+    "updated": "2026-09-29T14:38:39.567333+00:00"
   }
 }
