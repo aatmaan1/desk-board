@@ -3458,7 +3458,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T07:13:03.577143+00:00",
+    "updated": "2026-09-29T07:18:03.620074+00:00",
     "desk": {
       "main_equity": 912.14,
       "sleeves_net_pnl": 0.0,
@@ -3506,13 +3506,13 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T07:17:00+00:00",
+    "updated": "2026-09-29T07:18:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5000.76,
-    "net_pnl": 0.76,
-    "net_pnl_pct": 0.02,
-    "hwm": 5000.91,
+    "equity": 5002.0,
+    "net_pnl": 2.0,
+    "net_pnl_pct": 0.04,
+    "hwm": 5002.0,
     "fees": 0.28,
     "funding": 0.0,
     "brake": null,
@@ -3523,9 +3523,9 @@
         "side": "long",
         "notional": 555.56,
         "entry": 3.569e-06,
-        "mark": 3.581e-06,
-        "stop": 3.31e-06,
-        "upnl": 1.03,
+        "mark": 3.589e-06,
+        "stop": 3.32e-06,
+        "upnl": 2.28,
         "opened_at": "2026-09-29T07:01:00+00:00"
       }
     ],
@@ -3790,6 +3790,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T07:13:03.576437+00:00"
+    "updated": "2026-09-29T07:18:03.619243+00:00"
   }
 }
