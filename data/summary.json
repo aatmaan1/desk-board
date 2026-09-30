@@ -4533,12 +4533,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T15:33:00+00:00",
+    "updated": "2026-09-30T15:34:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4978.72,
-    "net_pnl": -21.28,
-    "net_pnl_pct": -0.43,
+    "equity": 4978.84,
+    "net_pnl": -21.16,
+    "net_pnl_pct": -0.42,
     "hwm": 5076.08,
     "fees": 2.8,
     "funding": -0.42,
@@ -4570,9 +4570,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.336e-06,
+        "mark": 4.337e-06,
         "stop": 4.27e-06,
-        "upnl": -10.75,
+        "upnl": -10.62,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4641,13 +4641,13 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -6.52
+        "upnl": -6.46
       }
     ],
     "closed_n": 4,
     "wins": 2,
     "realized_pnl": -12.58,
-    "unrealized_pnl": -6.52,
+    "unrealized_pnl": -6.46,
     "today_pnl": -40.33,
     "recent_closed": [
       {
@@ -4680,7 +4680,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T15:32:13.251722+00:00",
+    "last_poll": "2026-09-30T15:33:45.699407+00:00",
     "feed_last_alert": "2026-09-30T15:14:57+00:00"
   },
   "desk1000": {
