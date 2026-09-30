@@ -4589,12 +4589,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T16:43:00+00:00",
+    "updated": "2026-09-30T16:44:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4979.47,
-    "net_pnl": -20.53,
-    "net_pnl_pct": -0.41,
+    "equity": 4983.45,
+    "net_pnl": -16.55,
+    "net_pnl_pct": -0.33,
     "hwm": 5076.08,
     "fees": 2.8,
     "funding": -0.75,
@@ -4606,9 +4606,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2557,
+        "mark": 0.2561,
         "stop": 0.24226395,
-        "upnl": 38.01,
+        "upnl": 38.94,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4616,9 +4616,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.859e-06,
+        "mark": 3.864e-06,
         "stop": 3.67e-06,
-        "upnl": -14.98,
+        "upnl": -14.27,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4626,9 +4626,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.35e-06,
+        "mark": 4.363e-06,
         "stop": 4.27e-06,
-        "upnl": -8.97,
+        "upnl": -7.32,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4636,9 +4636,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09515,
+        "mark": 0.09527,
         "stop": 0.09369625,
-        "upnl": -12.44,
+        "upnl": -11.75,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4689,7 +4689,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 195,
+    "alerts_24h": 194,
     "signals_total": 10,
     "opened_total": 5,
     "open": [
@@ -4736,7 +4736,7 @@
       }
     ],
     "skips_24h": 3,
-    "last_poll": "2026-09-30T16:42:32.425990+00:00",
+    "last_poll": "2026-09-30T16:44:03.776798+00:00",
     "feed_last_alert": "2026-09-30T16:40:17+00:00"
   },
   "desk1000": {
