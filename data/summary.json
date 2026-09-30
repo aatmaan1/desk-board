@@ -12,9 +12,9 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -96.4625,
-  "net_pnl_pct": -9.65,
-  "burn_paid": 29.4,
+  "net_pnl": -96.6625,
+  "net_pnl_pct": -9.67,
+  "burn_paid": 29.6,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
     {
@@ -23,43 +23,43 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-29T17:53:02.194713+00:00",
+    "ts": "2026-09-30T04:07:47.187492+00:00",
     "rules": "v3",
-    "discovered": 6,
+    "discovered": 11,
     "prefilter": {
-      "h1_already_priced": 2,
-      "age_window": 12,
-      "liq_window": 26,
+      "h1_already_priced": 3,
+      "liq_window": 32,
+      "age_window": 11,
       "age_unknown": 1
     },
     "desk_block": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
     "opened": null,
-    "equity": 903.54,
-    "free_cash": 903.54,
+    "equity": 903.34,
+    "free_cash": 903.34,
     "open": 0,
-    "net_pnl": -96.46
+    "net_pnl": -96.66
   },
   "rejection_counts_24h": {
-    "LIQ_LT": 132,
-    "H1_BUY_SELL_WEAK": 119,
-    "NO_H1_MOMENTUM": 63,
-    "DESK:HALT_FLAG": 55,
-    "H1_TXNS_LT": 38,
+    "LIQ_LT": 129,
+    "H1_BUY_SELL_WEAK": 114,
+    "NO_H1_MOMENTUM": 62,
+    "DESK:HALT_FLAG": 56,
+    "H1_TXNS_LT": 37,
     "REENTRY_COOLDOWN": 29,
     "M5_SELLING": 27,
     "AGE_TOO_NEW": 18,
     "PUMP_GRAD_TOO_NEW": 12,
-    "H6_DOWNTREND": 8,
-    "ALREADY_OPEN": 5,
+    "H6_DOWNTREND": 7,
+    "ALREADY_OPEN": 4,
     "AWAIT_CONFIRM": 3,
     "CONFIRM_PRICE_LOWER": 2,
     "VOL24_WASH_SUSPECT": 1,
     "DESK:DAILY_LOSS_LIMIT": 1
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-29T17:53:02.194506+00:00",
-  "equity": 903.5375,
-  "free_cash": 903.5375,
+  "last_updated": "2026-09-30T04:07:47.186977+00:00",
+  "equity": 903.3375,
+  "free_cash": 903.3375,
   "realized_pnl": -67.0625,
   "fees_paid": 3.8,
   "slippage_paid": 2.5,
@@ -1917,9 +1917,37 @@
       "slippage_paid": 2.5,
       "total_deposited": 1000.0,
       "net_pnl": -96.4625
+    },
+    {
+      "ts": "2026-09-30T04:07:47.186546+00:00",
+      "equity": 903.3375,
+      "free_cash": 903.3375,
+      "open": 0,
+      "realized_pnl": -67.0625,
+      "fees_paid": 3.8,
+      "slippage_paid": 2.5,
+      "total_deposited": 1000.0,
+      "net_pnl": -96.6625
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-30T04:07:47.182882+00:00",
+      "type": "discovered",
+      "count": 11,
+      "tickers": [
+        "NUTFLEX",
+        "RESI",
+        "PARASITE",
+        "SS",
+        "HI",
+        "STOCK",
+        "FKCANCER",
+        "NI",
+        "CROCS",
+        "HALLOWINU"
+      ]
+    },
     {
       "ts": "2026-09-29T17:53:02.193751+00:00",
       "type": "discovered",
@@ -3148,23 +3176,6 @@
         "GRAYMATTER",
         "CAKE"
       ]
-    },
-    {
-      "ts": "2026-09-28T11:19:10.533116+00:00",
-      "type": "discovered",
-      "count": 14,
-      "tickers": [
-        "O",
-        "XPAD",
-        "E/ACC",
-        "INSTA",
-        "BUKANGI",
-        "TOBEY",
-        "Q4",
-        "DELREY",
-        "GRAYMATTER",
-        "CAKE"
-      ]
     }
   ],
   "rejections": [
@@ -3740,20 +3751,20 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-29T18:03:03.643523+00:00",
+    "updated": "2026-09-30T04:07:57.446295+00:00",
     "desk": {
-      "main_equity": 903.54,
+      "main_equity": 903.34,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 903.54,
+      "desk_equity": 903.34,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -96.46,
-      "main_free_cash": 903.5375,
+      "desk_net_pnl": -96.66,
+      "main_free_cash": 903.3375,
       "sleeve_open_cost": 0,
-      "burn_paid": 29.4,
-      "burn_today_excluded": 11.2,
-      "desk_day_pnl": -103.62
+      "burn_paid": 29.6,
+      "burn_today_excluded": 0.0,
+      "desk_day_pnl": 0.0
     },
-    "brake": "HALT_FLAG: SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
+    "brake": null,
     "sleeves": [
       {
         "name": "midcap_breakout",
@@ -3788,15 +3799,15 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-29T18:07:00+00:00",
+    "updated": "2026-09-30T04:08:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5000.53,
-    "net_pnl": 0.53,
-    "net_pnl_pct": 0.01,
+    "equity": 5014.92,
+    "net_pnl": 14.92,
+    "net_pnl_pct": 0.3,
     "hwm": 5065.37,
     "fees": 0.83,
-    "funding": -0.22,
+    "funding": -0.25,
     "brake": null,
     "rules": "1h Donchian-24 breakout, long-only, close>EMA96 & ATR14>ATR24; 3.5xATR trailing stop; 72h max hold; 9 OKX perps, equity/9 per slot at 1x; taker costs; 20% DD halt, 5% daily-loss brake; polls 60s",
     "positions": [
@@ -3805,9 +3816,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2356,
+        "mark": 0.2418,
         "stop": 0.22696395,
-        "upnl": -8.74,
+        "upnl": 5.68,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3874,14 +3885,14 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 903.54,
-    "desk_pnl": -96.46,
-    "desk_pnl_pct": -9.65,
+    "desk_equity": 903.34,
+    "desk_pnl": -96.66,
+    "desk_pnl_pct": -9.67,
     "hwm": 1019.89,
     "drawdown_halt_pct": 20.0,
-    "halt": "SLEEVES_DAILY_LOSS: desk day P&L $-103.62 <= -$81.47 (main+sleeves); auto-clears next UTC day",
-    "burn_paid": 29.4,
-    "free_cash": 903.54,
+    "halt": null,
+    "burn_paid": 29.6,
+    "free_cash": 903.34,
     "sleeves": [
       {
         "sleeve": "midcap_breakout",
@@ -3922,8 +3933,8 @@
         "open_cost": 0.0,
         "realized": 0.0,
         "unrealized": 0.0,
-        "pnl": -29.4,
-        "equity": 120.6,
+        "pnl": -29.6,
+        "equity": 120.4,
         "note": "simulated burn $0.8/h charged here"
       }
     ],
@@ -4082,6 +4093,6 @@
         ]
       }
     },
-    "updated": "2026-09-29T18:03:03.643057+00:00"
+    "updated": "2026-09-30T04:07:57.445187+00:00"
   }
 }
