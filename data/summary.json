@@ -3851,11 +3851,11 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T05:18:00+00:00",
+    "updated": "2026-09-30T05:19:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5017.48,
-    "net_pnl": 17.48,
+    "equity": 5017.72,
+    "net_pnl": 17.72,
     "net_pnl_pct": 0.35,
     "hwm": 5065.37,
     "fees": 0.83,
@@ -3868,9 +3868,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2429,
+        "mark": 0.243,
         "stop": 0.22826395,
-        "upnl": 8.24,
+        "upnl": 8.47,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3903,7 +3903,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 240,
+    "alerts_24h": 239,
     "signals_total": 7,
     "opened_total": 2,
     "open": [],
@@ -3929,7 +3929,7 @@
       }
     ],
     "skips_24h": 5,
-    "last_poll": "2026-09-30T05:16:53.984104+00:00",
+    "last_poll": "2026-09-30T05:18:25.218047+00:00",
     "feed_last_alert": "2026-09-30T05:09:10+00:00"
   },
   "desk1000": {
