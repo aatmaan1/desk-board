@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -102.033,
-  "net_pnl_pct": -10.2,
+  "net_pnl": -103.0313,
+  "net_pnl_pct": -10.3,
   "burn_paid": 37.8,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
@@ -69,8 +69,8 @@
     "ALREADY_OPEN": 2
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-30T14:31:42.913116+00:00",
-  "equity": 897.967,
+  "last_updated": "2026-09-30T14:32:43.207055+00:00",
+  "equity": 896.9687,
   "free_cash": 831.6875,
   "realized_pnl": -67.0625,
   "fees_paid": 4.75,
@@ -84,13 +84,13 @@
       "entry_price": 0.000431977,
       "dollars": 62.5,
       "opened_at": 1790776361.204414,
-      "mark_price": 0.0004581,
-      "last_mark_price": 0.0004581,
-      "unrealized_pnl": 3.7795704400928782,
-      "unrealized_pct": 6.047312704148605,
-      "volume_h6": 252398.56,
-      "volume_h24": 1155049.44,
-      "last_liquidity": 65188.71,
+      "mark_price": 0.0004512,
+      "last_mark_price": 0.0004512,
+      "unrealized_pnl": 2.7812534000652835,
+      "unrealized_pct": 4.450005440104453,
+      "volume_h6": 252387.05,
+      "volume_h24": 1155031.26,
+      "last_liquidity": 64677.69,
       "entry_liquidity": 63362.23,
       "peak_price": 0.0004759,
       "entry_costs": 0.95,
@@ -4385,18 +4385,18 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-30T14:27:48.743852+00:00",
+    "updated": "2026-09-30T14:32:48.785754+00:00",
     "desk": {
-      "main_equity": 897.79,
-      "sleeves_net_pnl": -1.68,
-      "desk_equity": 896.12,
+      "main_equity": 896.97,
+      "sleeves_net_pnl": -2.03,
+      "desk_equity": 894.94,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -103.88,
+      "desk_net_pnl": -105.06,
       "main_free_cash": 831.6875,
       "sleeve_open_cost": 100.27,
       "burn_paid": 37.8,
       "burn_today_excluded": 8.2,
-      "desk_day_pnl": 0.97
+      "desk_day_pnl": -0.2
     },
     "brake": null,
     "sleeves": [
@@ -4407,8 +4407,8 @@
         "closed": 1,
         "wins": 0,
         "realized": -0.22,
-        "unrealized": -1.45,
-        "net_pnl": -1.68,
+        "unrealized": -1.81,
+        "net_pnl": -2.03,
         "ticket_usd": 100.0,
         "rt_cost_pct": 1.04,
         "positions": [
@@ -4417,8 +4417,8 @@
             "opened_at": "2026-09-30T12:07:58.638516+00:00",
             "dollars": 100.0,
             "entry": 0.0005299214999999999,
-            "mark": 0.0005264,
-            "upnl_pct": -0.66,
+            "mark": 0.0005245,
+            "upnl_pct": -1.02,
             "stop": 0.0004959171488702441
           }
         ],
@@ -4452,14 +4452,14 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T14:32:00+00:00",
+    "updated": "2026-09-30T14:33:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4972.03,
-    "net_pnl": -27.97,
-    "net_pnl_pct": -0.56,
+    "equity": 4956.46,
+    "net_pnl": -43.54,
+    "net_pnl_pct": -0.87,
     "hwm": 5076.08,
-    "fees": 2.24,
+    "fees": 2.52,
     "funding": -0.42,
     "brake": null,
     "rules": "1h Donchian-24 breakout, long-only, close>EMA96 & ATR14>ATR24; 3.5xATR trailing stop; 72h max hold; 9 OKX perps, equity/9 per slot at 1x; taker costs; 20% DD halt, 5% daily-loss brake; polls 60s",
@@ -4469,9 +4469,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.253,
+        "mark": 0.2514,
         "stop": 0.24226395,
-        "upnl": 31.73,
+        "upnl": 28.01,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4479,29 +4479,19 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.838e-06,
+        "mark": 3.81e-06,
         "stop": 3.67e-06,
-        "upnl": -17.95,
+        "upnl": -21.9,
         "opened_at": "2026-09-30T11:01:00+00:00"
-      },
-      {
-        "sym": "BTC",
-        "side": "long",
-        "notional": 561.44,
-        "entry": 85218.8,
-        "mark": 83692.5,
-        "stop": 83577.012649,
-        "upnl": -10.56,
-        "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
         "sym": "SOL",
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 118.88,
+        "mark": 118.55,
         "stop": 118.27283836,
-        "upnl": -13.87,
+        "upnl": -15.39,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4509,9 +4499,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.334e-06,
+        "mark": 4.311e-06,
         "stop": 4.27e-06,
-        "upnl": -11.0,
+        "upnl": -13.93,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4519,13 +4509,22 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09488,
+        "mark": 0.0946,
         "stop": 0.09369625,
-        "upnl": -14.0,
+        "upnl": -15.61,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
     "recent_closed": [
+      {
+        "sym": "BTC",
+        "notional": 561.44,
+        "pnl": -12.68,
+        "pnl_pct_notional": -2.26,
+        "exit_reason": "ATR_TRAIL_STOP",
+        "hold_h": 1.53,
+        "closed_at": "2026-09-30T14:33:00+00:00"
+      },
       {
         "sym": "BONK",
         "notional": 555.56,
@@ -4536,7 +4535,7 @@
         "closed_at": "2026-09-29T15:27:00+00:00"
       }
     ],
-    "closed_count": 1,
+    "closed_count": 2,
     "wins": 1,
     "regime_switcher_shadow": {
       "n": 0,
@@ -4562,19 +4561,19 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -5.66
+        "upnl": -6.14
       },
       {
         "ticker": "Saw",
         "opened_at": "2026-09-30T14:07:59.147321+00:00",
         "n_traders": 3,
-        "upnl": -3.44
+        "upnl": -1.48
       }
     ],
     "closed_n": 3,
     "wins": 2,
     "realized_pnl": 18.87,
-    "unrealized_pnl": -9.1,
+    "unrealized_pnl": -7.62,
     "today_pnl": -8.88,
     "recent_closed": [
       {
@@ -4600,7 +4599,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T14:30:51.394907+00:00",
+    "last_poll": "2026-09-30T14:32:22.927121+00:00",
     "feed_last_alert": "2026-09-30T14:30:23+00:00"
   },
   "desk1000": {
@@ -4608,9 +4607,9 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 896.12,
-    "desk_pnl": -103.88,
-    "desk_pnl_pct": -10.39,
+    "desk_equity": 894.94,
+    "desk_pnl": -105.06,
+    "desk_pnl_pct": -10.51,
     "hwm": 1019.89,
     "drawdown_halt_pct": 20.0,
     "halt": null,
@@ -4625,9 +4624,9 @@
         "closed": 1,
         "open_cost": 100.27,
         "realized": -0.22,
-        "unrealized": -1.45,
-        "pnl": -1.68,
-        "equity": 598.32,
+        "unrealized": -1.81,
+        "pnl": -2.03,
+        "equity": 597.97,
         "ticket_usd": 100.0,
         "max_open": 5,
         "positions": [
@@ -4635,7 +4634,7 @@
             "symbol": "MEW",
             "dollars": 100.0,
             "entry": 0.0005299214999999999,
-            "mark": 0.0005264,
+            "mark": 0.0005245,
             "stop": 0.0004959171488702441
           }
         ]
@@ -4648,9 +4647,9 @@
         "closed": 2,
         "open_cost": 63.45,
         "realized": -67.06,
-        "unrealized": 3.61,
-        "pnl": -63.46,
-        "equity": 186.54,
+        "unrealized": 2.78,
+        "pnl": -64.28,
+        "equity": 185.72,
         "ticket_usd": 62.5,
         "max_open": 2,
         "positions": [
@@ -4658,7 +4657,7 @@
             "symbol": "STOCK",
             "dollars": 62.5,
             "entry": 0.000431977,
-            "mark": 0.0004569
+            "mark": 0.0004512
           }
         ]
       },
@@ -4831,6 +4830,6 @@
         ]
       }
     },
-    "updated": "2026-09-30T14:27:48.743245+00:00"
+    "updated": "2026-09-30T14:32:48.784976+00:00"
   }
 }
