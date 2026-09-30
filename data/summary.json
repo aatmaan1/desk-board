@@ -4104,18 +4104,18 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-30T12:42:48.672456+00:00",
+    "updated": "2026-09-30T12:47:48.679694+00:00",
     "desk": {
       "main_equity": 896.54,
-      "sleeves_net_pnl": -0.13,
-      "desk_equity": 896.41,
+      "sleeves_net_pnl": -0.06,
+      "desk_equity": 896.48,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -103.59,
+      "desk_net_pnl": -103.52,
       "main_free_cash": 896.5375,
       "sleeve_open_cost": 100.27,
       "burn_paid": 36.4,
       "burn_today_excluded": 6.8,
-      "desk_day_pnl": -0.13
+      "desk_day_pnl": -0.06
     },
     "brake": null,
     "sleeves": [
@@ -4126,8 +4126,8 @@
         "closed": 1,
         "wins": 0,
         "realized": -0.22,
-        "unrealized": 0.09,
-        "net_pnl": -0.13,
+        "unrealized": 0.17,
+        "net_pnl": -0.06,
         "ticket_usd": 100.0,
         "rt_cost_pct": 1.04,
         "positions": [
@@ -4136,8 +4136,8 @@
             "opened_at": "2026-09-30T12:07:58.638516+00:00",
             "dollars": 100.0,
             "entry": 0.0005299214999999999,
-            "mark": 0.0005346,
-            "upnl_pct": 0.88,
+            "mark": 0.000535,
+            "upnl_pct": 0.96,
             "stop": 0.0004959171488702441
           }
         ],
@@ -4171,12 +4171,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T12:47:00+00:00",
+    "updated": "2026-09-30T12:48:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5045.51,
-    "net_pnl": 45.51,
-    "net_pnl_pct": 0.91,
+    "equity": 5043.33,
+    "net_pnl": 43.33,
+    "net_pnl_pct": 0.87,
     "hwm": 5065.37,
     "fees": 1.11,
     "funding": -0.42,
@@ -4188,9 +4188,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2566,
+        "mark": 0.2556,
         "stop": 0.24076395,
-        "upnl": 40.1,
+        "upnl": 37.77,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4198,9 +4198,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.941e-06,
+        "mark": 3.942e-06,
         "stop": 3.63e-06,
-        "upnl": -3.38,
+        "upnl": -3.24,
         "opened_at": "2026-09-30T11:01:00+00:00"
       }
     ],
@@ -4241,13 +4241,13 @@
         "ticker": "e/acc",
         "opened_at": "2026-09-30T07:00:21.588648+00:00",
         "n_traders": 3,
-        "upnl": -11.11
+        "upnl": -11.53
       }
     ],
     "closed_n": 2,
     "wins": 2,
     "realized_pnl": 27.75,
-    "unrealized_pnl": -11.11,
+    "unrealized_pnl": -11.53,
     "today_pnl": 0,
     "recent_closed": [
       {
@@ -4266,7 +4266,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T12:46:35.907521+00:00",
+    "last_poll": "2026-09-30T12:48:07.308479+00:00",
     "feed_last_alert": "2026-09-30T12:42:58+00:00"
   },
   "desk1000": {
@@ -4274,9 +4274,9 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 896.41,
-    "desk_pnl": -103.59,
-    "desk_pnl_pct": -10.36,
+    "desk_equity": 896.48,
+    "desk_pnl": -103.52,
+    "desk_pnl_pct": -10.35,
     "hwm": 1019.89,
     "drawdown_halt_pct": 20.0,
     "halt": null,
@@ -4291,9 +4291,9 @@
         "closed": 1,
         "open_cost": 100.27,
         "realized": -0.22,
-        "unrealized": 0.09,
-        "pnl": -0.13,
-        "equity": 599.87,
+        "unrealized": 0.17,
+        "pnl": -0.06,
+        "equity": 599.94,
         "ticket_usd": 100.0,
         "max_open": 5,
         "positions": [
@@ -4301,7 +4301,7 @@
             "symbol": "MEW",
             "dollars": 100.0,
             "entry": 0.0005299214999999999,
-            "mark": 0.0005346,
+            "mark": 0.000535,
             "stop": 0.0004959171488702441
           }
         ]
@@ -4490,6 +4490,6 @@
         ]
       }
     },
-    "updated": "2026-09-30T12:42:48.671851+00:00"
+    "updated": "2026-09-30T12:47:48.678864+00:00"
   }
 }
