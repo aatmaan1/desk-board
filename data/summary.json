@@ -3963,15 +3963,15 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T08:00:00+00:00",
+    "updated": "2026-09-30T08:01:03+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5027.22,
-    "net_pnl": 27.22,
-    "net_pnl_pct": 0.54,
+    "equity": 5027.66,
+    "net_pnl": 27.66,
+    "net_pnl_pct": 0.55,
     "hwm": 5065.37,
     "fees": 0.83,
-    "funding": -0.28,
+    "funding": -0.31,
     "brake": null,
     "rules": "1h Donchian-24 breakout, long-only, close>EMA96 & ATR14>ATR24; 3.5xATR trailing stop; 72h max hold; 9 OKX perps, equity/9 per slot at 1x; taker costs; 20% DD halt, 5% daily-loss brake; polls 60s",
     "positions": [
@@ -3980,9 +3980,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2471,
+        "mark": 0.2473,
         "stop": 0.23016395,
-        "upnl": 18.0,
+        "upnl": 18.47,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -4023,13 +4023,13 @@
         "ticker": "e/acc",
         "opened_at": "2026-09-30T07:00:21.588648+00:00",
         "n_traders": 3,
-        "upnl": -11.44
+        "upnl": -11.62
       }
     ],
     "closed_n": 2,
     "wins": 2,
     "realized_pnl": 27.75,
-    "unrealized_pnl": -11.44,
+    "unrealized_pnl": -11.62,
     "today_pnl": 0,
     "recent_closed": [
       {
@@ -4048,7 +4048,7 @@
       }
     ],
     "skips_24h": 5,
-    "last_poll": "2026-09-30T07:59:07.667080+00:00",
+    "last_poll": "2026-09-30T08:00:39.240693+00:00",
     "feed_last_alert": "2026-09-30T07:30:20+00:00"
   },
   "desk1000": {
