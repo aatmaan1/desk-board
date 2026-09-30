@@ -4222,12 +4222,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T13:25:00+00:00",
+    "updated": "2026-09-30T13:26:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5061.76,
-    "net_pnl": 61.76,
-    "net_pnl_pct": 1.24,
+    "equity": 5063.22,
+    "net_pnl": 63.22,
+    "net_pnl_pct": 1.26,
     "hwm": 5069.97,
     "fees": 2.24,
     "funding": -0.42,
@@ -4239,9 +4239,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2573,
+        "mark": 0.2576,
         "stop": 0.24226395,
-        "upnl": 41.73,
+        "upnl": 42.43,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4249,9 +4249,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.975e-06,
+        "mark": 3.977e-06,
         "stop": 3.67e-06,
-        "upnl": 1.42,
+        "upnl": 1.7,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4259,9 +4259,9 @@
         "side": "long",
         "notional": 561.44,
         "entry": 85218.8,
-        "mark": 85294.3,
+        "mark": 85268.1,
         "stop": 83577.012649,
-        "upnl": -0.01,
+        "upnl": -0.18,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4269,9 +4269,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 122.21,
+        "mark": 122.27,
         "stop": 118.16283836,
-        "upnl": 1.48,
+        "upnl": 1.75,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4279,9 +4279,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.485e-06,
-        "stop": 4.25e-06,
-        "upnl": 8.18,
+        "mark": 4.487e-06,
+        "stop": 4.26e-06,
+        "upnl": 8.43,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4289,9 +4289,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09753,
+        "mark": 0.09755,
         "stop": 0.09338625,
-        "upnl": 1.29,
+        "upnl": 1.41,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4332,13 +4332,13 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -2.56
+        "upnl": -2.87
       }
     ],
     "closed_n": 3,
     "wins": 2,
     "realized_pnl": 18.87,
-    "unrealized_pnl": -2.56,
+    "unrealized_pnl": -2.87,
     "today_pnl": -8.88,
     "recent_closed": [
       {
@@ -4364,7 +4364,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T13:24:47.027182+00:00",
+    "last_poll": "2026-09-30T13:26:18.426114+00:00",
     "feed_last_alert": "2026-09-30T12:57:58+00:00"
   },
   "desk1000": {
