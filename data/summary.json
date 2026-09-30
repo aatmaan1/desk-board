@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -100.1759,
-  "net_pnl_pct": -10.02,
+  "net_pnl": -99.9878,
+  "net_pnl_pct": -10.0,
   "burn_paid": 38.2,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
@@ -60,8 +60,8 @@
     "INSIDER_SUPPLY_HIGH": 2
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-30T15:03:25.361094+00:00",
-  "equity": 899.8241,
+  "last_updated": "2026-09-30T15:05:33.044991+00:00",
+  "equity": 900.0122,
   "free_cash": 831.2875,
   "realized_pnl": -67.0625,
   "fees_paid": 4.75,
@@ -75,13 +75,13 @@
       "entry_price": 0.000431977,
       "dollars": 62.5,
       "opened_at": 1790776361.204414,
-      "mark_price": 0.0004737,
-      "last_mark_price": 0.0004737,
-      "unrealized_pnl": 6.036635052329178,
-      "unrealized_pct": 9.658616083726685,
-      "volume_h6": 274430.07,
-      "volume_h24": 1180704.89,
-      "last_liquidity": 66379.8,
+      "mark_price": 0.000475,
+      "last_mark_price": 0.000475,
+      "unrealized_pnl": 6.224723770015533,
+      "unrealized_pct": 9.959558032024853,
+      "volume_h6": 276530.43,
+      "volume_h24": 1182310.02,
+      "last_liquidity": 66482.88,
       "entry_liquidity": 63362.23,
       "peak_price": 0.0004759,
       "entry_costs": 0.95,
@@ -4473,12 +4473,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T15:04:00+00:00",
+    "updated": "2026-09-30T15:05:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4978.84,
-    "net_pnl": -21.16,
-    "net_pnl_pct": -0.42,
+    "equity": 4976.4,
+    "net_pnl": -23.6,
+    "net_pnl_pct": -0.47,
     "hwm": 5076.08,
     "fees": 2.52,
     "funding": -0.42,
@@ -4490,9 +4490,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2551,
+        "mark": 0.2545,
         "stop": 0.24226395,
-        "upnl": 36.61,
+        "upnl": 35.22,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4500,9 +4500,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.855e-06,
+        "mark": 3.853e-06,
         "stop": 3.67e-06,
-        "upnl": -15.54,
+        "upnl": -15.82,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4510,9 +4510,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 118.98,
+        "mark": 118.87,
         "stop": 118.27283836,
-        "upnl": -13.41,
+        "upnl": -13.91,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4520,9 +4520,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.337e-06,
+        "mark": 4.335e-06,
         "stop": 4.27e-06,
-        "upnl": -10.62,
+        "upnl": -10.88,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4621,7 +4621,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T15:02:53.965545+00:00",
+    "last_poll": "2026-09-30T15:04:25.333754+00:00",
     "feed_last_alert": "2026-09-30T15:00:20+00:00"
   },
   "desk1000": {
