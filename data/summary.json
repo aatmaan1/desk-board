@@ -4460,12 +4460,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T14:52:00+00:00",
+    "updated": "2026-09-30T14:53:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4966.44,
-    "net_pnl": -33.56,
-    "net_pnl_pct": -0.67,
+    "equity": 4967.74,
+    "net_pnl": -32.26,
+    "net_pnl_pct": -0.65,
     "hwm": 5076.08,
     "fees": 2.52,
     "funding": -0.42,
@@ -4477,9 +4477,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2521,
+        "mark": 0.2526,
         "stop": 0.24226395,
-        "upnl": 29.63,
+        "upnl": 30.8,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4487,9 +4487,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.841e-06,
+        "mark": 3.844e-06,
         "stop": 3.67e-06,
-        "upnl": -17.52,
+        "upnl": -17.1,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4497,9 +4497,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 118.89,
+        "mark": 118.94,
         "stop": 118.27283836,
-        "upnl": -13.82,
+        "upnl": -13.59,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4507,9 +4507,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.324e-06,
+        "mark": 4.32e-06,
         "stop": 4.27e-06,
-        "upnl": -12.27,
+        "upnl": -12.78,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4561,7 +4561,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 214,
+    "alerts_24h": 215,
     "signals_total": 10,
     "opened_total": 5,
     "open": [
@@ -4569,19 +4569,19 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -7.12
+        "upnl": -7.24
       },
       {
         "ticker": "Saw",
         "opened_at": "2026-09-30T14:07:59.147321+00:00",
         "n_traders": 3,
-        "upnl": -19.05
+        "upnl": -11.57
       }
     ],
     "closed_n": 3,
     "wins": 2,
     "realized_pnl": 18.87,
-    "unrealized_pnl": -26.18,
+    "unrealized_pnl": -18.82,
     "today_pnl": -8.88,
     "recent_closed": [
       {
@@ -4607,8 +4607,8 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T14:50:41.980528+00:00",
-    "feed_last_alert": "2026-09-30T14:47:22+00:00"
+    "last_poll": "2026-09-30T14:52:13.645684+00:00",
+    "feed_last_alert": "2026-09-30T14:51:44+00:00"
   },
   "desk1000": {
     "paper": true,
