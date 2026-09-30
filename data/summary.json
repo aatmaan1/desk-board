@@ -4233,12 +4233,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T13:46:00+00:00",
+    "updated": "2026-09-30T13:47:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5009.31,
-    "net_pnl": 9.31,
-    "net_pnl_pct": 0.19,
+    "equity": 5021.81,
+    "net_pnl": 21.81,
+    "net_pnl_pct": 0.44,
     "hwm": 5076.08,
     "fees": 2.24,
     "funding": -0.42,
@@ -4250,9 +4250,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2534,
+        "mark": 0.2553,
         "stop": 0.24226395,
-        "upnl": 32.66,
+        "upnl": 37.08,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4260,9 +4260,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.914e-06,
+        "mark": 3.924e-06,
         "stop": 3.67e-06,
-        "upnl": -7.2,
+        "upnl": -5.79,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4270,9 +4270,9 @@
         "side": "long",
         "notional": 561.44,
         "entry": 85218.8,
-        "mark": 84376.8,
+        "mark": 84553.7,
         "stop": 83577.012649,
-        "upnl": -6.05,
+        "upnl": -4.89,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4280,9 +4280,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 120.79,
+        "mark": 121.12,
         "stop": 118.27283836,
-        "upnl": -5.07,
+        "upnl": -3.55,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4290,9 +4290,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.369e-06,
+        "mark": 4.389e-06,
         "stop": 4.27e-06,
-        "upnl": -6.56,
+        "upnl": -4.02,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4300,9 +4300,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09624,
+        "mark": 0.09649,
         "stop": 0.09369625,
-        "upnl": -6.15,
+        "upnl": -4.71,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4325,8 +4325,8 @@
       "note": "shadow only: subset of fast_breakout trades the frozen regime switcher would take (24h ER>0.45 up)"
     },
     "leadlag_shadow": {
-      "n": 35,
-      "mean_net_bp": 21.5,
+      "n": 40,
+      "mean_net_bp": 21.6,
       "note": "shadow only: BTC 1m move >0.3% -> meme perp 3-min follow, no P&L booked"
     }
   },
