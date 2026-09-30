@@ -4540,12 +4540,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T15:38:00+00:00",
+    "updated": "2026-09-30T15:39:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4979.83,
-    "net_pnl": -20.17,
-    "net_pnl_pct": -0.4,
+    "equity": 4976.45,
+    "net_pnl": -23.55,
+    "net_pnl_pct": -0.47,
     "hwm": 5076.08,
     "fees": 2.8,
     "funding": -0.42,
@@ -4557,9 +4557,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2559,
+        "mark": 0.256,
         "stop": 0.24226395,
-        "upnl": 38.47,
+        "upnl": 38.7,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4567,9 +4567,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.866e-06,
+        "mark": 3.842e-06,
         "stop": 3.67e-06,
-        "upnl": -13.99,
+        "upnl": -17.38,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4577,9 +4577,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.336e-06,
+        "mark": 4.332e-06,
         "stop": 4.27e-06,
-        "upnl": -10.75,
+        "upnl": -11.26,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4587,9 +4587,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09521,
+        "mark": 0.09526,
         "stop": 0.09369625,
-        "upnl": -12.09,
+        "upnl": -11.8,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4648,13 +4648,13 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -6.43
+        "upnl": -6.55
       }
     ],
     "closed_n": 4,
     "wins": 2,
     "realized_pnl": -12.58,
-    "unrealized_pnl": -6.43,
+    "unrealized_pnl": -6.55,
     "today_pnl": -40.33,
     "recent_closed": [
       {
@@ -4687,7 +4687,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T15:38:19.872722+00:00",
+    "last_poll": "2026-09-30T15:39:51.188922+00:00",
     "feed_last_alert": "2026-09-30T15:14:57+00:00"
   },
   "desk1000": {
