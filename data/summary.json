@@ -4233,12 +4233,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T13:51:00+00:00",
+    "updated": "2026-09-30T13:52:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5023.7,
-    "net_pnl": 23.7,
-    "net_pnl_pct": 0.47,
+    "equity": 5028.75,
+    "net_pnl": 28.75,
+    "net_pnl_pct": 0.57,
     "hwm": 5076.08,
     "fees": 2.24,
     "funding": -0.42,
@@ -4250,9 +4250,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2565,
+        "mark": 0.2574,
         "stop": 0.24226395,
-        "upnl": 39.87,
+        "upnl": 41.96,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4270,9 +4270,9 @@
         "side": "long",
         "notional": 561.44,
         "entry": 85218.8,
-        "mark": 84550.1,
+        "mark": 84652.6,
         "stop": 83577.012649,
-        "upnl": -4.91,
+        "upnl": -4.23,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4280,9 +4280,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 120.89,
+        "mark": 120.98,
         "stop": 118.27283836,
-        "upnl": -4.61,
+        "upnl": -4.19,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4290,9 +4290,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.395e-06,
+        "mark": 4.407e-06,
         "stop": 4.27e-06,
-        "upnl": -3.26,
+        "upnl": -1.73,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4300,9 +4300,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09634,
+        "mark": 0.0964,
         "stop": 0.09369625,
-        "upnl": -5.57,
+        "upnl": -5.23,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4335,7 +4335,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 215,
+    "alerts_24h": 214,
     "signals_total": 9,
     "opened_total": 4,
     "open": [
@@ -4343,13 +4343,13 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -3.48
+        "upnl": -3.4
       }
     ],
     "closed_n": 3,
     "wins": 2,
     "realized_pnl": 18.87,
-    "unrealized_pnl": -3.48,
+    "unrealized_pnl": -3.4,
     "today_pnl": -8.88,
     "recent_closed": [
       {
@@ -4375,7 +4375,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T13:50:42.420242+00:00",
+    "last_poll": "2026-09-30T13:52:13.788740+00:00",
     "feed_last_alert": "2026-09-30T13:44:25+00:00"
   },
   "desk1000": {
