@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -104.8585,
-  "net_pnl_pct": -10.49,
+  "net_pnl": -108.7858,
+  "net_pnl_pct": -10.88,
   "burn_paid": 38.6,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
@@ -69,112 +69,14 @@
     "INSIDER_SUPPLY_HIGH": 2
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-30T15:30:57.930254+00:00",
-  "equity": 895.1415,
-  "free_cash": 830.8875,
-  "realized_pnl": -67.0625,
-  "fees_paid": 4.75,
-  "slippage_paid": 3.125,
-  "open_count": 1,
-  "positions": [
-    {
-      "lead_id": "2d79yirW-1790776360416",
-      "contract": "2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump",
-      "ticker": "STOCK",
-      "entry_price": 0.000431977,
-      "dollars": 62.5,
-      "opened_at": 1790776361.204414,
-      "mark_price": 0.0004441,
-      "last_mark_price": 0.0004441,
-      "unrealized_pnl": 1.7539996342397868,
-      "unrealized_pct": 2.806399414783659,
-      "volume_h6": 303392.56,
-      "volume_h24": 1214991.86,
-      "last_liquidity": 64169.59,
-      "entry_liquidity": 63362.23,
-      "peak_price": 0.0005134,
-      "entry_costs": 0.95,
-      "rules": "v3",
-      "entry_features": {
-        "liquidity_usd": 63362.23,
-        "age_h": 38.43,
-        "dex": "pumpswap",
-        "pump_origin": true,
-        "sources": [
-          "dex_boost_latest",
-          "dex_boost_top",
-          "gt_trending"
-        ],
-        "boosts": 50,
-        "price_change": {
-          "m5": -0.36,
-          "h1": 10.87,
-          "h6": 17.35,
-          "h24": -19.22
-        },
-        "txns": {
-          "m5": {
-            "buys": 89,
-            "sells": 42
-          },
-          "h1": {
-            "buys": 599,
-            "sells": 308
-          },
-          "h6": {
-            "buys": 2437,
-            "sells": 1201
-          },
-          "h24": {
-            "buys": 8175,
-            "sells": 5630
-          }
-        },
-        "vol_h1": 35390.37,
-        "vol_h24": 1127847.72,
-        "mcap": 424192.0,
-        "vet": {
-          "rc_score": 1,
-          "holders": 3257,
-          "top10_ex_pool_pct": 13.36,
-          "max_holder_pct": 2.59,
-          "insider_supply_pct": 0.0,
-          "graph_insiders": 0,
-          "creator_supply_pct": 2.441,
-          "lp_locked_main_pct": 100.0,
-          "lp_locked_max_pct": 100.0,
-          "creator_prior_dead_tokens": 0,
-          "launchpad": "Pump.Fun",
-          "rc_risks": [],
-          "real_liquidity": 63128.88,
-          "score_parts": {
-            "buy_pressure": 1.0,
-            "activity": 0.25,
-            "holders": 0.61,
-            "distribution": 0.87,
-            "insiders": 0.0,
-            "momentum": 1.0,
-            "source": 1.0
-          }
-        },
-        "edge": {
-          "p": 0.477,
-          "W": 0.4,
-          "L": 0.24,
-          "cost_pct": 5.43,
-          "ev_pct": 1.09,
-          "score": 0.708
-        },
-        "creator": {
-          "pump_origin": true,
-          "pump_api_ok": false,
-          "creator_notes": [
-            "NOT_A_PUMP_COIN"
-          ]
-        }
-      }
-    }
-  ],
+  "last_updated": "2026-09-30T15:31:58.225419+00:00",
+  "equity": 891.2142,
+  "free_cash": 891.2142,
+  "realized_pnl": -70.1858,
+  "fees_paid": 5.7,
+  "slippage_paid": 3.75,
+  "open_count": 0,
+  "positions": [],
   "closed": [
     {
       "lead_id": "FFzTy32b-1790582652122",
@@ -384,6 +286,112 @@
       "slippage": 0.625,
       "hold_min": 723.8,
       "closed_at": "2026-09-29T04:08:02.438251+00:00"
+    },
+    {
+      "lead_id": "2d79yirW-1790776360416",
+      "contract": "2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump",
+      "ticker": "STOCK",
+      "entry_price": 0.000431977,
+      "dollars": 62.5,
+      "opened_at": 1790776361.204414,
+      "mark_price": 0.0004278,
+      "last_mark_price": 0.0004278,
+      "unrealized_pnl": -0.6043435182891698,
+      "unrealized_pct": -0.9669496292626716,
+      "volume_h6": 305658.17,
+      "volume_h24": 1217287.97,
+      "last_liquidity": 63035.38,
+      "entry_liquidity": 63362.23,
+      "peak_price": 0.0005134,
+      "entry_costs": 0.95,
+      "rules": "v3",
+      "entry_features": {
+        "liquidity_usd": 63362.23,
+        "age_h": 38.43,
+        "dex": "pumpswap",
+        "pump_origin": true,
+        "sources": [
+          "dex_boost_latest",
+          "dex_boost_top",
+          "gt_trending"
+        ],
+        "boosts": 50,
+        "price_change": {
+          "m5": -0.36,
+          "h1": 10.87,
+          "h6": 17.35,
+          "h24": -19.22
+        },
+        "txns": {
+          "m5": {
+            "buys": 89,
+            "sells": 42
+          },
+          "h1": {
+            "buys": 599,
+            "sells": 308
+          },
+          "h6": {
+            "buys": 2437,
+            "sells": 1201
+          },
+          "h24": {
+            "buys": 8175,
+            "sells": 5630
+          }
+        },
+        "vol_h1": 35390.37,
+        "vol_h24": 1127847.72,
+        "mcap": 424192.0,
+        "vet": {
+          "rc_score": 1,
+          "holders": 3257,
+          "top10_ex_pool_pct": 13.36,
+          "max_holder_pct": 2.59,
+          "insider_supply_pct": 0.0,
+          "graph_insiders": 0,
+          "creator_supply_pct": 2.441,
+          "lp_locked_main_pct": 100.0,
+          "lp_locked_max_pct": 100.0,
+          "creator_prior_dead_tokens": 0,
+          "launchpad": "Pump.Fun",
+          "rc_risks": [],
+          "real_liquidity": 63128.88,
+          "score_parts": {
+            "buy_pressure": 1.0,
+            "activity": 0.25,
+            "holders": 0.61,
+            "distribution": 0.87,
+            "insiders": 0.0,
+            "momentum": 1.0,
+            "source": 1.0
+          }
+        },
+        "edge": {
+          "p": 0.477,
+          "W": 0.4,
+          "L": 0.24,
+          "cost_pct": 5.43,
+          "ev_pct": 1.09,
+          "score": 0.708
+        },
+        "creator": {
+          "pump_origin": true,
+          "pump_api_ok": false,
+          "creator_notes": [
+            "NOT_A_PUMP_COIN"
+          ]
+        }
+      },
+      "exit_mid": 0.0004278,
+      "exit_price": 0.00042352199999999996,
+      "realized_pnl": -3.1233000831062823,
+      "realized_pct": -4.997280132970052,
+      "close_reason": "BREAKEVEN_STOP: peak +18.8%, now -0.97%",
+      "fee": 0.95,
+      "slippage": 0.625,
+      "hold_min": 99.3,
+      "closed_at": "2026-09-30T15:31:58.224303+00:00"
     }
   ],
   "equity_series": [
@@ -2533,9 +2541,40 @@
       "slippage_paid": 3.125,
       "total_deposited": 1000.0,
       "net_pnl": -98.8831
+    },
+    {
+      "ts": "2026-09-30T15:31:58.227427+00:00",
+      "equity": 891.2142,
+      "free_cash": 891.2142,
+      "open": 0,
+      "realized_pnl": -70.1858,
+      "fees_paid": 5.7,
+      "slippage_paid": 3.75,
+      "total_deposited": 1000.0,
+      "net_pnl": -108.7858,
+      "note": "exit-monitor close"
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-30T15:31:58.224486+00:00",
+      "type": "close",
+      "lead_id": "2d79yirW-1790776360416",
+      "contract": "2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump",
+      "ticker": "STOCK",
+      "entry_price": 0.000431977,
+      "exit_mid": 0.0004278,
+      "exit_price": 0.00042352199999999996,
+      "dollars": 62.5,
+      "realized_pnl": -3.1233000831062823,
+      "reason": "BREAKEVEN_STOP: peak +18.8%, now -0.97%",
+      "fee": 0.95,
+      "slippage": 0.625,
+      "entry_costs": 0.95,
+      "rules": "v3",
+      "hold_min": 99.3,
+      "free_cash": 891.2141680848732
+    },
     {
       "ts": "2026-09-30T15:22:40.372981+00:00",
       "type": "discovered",
@@ -3855,22 +3894,6 @@
         "CAT/ACC",
         "MOG"
       ]
-    },
-    {
-      "ts": "2026-09-29T10:22:55.261129+00:00",
-      "type": "discovered",
-      "count": 9,
-      "tickers": [
-        "INUINK",
-        "HOOKEDCAT",
-        "PARASITE",
-        "SWORDCAT",
-        "FROINK",
-        "SITRUMP",
-        "SICAT",
-        "MOIN",
-        "MOG"
-      ]
     }
   ],
   "rejections": [
@@ -4510,12 +4533,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T15:31:00+00:00",
+    "updated": "2026-09-30T15:32:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4971.69,
-    "net_pnl": -28.31,
-    "net_pnl_pct": -0.57,
+    "equity": 4982.31,
+    "net_pnl": -17.69,
+    "net_pnl_pct": -0.35,
     "hwm": 5076.08,
     "fees": 2.8,
     "funding": -0.42,
@@ -4527,9 +4550,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.255,
+        "mark": 0.2563,
         "stop": 0.24226395,
-        "upnl": 36.38,
+        "upnl": 39.4,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4537,9 +4560,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.849e-06,
+        "mark": 3.868e-06,
         "stop": 3.67e-06,
-        "upnl": -16.39,
+        "upnl": -13.7,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4547,9 +4570,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.32e-06,
+        "mark": 4.341e-06,
         "stop": 4.27e-06,
-        "upnl": -12.78,
+        "upnl": -10.11,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4557,9 +4580,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09493,
+        "mark": 0.09532,
         "stop": 0.09369625,
-        "upnl": -13.71,
+        "upnl": -11.46,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4618,13 +4641,13 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -6.42
+        "upnl": -6.52
       }
     ],
     "closed_n": 4,
     "wins": 2,
     "realized_pnl": -12.58,
-    "unrealized_pnl": -6.42,
+    "unrealized_pnl": -6.52,
     "today_pnl": -40.33,
     "recent_closed": [
       {
@@ -4657,7 +4680,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T15:30:41.863465+00:00",
+    "last_poll": "2026-09-30T15:32:13.251722+00:00",
     "feed_last_alert": "2026-09-30T15:14:57+00:00"
   },
   "desk1000": {
