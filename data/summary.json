@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -105.4645,
-  "net_pnl_pct": -10.55,
+  "net_pnl": -104.9726,
+  "net_pnl_pct": -10.5,
   "burn_paid": 37.6,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
@@ -69,8 +69,8 @@
     "GOPLUS_FEE_UPGRADABLE": 1
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-30T14:09:55.004668+00:00",
-  "equity": 894.5355,
+  "last_updated": "2026-09-30T14:10:55.261348+00:00",
+  "equity": 895.0274,
   "free_cash": 831.8875,
   "realized_pnl": -67.0625,
   "fees_paid": 4.75,
@@ -84,13 +84,13 @@
       "entry_price": 0.000431977,
       "dollars": 62.5,
       "opened_at": 1790776361.204414,
-      "mark_price": 0.000433,
-      "last_mark_price": 0.000433,
-      "unrealized_pnl": 0.14801135245626607,
-      "unrealized_pct": 0.2368181639300257,
-      "volume_h6": 244533.83,
-      "volume_h24": 1144873.57,
-      "last_liquidity": 63802.1,
+      "mark_price": 0.0004364,
+      "last_mark_price": 0.0004364,
+      "unrealized_pnl": 0.6399356910205841,
+      "unrealized_pct": 1.0238971056329345,
+      "volume_h6": 244849.26,
+      "volume_h24": 1145624.88,
+      "last_liquidity": 64058.74,
       "entry_liquidity": 63362.23,
       "peak_price": 0.0004759,
       "entry_costs": 0.95,
@@ -4441,12 +4441,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T14:10:00+00:00",
+    "updated": "2026-09-30T14:11:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5018.31,
-    "net_pnl": 18.31,
-    "net_pnl_pct": 0.37,
+    "equity": 5011.36,
+    "net_pnl": 11.36,
+    "net_pnl_pct": 0.23,
     "hwm": 5076.08,
     "fees": 2.24,
     "funding": -0.42,
@@ -4458,9 +4458,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.256,
+        "mark": 0.2553,
         "stop": 0.24226395,
-        "upnl": 38.7,
+        "upnl": 37.08,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4468,9 +4468,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.908e-06,
+        "mark": 3.899e-06,
         "stop": 3.67e-06,
-        "upnl": -8.05,
+        "upnl": -9.32,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4478,9 +4478,9 @@
         "side": "long",
         "notional": 561.44,
         "entry": 85218.8,
-        "mark": 84346.9,
+        "mark": 84256.3,
         "stop": 83577.012649,
-        "upnl": -6.25,
+        "upnl": -6.84,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4488,9 +4488,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 120.75,
+        "mark": 120.54,
         "stop": 118.27283836,
-        "upnl": -5.25,
+        "upnl": -6.22,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4498,9 +4498,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.406e-06,
+        "mark": 4.396e-06,
         "stop": 4.27e-06,
-        "upnl": -1.86,
+        "upnl": -3.13,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4508,9 +4508,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09615,
+        "mark": 0.09594,
         "stop": 0.09369625,
-        "upnl": -6.67,
+        "upnl": -7.88,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4551,19 +4551,19 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -3.97
+        "upnl": -3.74
       },
       {
         "ticker": "Saw",
         "opened_at": "2026-09-30T14:07:59.147321+00:00",
         "n_traders": 3,
-        "upnl": -2.2
+        "upnl": 1.66
       }
     ],
     "closed_n": 3,
     "wins": 2,
     "realized_pnl": 18.87,
-    "unrealized_pnl": -6.17,
+    "unrealized_pnl": -2.08,
     "today_pnl": -8.88,
     "recent_closed": [
       {
@@ -4589,7 +4589,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T14:09:30.302724+00:00",
+    "last_poll": "2026-09-30T14:11:01.835111+00:00",
     "feed_last_alert": "2026-09-30T14:07:33+00:00"
   },
   "desk1000": {
