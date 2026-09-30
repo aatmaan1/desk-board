@@ -3915,17 +3915,17 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-30T07:47:48.650620+00:00",
+    "updated": "2026-09-30T07:52:48.649371+00:00",
     "desk": {
-      "main_equity": 900.54,
+      "main_equity": 900.34,
       "sleeves_net_pnl": 0.0,
-      "desk_equity": 900.54,
+      "desk_equity": 900.34,
       "total_deposited": 1000.0,
-      "desk_net_pnl": -99.46,
-      "main_free_cash": 900.5375,
+      "desk_net_pnl": -99.66,
+      "main_free_cash": 900.3375,
       "sleeve_open_cost": 0,
-      "burn_paid": 32.4,
-      "burn_today_excluded": 2.8,
+      "burn_paid": 32.6,
+      "burn_today_excluded": 3.0,
       "desk_day_pnl": 0.0
     },
     "brake": null,
@@ -3963,12 +3963,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T07:52:00+00:00",
+    "updated": "2026-09-30T07:53:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5027.72,
-    "net_pnl": 27.72,
-    "net_pnl_pct": 0.55,
+    "equity": 5028.18,
+    "net_pnl": 28.18,
+    "net_pnl_pct": 0.56,
     "hwm": 5065.37,
     "fees": 0.83,
     "funding": -0.25,
@@ -3980,9 +3980,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2473,
+        "mark": 0.2475,
         "stop": 0.23016395,
-        "upnl": 18.47,
+        "upnl": 18.93,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -4015,7 +4015,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 245,
+    "alerts_24h": 244,
     "signals_total": 8,
     "opened_total": 3,
     "open": [
@@ -4023,13 +4023,13 @@
         "ticker": "e/acc",
         "opened_at": "2026-09-30T07:00:21.588648+00:00",
         "n_traders": 3,
-        "upnl": -10.5
+        "upnl": -11.22
       }
     ],
     "closed_n": 2,
     "wins": 2,
     "realized_pnl": 27.75,
-    "unrealized_pnl": -10.5,
+    "unrealized_pnl": -11.22,
     "today_pnl": 0,
     "recent_closed": [
       {
@@ -4048,7 +4048,7 @@
       }
     ],
     "skips_24h": 5,
-    "last_poll": "2026-09-30T07:51:22.754247+00:00",
+    "last_poll": "2026-09-30T07:52:54.269193+00:00",
     "feed_last_alert": "2026-09-30T07:30:20+00:00"
   },
   "desk1000": {
@@ -4264,6 +4264,6 @@
         ]
       }
     },
-    "updated": "2026-09-30T07:52:44.437728+00:00"
+    "updated": "2026-09-30T07:52:48.648781+00:00"
   }
 }
