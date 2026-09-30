@@ -12,8 +12,8 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -102.7947,
-  "net_pnl_pct": -10.28,
+  "net_pnl": -102.8959,
+  "net_pnl_pct": -10.29,
   "burn_paid": 38.2,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
@@ -60,8 +60,8 @@
     "INSIDER_SUPPLY_HIGH": 2
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-30T14:58:24.088021+00:00",
-  "equity": 897.2053,
+  "last_updated": "2026-09-30T14:59:24.343916+00:00",
+  "equity": 897.1041,
   "free_cash": 831.2875,
   "realized_pnl": -67.0625,
   "fees_paid": 4.75,
@@ -75,13 +75,13 @@
       "entry_price": 0.000431977,
       "dollars": 62.5,
       "opened_at": 1790776361.204414,
-      "mark_price": 0.0004556,
-      "last_mark_price": 0.0004556,
-      "unrealized_pnl": 3.4178613676191114,
-      "unrealized_pct": 5.468578188190578,
-      "volume_h6": 267681.29,
-      "volume_h24": 1173288.24,
-      "last_liquidity": 65110.69,
+      "mark_price": 0.0004549,
+      "last_mark_price": 0.0004549,
+      "unrealized_pnl": 3.3165828273264544,
+      "unrealized_pct": 5.3065325237223275,
+      "volume_h6": 269421.82,
+      "volume_h24": 1175152.46,
+      "last_liquidity": 65060.68,
       "entry_liquidity": 63362.23,
       "peak_price": 0.0004759,
       "entry_costs": 0.95,
@@ -4473,12 +4473,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T14:59:00+00:00",
+    "updated": "2026-09-30T15:00:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 4963.98,
-    "net_pnl": -36.02,
-    "net_pnl_pct": -0.72,
+    "equity": 4966.35,
+    "net_pnl": -33.65,
+    "net_pnl_pct": -0.67,
     "hwm": 5076.08,
     "fees": 2.52,
     "funding": -0.42,
@@ -4490,9 +4490,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2521,
+        "mark": 0.2529,
         "stop": 0.24226395,
-        "upnl": 29.63,
+        "upnl": 31.49,
         "opened_at": "2026-09-29T08:01:00+00:00"
       },
       {
@@ -4500,9 +4500,9 @@
         "side": "long",
         "notional": 560.23,
         "entry": 3.959e-06,
-        "mark": 3.834e-06,
+        "mark": 3.837e-06,
         "stop": 3.67e-06,
-        "upnl": -18.51,
+        "upnl": -18.09,
         "opened_at": "2026-09-30T11:01:00+00:00"
       },
       {
@@ -4510,9 +4510,9 @@
         "side": "long",
         "notional": 561.35,
         "entry": 121.78,
-        "mark": 118.79,
+        "mark": 118.74,
         "stop": 118.27283836,
-        "upnl": -14.28,
+        "upnl": -14.51,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4520,9 +4520,9 @@
         "side": "long",
         "notional": 561.26,
         "entry": 4.414e-06,
-        "mark": 4.317e-06,
+        "mark": 4.319e-06,
         "stop": 4.27e-06,
-        "upnl": -13.16,
+        "upnl": -12.91,
         "opened_at": "2026-09-30T13:01:00+00:00"
       },
       {
@@ -4530,9 +4530,9 @@
         "side": "long",
         "notional": 561.14,
         "entry": 0.09716,
-        "mark": 0.09471,
+        "mark": 0.09472,
         "stop": 0.09369625,
-        "upnl": -14.98,
+        "upnl": -14.92,
         "opened_at": "2026-09-30T13:01:00+00:00"
       }
     ],
@@ -4574,7 +4574,7 @@
     "rule": ">=3 top traders in 120m, exit time6h_s50",
     "ticket_usd": 40.0,
     "max_open": 2,
-    "alerts_24h": 215,
+    "alerts_24h": 213,
     "signals_total": 10,
     "opened_total": 5,
     "open": [
@@ -4582,13 +4582,13 @@
         "ticker": "STONK",
         "opened_at": "2026-09-30T12:58:48.985713+00:00",
         "n_traders": 3,
-        "upnl": -6.95
+        "upnl": -6.88
       }
     ],
     "closed_n": 4,
     "wins": 2,
     "realized_pnl": -12.58,
-    "unrealized_pnl": -6.95,
+    "unrealized_pnl": -6.88,
     "today_pnl": -40.33,
     "recent_closed": [
       {
@@ -4621,7 +4621,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T14:58:19.304642+00:00",
+    "last_poll": "2026-09-30T14:59:50.843571+00:00",
     "feed_last_alert": "2026-09-30T14:51:44+00:00"
   },
   "desk1000": {
