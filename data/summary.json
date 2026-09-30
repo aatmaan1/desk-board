@@ -1932,6 +1932,14 @@
   ],
   "events": [
     {
+      "ts": "2026-09-30T04:08:28.543077+00:00",
+      "type": "copy_skip",
+      "mint": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "ticker": "SI",
+      "reason": "VET_GOPLUS_FEE_UPGRADABLE",
+      "mode": "shadow"
+    },
+    {
       "ts": "2026-09-30T04:07:47.182882+00:00",
       "type": "discovered",
       "count": 11,
@@ -3159,23 +3167,6 @@
         "VAULT",
         "JIANCO"
       ]
-    },
-    {
-      "ts": "2026-09-28T11:34:10.599667+00:00",
-      "type": "discovered",
-      "count": 14,
-      "tickers": [
-        "XPAD",
-        "E/ACC",
-        "BUKANGI",
-        "BABYCALI",
-        "INSTA",
-        "TOBEY",
-        "DELREY",
-        "Q4",
-        "GRAYMATTER",
-        "CAKE"
-      ]
     }
   ],
   "rejections": [
@@ -3799,12 +3790,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T04:08:00+00:00",
+    "updated": "2026-09-30T04:09:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5014.92,
-    "net_pnl": 14.92,
-    "net_pnl_pct": 0.3,
+    "equity": 5013.76,
+    "net_pnl": 13.76,
+    "net_pnl_pct": 0.28,
     "hwm": 5065.37,
     "fees": 0.83,
     "funding": -0.25,
@@ -3816,9 +3807,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2418,
+        "mark": 0.2413,
         "stop": 0.22696395,
-        "upnl": 5.68,
+        "upnl": 4.51,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3852,7 +3843,7 @@
     "ticket_usd": 40.0,
     "max_open": 2,
     "alerts_24h": 231,
-    "signals_total": 6,
+    "signals_total": 7,
     "opened_total": 2,
     "open": [],
     "closed_n": 2,
@@ -3876,9 +3867,9 @@
         "closed_at": "2026-09-28T06:55:42.818211+00:00"
       }
     ],
-    "skips_24h": 4,
-    "last_poll": "2026-09-29T18:06:57.775291+00:00",
-    "feed_last_alert": "2026-09-29T17:48:54+00:00"
+    "skips_24h": 5,
+    "last_poll": "2026-09-30T04:08:26.745368+00:00",
+    "feed_last_alert": "2026-09-30T03:54:26+00:00"
   },
   "desk1000": {
     "paper": true,
