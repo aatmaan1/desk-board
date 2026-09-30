@@ -3979,12 +3979,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T09:33:00+00:00",
+    "updated": "2026-09-30T09:34:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5041.62,
-    "net_pnl": 41.62,
-    "net_pnl_pct": 0.83,
+    "equity": 5045.34,
+    "net_pnl": 45.34,
+    "net_pnl_pct": 0.91,
     "hwm": 5065.37,
     "fees": 0.83,
     "funding": -0.31,
@@ -3996,9 +3996,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2533,
-        "stop": 0.23586395,
-        "upnl": 32.42,
+        "mark": 0.2549,
+        "stop": 0.23746395,
+        "upnl": 36.15,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -4039,13 +4039,13 @@
         "ticker": "e/acc",
         "opened_at": "2026-09-30T07:00:21.588648+00:00",
         "n_traders": 3,
-        "upnl": -9.72
+        "upnl": -9.57
       }
     ],
     "closed_n": 2,
     "wins": 2,
     "realized_pnl": 27.75,
-    "unrealized_pnl": -9.72,
+    "unrealized_pnl": -9.57,
     "today_pnl": 0,
     "recent_closed": [
       {
@@ -4064,7 +4064,7 @@
       }
     ],
     "skips_24h": 4,
-    "last_poll": "2026-09-30T09:32:32.015573+00:00",
+    "last_poll": "2026-09-30T09:34:03.427946+00:00",
     "feed_last_alert": "2026-09-30T08:03:05+00:00"
   },
   "desk1000": {
