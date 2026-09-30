@@ -12,9 +12,9 @@
       "total_deposited": 1000.0
     }
   ],
-  "net_pnl": -97.4625,
-  "net_pnl_pct": -9.75,
-  "burn_paid": 30.4,
+  "net_pnl": -97.6625,
+  "net_pnl_pct": -9.77,
+  "burn_paid": 30.6,
   "hwm_equity": 1019.8884,
   "accounting_notes": [
     {
@@ -23,9 +23,9 @@
     }
   ],
   "last_cycle": {
-    "ts": "2026-09-30T05:07:45.281779+00:00",
+    "ts": "2026-09-30T05:23:15.295503+00:00",
     "rules": "v3",
-    "discovered": 16,
+    "discovered": 0,
     "prefilter": {
       "liq_window": 35,
       "age_window": 19,
@@ -35,33 +35,25 @@
     "creator_sources": {
       "pump": "http_404"
     },
-    "rejections": {
-      "AGE_TOO_NEW": 2,
-      "NO_H1_MOMENTUM": 4,
-      "VOL24_WASH_SUSPECT": 1,
-      "H1_BUY_SELL_WEAK": 5,
-      "PUMP_GRAD_TOO_NEW": 1,
-      "LIQ_LT": 2,
-      "H1_TXNS_LT": 1
-    },
+    "rejections": {},
     "passed": [],
     "opened": null,
-    "equity": 902.54,
-    "free_cash": 902.54,
+    "equity": 902.34,
+    "free_cash": 902.34,
     "open": 0,
-    "net_pnl": -97.46
+    "net_pnl": -97.66
   },
   "rejection_counts_24h": {
-    "LIQ_LT": 126,
-    "H1_BUY_SELL_WEAK": 107,
-    "NO_H1_MOMENTUM": 61,
+    "LIQ_LT": 123,
+    "H1_BUY_SELL_WEAK": 103,
+    "NO_H1_MOMENTUM": 59,
     "DESK:HALT_FLAG": 56,
-    "H1_TXNS_LT": 34,
-    "REENTRY_COOLDOWN": 25,
-    "M5_SELLING": 24,
+    "H1_TXNS_LT": 33,
+    "REENTRY_COOLDOWN": 24,
+    "M5_SELLING": 23,
     "AGE_TOO_NEW": 22,
     "PUMP_GRAD_TOO_NEW": 17,
-    "H6_DOWNTREND": 5,
+    "H6_DOWNTREND": 4,
     "ALREADY_OPEN": 4,
     "AWAIT_CONFIRM": 3,
     "VOL24_WASH_SUSPECT": 3,
@@ -69,9 +61,9 @@
     "DESK:DAILY_LOSS_LIMIT": 1
   },
   "started_at": "2026-09-27T19:31:30.295846+00:00",
-  "last_updated": "2026-09-30T05:07:45.281478+00:00",
-  "equity": 902.5375,
-  "free_cash": 902.5375,
+  "last_updated": "2026-09-30T05:23:15.295156+00:00",
+  "equity": 902.3375,
+  "free_cash": 902.3375,
   "realized_pnl": -67.0625,
   "fees_paid": 3.8,
   "slippage_paid": 2.5,
@@ -1984,6 +1976,17 @@
       "slippage_paid": 2.5,
       "total_deposited": 1000.0,
       "net_pnl": -97.4625
+    },
+    {
+      "ts": "2026-09-30T05:23:15.294967+00:00",
+      "equity": 902.3375,
+      "free_cash": 902.3375,
+      "open": 0,
+      "realized_pnl": -67.0625,
+      "fees_paid": 3.8,
+      "slippage_paid": 2.5,
+      "total_deposited": 1000.0,
+      "net_pnl": -97.6625
     }
   ],
   "events": [
@@ -3803,7 +3806,7 @@
   ],
   "sleeves": {
     "paper": true,
-    "updated": "2026-09-30T05:17:48.739671+00:00",
+    "updated": "2026-09-30T05:23:12.642951+00:00",
     "desk": {
       "main_equity": 902.54,
       "sleeves_net_pnl": 0.0,
@@ -3851,12 +3854,12 @@
   },
   "fast": {
     "paper": true,
-    "updated": "2026-09-30T05:23:00+00:00",
+    "updated": "2026-09-30T05:24:00+00:00",
     "name": "fast_breakout_1h",
     "start_equity": 5000.0,
-    "equity": 5018.88,
-    "net_pnl": 18.88,
-    "net_pnl_pct": 0.38,
+    "equity": 5019.81,
+    "net_pnl": 19.81,
+    "net_pnl_pct": 0.4,
     "hwm": 5065.37,
     "fees": 0.83,
     "funding": -0.25,
@@ -3868,9 +3871,9 @@
         "side": "long",
         "notional": 556.42,
         "entry": 0.239,
-        "mark": 0.2435,
+        "mark": 0.2439,
         "stop": 0.22826395,
-        "upnl": 9.63,
+        "upnl": 10.56,
         "opened_at": "2026-09-29T08:01:00+00:00"
       }
     ],
@@ -3937,14 +3940,14 @@
     "desk": "fresh_1000",
     "started_at": "2026-09-27T19:31:30.295846+00:00",
     "deposited": 1000.0,
-    "desk_equity": 902.54,
-    "desk_pnl": -97.46,
-    "desk_pnl_pct": -9.75,
+    "desk_equity": 902.34,
+    "desk_pnl": -97.66,
+    "desk_pnl_pct": -9.77,
     "hwm": 1019.89,
     "drawdown_halt_pct": 20.0,
     "halt": null,
-    "burn_paid": 30.4,
-    "free_cash": 902.54,
+    "burn_paid": 30.6,
+    "free_cash": 902.34,
     "sleeves": [
       {
         "sleeve": "midcap_breakout",
@@ -3985,8 +3988,8 @@
         "open_cost": 0.0,
         "realized": 0.0,
         "unrealized": 0.0,
-        "pnl": -30.4,
-        "equity": 119.6,
+        "pnl": -30.6,
+        "equity": 119.4,
         "note": "simulated burn $0.8/h charged here"
       }
     ],
@@ -4145,6 +4148,6 @@
         ]
       }
     },
-    "updated": "2026-09-30T05:17:48.738862+00:00"
+    "updated": "2026-09-30T05:23:15.296088+00:00"
   }
 }
